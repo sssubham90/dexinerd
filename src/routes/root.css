@@ -1,1 +1,42 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: futsat;
+  src: url("../assets/fonts/Fustat-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: open-sans;
+  src: url("../assets/fonts/OpenSans-VariableFont_wdth,wght.ttf");
+}
+
+@theme {
+  --font-futsat: "futsat", sans-serif;
+  --font-open-sans: "open-sans", sans-serif;
+}
+
+@layer base {
+  html {
+    @apply font-futsat;
+    @apply bg-[#F5F5F5];
+  }
+}
+
+@keyframes float-up {
+  from {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-float-up {
+  animation: float-up 0.75s ease-out forwards;
+}
+
+.shadow-up {
+  box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.15);
+}
