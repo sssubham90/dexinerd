@@ -8,7 +8,7 @@ function Story() {
         <h4 className="font-medium text-2xl text-[#2F2F2F] mt-0.5">
           What does this mean to me?
         </h4>
-        <p className="font-normal text-[33px] leading-[174%] tracking-[-4%] text-[#000000] mt-14">
+        <p className="font-normal text-[33px] leading-[174%] tracking-[-4%] text-black mt-14">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae
           mi at nisl pharetra laoreet ut a risus. Vestibulum ut purus laoreet,
           fermentum ante bibendum, suscipit odio. Vestibulum lacinia.
