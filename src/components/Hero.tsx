@@ -12,7 +12,7 @@ function Hero() {
             className="w-[65px] h-[65px] cursor-pointer"
           />
         </div>
-        <div className="w-[672px] pb-5.5">
+        <div  id = "aboutme" className="w-[672px] pb-5.5">
           <h2 className="text-[#DD5D18] text-lg font-medium my-1">Namaste!</h2>
           <h1 className="text-[#171717] text-[52.82px] font-semibold">
             I’m Sourav Rout,

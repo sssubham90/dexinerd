@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: futsat;
+  font-family: fustat;
   src: url("../assets/fonts/Fustat-VariableFont_wght.ttf");
 }
 
@@ -11,13 +11,13 @@
 }
 
 @theme {
-  --font-futsat: "futsat", sans-serif;
+  --font-fustat: "fustat", sans-serif;
   --font-open-sans: "open-sans", sans-serif;
 }
 
 @layer base {
   html {
-    @apply font-futsat;
+    @apply font-fustat;
     @apply bg-[#F5F5F5];
   }
 }
@@ -39,4 +39,8 @@
 
 .shadow-up {
   box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.common-list-item {
+  @apply px-7 py-1 hover:text-orange-500 cursor-pointer font-normal font-fustat text-[32px];
 }
