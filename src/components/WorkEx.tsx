@@ -16,7 +16,7 @@ import Workex from "../assets/png/Workex.png";
 
 function WorkEx() {
   return (
-    <div className="p-5 mx-[200px] bg-white rounded-2xl flex flex-row justify-center items-center">
+    <div className="mb-7 p-5 mx-[200px] bg-white rounded-2xl flex flex-row justify-center items-center">
       <div className="flex flex-col justify-between items-center h-[701px] p-13 pt-36 pb-20">
         <div className="mt-1 w-[600px]">
           <h2 className="font-normal text-[37px] leading-[156%] text-black">

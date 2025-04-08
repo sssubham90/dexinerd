@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react-swc'
 import { TanStackRouterVite } from '@tanstack/router-plugin/vite'
+import vitePluginSvgr from 'vite-plugin-svgr'
 import dts from 'vite-plugin-dts'
 import tailwindcss from '@tailwindcss/vite'
 
@@ -10,6 +11,7 @@ export default defineConfig({
     TanStackRouterVite({ target: 'react', autoCodeSplitting: true }),
     tailwindcss(),
     react(),
+    vitePluginSvgr(),
     dts({ tsconfigPath: './tsconfig.app.json' }),
   ],
 })
