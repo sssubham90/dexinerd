@@ -1,6 +1,6 @@
 function Story() {
   return (
-    <div className="mt-2 py-[180px] px-[160px] flex flex-row justify-between items-center bg-[#F5F5F5]">
+    <div className="py-[180px] px-[160px] flex flex-row justify-between items-center bg-[#F5F5F5]">
       <div className="flex-grow-[527]"></div>
 
       <div className="w-[1012px]">

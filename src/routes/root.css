@@ -42,5 +42,5 @@
 }
 
 .common-list-item {
-  @apply px-7 py-1 hover:text-orange-500 cursor-pointer font-normal font-fustat text-[32px];
+  @apply px-2.5 hover:text-[#DD5D18] cursor-pointer font-normal font-fustat text-[32px];
 }

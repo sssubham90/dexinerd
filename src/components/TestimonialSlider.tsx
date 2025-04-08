@@ -40,7 +40,9 @@ export default function TestimonialSlider() {
 
   return (
     <div className="relative w-full max-w-5xl mx-auto px-4 py-12">
-      <div className="text-orange-400 text-lg font-medium font-fustat">Testimonials</div>
+      <div className="text-orange-400 text-lg font-medium font-fustat">
+        Testimonials
+      </div>
       <h2 className="text-2xl font-semibold text-gray-700 mb-8">
         Feedback that speaks to my Results
       </h2>
@@ -72,7 +74,7 @@ export default function TestimonialSlider() {
             onClick={() => instanceRef.current?.prev()}
             className="text-orange-500 hover:text-orange-700"
           >
-            <ArrowLeft/>
+            <ArrowLeft />
           </button>
           <button
             onClick={() => instanceRef.current?.next()}
@@ -82,7 +84,6 @@ export default function TestimonialSlider() {
           </button>
         </div>
       )}
-      
     </div>
   );
 }
