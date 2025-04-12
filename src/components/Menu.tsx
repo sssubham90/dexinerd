@@ -33,7 +33,6 @@ const Menu: React.FC = () => {
       </button>
       <HamburgerMenuIcon
         onClick={toggleMenu}
-        fill="white"
         className="w-[45px] h-[45px] p-2.5 rounded-full bg-[#DD5D18] text-white cursor-pointer [@media(min-width:433px)]:hidden [@media(max-width:433px)]:w-[10vw] [@media(max-width:433px)]:h-[10vw]"
       />
       {isOpen && (

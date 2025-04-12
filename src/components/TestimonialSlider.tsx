@@ -48,11 +48,11 @@ export default function TestimonialSlider() {
         <h2 className="font-medium text-2xl text-[#DD5D18] mb-2">
           Testimonials
         </h2>
-        <div className="flex flex-row justify-between items-center mb-14">
+        <div className="flex flex-row justify-between items-center mb-14 [@media(max-width:550px)]:gap-4">
           <h4 className="font-medium text-2xl text-[#2F2F2F] mt-0.5">
             Feedback that speaks to my Results
           </h4>
-          <div className="flex flex-row justify-center items-center gap-8">
+          <div className="flex flex-row justify-center items-center gap-8 [@media(max-width:550px)]:gap-2">
             <ArrowLeft
               onClick={() => instanceRef.current?.prev()}
               aria-disabled={config.min}
