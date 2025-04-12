@@ -3,6 +3,7 @@ import * as NavigationMenu from "@radix-ui/react-navigation-menu";
 import Linkedin from "../assets/svg/Linkedin.svg";
 import Behance from "../assets/svg/Behance.svg";
 import Dribble from "../assets/svg/Dribble.svg";
+import { HamburgerMenuIcon } from "@radix-ui/react-icons";
 
 const Menu: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -26,17 +27,25 @@ const Menu: React.FC = () => {
     <div className="relative inline-block text-left" ref={menuRef}>
       <button
         onClick={toggleMenu}
-        className="w-[89px] h-[45px] bg-[#DD5D18] py-2.5 px-5 text-white font-normal font-open-sans rounded-4xl cursor-pointer"
+        className="w-[89px] h-[45px] [@media(max-width:432px)]:hidden bg-[#DD5D18] py-2.5 px-5 text-white font-normal font-open-sans rounded-4xl cursor-pointer"
       >
         Menu
       </button>
+      <HamburgerMenuIcon
+        onClick={toggleMenu}
+        fill="white"
+        className="w-[45px] h-[45px] p-2.5 rounded-full bg-[#DD5D18] text-white cursor-pointer [@media(min-width:433px)]:hidden [@media(max-width:433px)]:w-[10vw] [@media(max-width:433px)]:h-[10vw]"
+      />
       {isOpen && (
-        <div className="absolute right-0 mt-12.5 flex flex-col z-10 gap-3">
+        <div
+          className="absolute right-0 mt-12.5 flex flex-col z-10 gap-3"
+          onClick={toggleMenu}
+        >
           <div className="bg-white/90 hover:bg-white rounded-2xl shadow-lg w-[316px] py-9 px-7">
             <NavigationMenu.Root>
               <NavigationMenu.List className="flex flex-col gap-2">
                 <NavigationMenu.Item className="common-list-item">
-                  <NavigationMenu.Link href="/">Home</NavigationMenu.Link>
+                  <NavigationMenu.Link href="#">Home</NavigationMenu.Link>
                 </NavigationMenu.Item>
                 <NavigationMenu.Item className="common-list-item">
                   <NavigationMenu.Link href="#portfolio">

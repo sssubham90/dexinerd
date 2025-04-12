@@ -6,7 +6,7 @@ type MusicAlertProps = {
 
 function MusicAlert({ setShowMusicAlert }: MusicAlertProps) {
   return (
-    <div className="py-6 px-[200px] w-full flex flex-row justify-between items-center bg-white z-50 fixed bottom-0 animate-float-up shadow-up">
+    <div className="py-6 px-[200px] [@media(max-width:1814px)]:px-4 w-full flex flex-row justify-between items-center bg-white z-50 fixed bottom-0 animate-float-up shadow-up">
       <div className="flex flex-row justify-items-center gap-2.5">
         <img src={Music} alt="Music" className="w-[33px] h-[33px]" />
         <h3 className="text-[#171717] text-lg leading-[191%] font-normal">

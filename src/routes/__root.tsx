@@ -12,15 +12,19 @@ export const Route = createRootRoute({
 function Root() {
   return (
     <>
-      <header className="flex justify-between items-center px-[200px] py-7">
+      <header className="flex justify-between items-center px-[200px] [@media(max-width:1520px)]:px-4 [@media(max-width:1520px)]:w-full py-7">
         <img
           src={HeadingLogo}
           alt="Dexinerd"
-          className="w-[246.71px] h-[21px]"
+          className="w-[246.71px] [@media(max-width:600px)]:w-[55vw]"
         />
-        <div className="flex items-center gap-5">
-          <img src={Music} alt="Music" className="w-[45px] h-[45px]" />
-          <button className="w-[149px] h-[45px] bg-[#121212] py-2.5 px-5 text-white font-normal font-open-sans rounded-4xl">
+        <div className="flex items-center gap-5 [@media(max-width:600px)]:gap-[2vw]">
+          <img
+            src={Music}
+            alt="Music"
+            className="w-[45px] h-[45px] [@media(max-width:600px)]:w-[10vw] cursor-pointer"
+          />
+          <button className="w-[149px] h-[45px]  cursor-pointer [@media(max-width:600px)]:hidden bg-[#121212] py-2.5 px-5 text-white font-normal font-open-sans rounded-4xl">
             Let's connect
           </button>
           <Menu />

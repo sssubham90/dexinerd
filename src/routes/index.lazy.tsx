@@ -13,7 +13,7 @@ export const Route = createLazyFileRoute("/")({
 });
 
 function Index() {
-  const [showMusicAlert, setShowMusicAlert] = useState(false);
+  const [showMusicAlert, setShowMusicAlert] = useState(true);
   return (
     <>
       <Hero />

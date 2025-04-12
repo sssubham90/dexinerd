@@ -2,9 +2,9 @@ import VideoThumbnail from "../assets/png/VideoThumbnail.png";
 
 function Video() {
   return (
-    <>
-      <div className="py-5 mb-32 px-[200px] flex flex-col justify-center">
-        <button className="bg-white/[13%] text-white font-medium tracking-[-4%] text-lg px-5 py-2.5 w-44 rounded-[58px] ml-auto mr-17 relative top-29">
+    <div className="mx-4">
+      <div className="py-5 mb-32 [@media(max-width:1520px)]:mb-4 px-[200px] [@media(max-width:1520px)]:px-0 flex flex-col justify-center">
+        <button className="bg-white/[13%] text-white font-medium tracking-[-4%] text-lg px-5 py-2.5 w-44 rounded-[58px] ml-auto mr-17 relative [top:calc(48px+3.5vw)] [@media(max-width:768px)]:hidden">
           Know about me
         </button>
         <img
@@ -27,8 +27,8 @@ function Video() {
         </div>
         <div className="flex-grow-[328]"></div>
       </div>
-      <div className="w-[1520px] h-0.5 bg-black/17 my-7 mx-auto"></div>
-    </>
+      <div className="max-w-[1520px] [@media(max-width:1520px)]:w-full h-0.5 bg-black/17 my-7 mx-auto"></div>
+    </div>
   );
 }
 

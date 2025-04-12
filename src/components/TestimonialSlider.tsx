@@ -26,25 +26,25 @@ const testimonials = [
 export default function TestimonialSlider() {
   const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>({
     loop: false,
-    slideChanged: (s) => setCurrent(s.track.details.rel),
+    created: (s) =>
+      setConfig({
+        min: s?.track?.details?.rel == s?.track?.details?.min,
+        max: s?.track?.details?.rel == s?.track?.details?.max,
+      }),
+    slideChanged: (s) =>
+      setConfig({
+        min: s?.track?.details?.rel == s?.track?.details?.min,
+        max: s?.track?.details?.rel == s?.track?.details?.max,
+      }),
   });
 
-  const [current, setCurrent] = useState(0);
-
-  console.log({
-    min:
-      instanceRef.current?.track?.details?.rel ==
-      instanceRef.current?.track?.details?.min,
-    max:
-      instanceRef.current?.track?.details?.rel ==
-      instanceRef.current?.track?.details?.max,
-  });
+  const [config, setConfig] = useState({ min: false, max: false });
 
   return (
-    <div className="py-[140px] flex flex-row justify-between items-center">
+    <div className="py-[140px] [@media(max-width:1520px)]:mx-4 [@media(max-width:1520px)]:py-4 flex flex-row [@media(max-width:1520px)]:justify-between items-center">
       <div className="flex-grow-[585]"></div>
 
-      <div className="w-[987px]">
+      <div className="w-[1520px] [@media(max-width:1520px)]:w-full">
         <h2 className="font-medium text-2xl text-[#DD5D18] mb-2">
           Testimonials
         </h2>
@@ -55,18 +55,12 @@ export default function TestimonialSlider() {
           <div className="flex flex-row justify-center items-center gap-8">
             <ArrowLeft
               onClick={() => instanceRef.current?.prev()}
-              aria-disabled={
-                instanceRef.current?.track?.details?.rel ==
-                instanceRef.current?.track?.details?.min
-              }
+              aria-disabled={config.min}
               className="w-7 fill-[#DD5D18] aria-disabled:fill-[#DD5D1866]"
             />
             <ArrowRight
               onClick={() => instanceRef.current?.next()}
-              aria-disabled={
-                instanceRef.current?.track?.details?.rel ==
-                instanceRef.current?.track?.details?.max
-              }
+              aria-disabled={config.max}
               className="w-7 fill-[#DD5D18] aria-disabled:fill-[#DD5D1866]"
             />
           </div>
@@ -79,7 +73,7 @@ export default function TestimonialSlider() {
                 “{t.quote}”
               </blockquote>
               <div className="flex flex-row items-center gap-4">
-                <p className="text-[33px] leading-[174%] text-[#DD5D18] mr-14">
+                <p className="text-[33px] leading-[174%] text-[#DD5D18] mr-14 [@media(max-width:1520px)]:mr-0">
                   -
                 </p>
                 <img
