@@ -16,6 +16,7 @@ function Root() {
     <>
       <Helmet>
         <link rel="preload" as="image" href={Hero} />
+        <meta name="description" content="Sourav's Portfolio" />
       </Helmet>
       <header className="flex justify-between items-center px-[200px] [@media(max-width:1520px)]:px-4 [@media(max-width:1520px)]:w-full py-7">
         <img
