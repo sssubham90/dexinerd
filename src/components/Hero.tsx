@@ -1,5 +1,5 @@
 import OrangeArrowDown from "../assets/svg/OrangeArrowDown.svg";
-import HeroImage from "../assets/png/Hero.png";
+import HeroImage from "../assets/webp/Hero.webp";
 
 function Hero() {
   return (

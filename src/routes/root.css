@@ -2,12 +2,12 @@
 
 @font-face {
   font-family: fustat;
-  src: url("../assets/fonts/Fustat-VariableFont_wght.ttf");
+  src: url("../assets/fonts/Fustat-VariableFont_wght.woff2");
 }
 
 @font-face {
   font-family: open-sans;
-  src: url("../assets/fonts/OpenSans-VariableFont_wdth,wght.ttf");
+  src: url("../assets/fonts/OpenSans-VariableFont_wdth,wght.woff2");
 }
 
 @theme {

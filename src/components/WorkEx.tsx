@@ -12,7 +12,7 @@ import SeventhGear from "../assets/svg/SeventhGear.svg";
 import DAV from "../assets/svg/DAV.svg";
 import BJP from "../assets/svg/BJP.svg";
 
-import Workex from "../assets/png/Workex.png";
+import Workex from "../assets/webp/Workex.webp";
 
 function WorkEx() {
   return (

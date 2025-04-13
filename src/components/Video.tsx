@@ -1,4 +1,4 @@
-import VideoThumbnail from "../assets/png/VideoThumbnail.png";
+import VideoThumbnail from "../assets/webp/VideoThumbnail.webp";
 
 function Video() {
   return (

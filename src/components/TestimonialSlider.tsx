@@ -50,9 +50,9 @@ export default function TestimonialSlider() {
             Testimonials
           </h2>
           <div className="flex flex-row justify-between items-center mb-14 [@media(max-width:550px)]:gap-4">
-            <h4 className="font-medium text-2xl text-[#2F2F2F] mt-0.5">
+            <h3 className="font-medium text-2xl text-[#2F2F2F] mt-0.5">
               Feedback that speaks to my Results
-            </h4>
+            </h3>
             <div className="flex flex-row justify-center items-center gap-8 [@media(max-width:550px)]:gap-2">
               <ArrowLeft
                 onClick={() => instanceRef.current?.prev()}

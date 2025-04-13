@@ -36,9 +36,9 @@ function FAQ() {
         <h2 className="font-medium text-2xl text-[#DD5D18] tracking-[-4%]">
           FAQs
         </h2>
-        <h4 className="font-medium text-2xl text-[#2F2F2F] tracking-[-4%] mb-14">
+        <h3 className="font-medium text-2xl text-[#2F2F2F] tracking-[-4%] mb-14">
           Answers to all your questions
-        </h4>
+        </h3>
         <Accordion.Root
           id="faqs"
           className="AccordionRoot"
