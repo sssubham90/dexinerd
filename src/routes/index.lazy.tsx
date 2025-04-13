@@ -7,6 +7,9 @@ import MarqueeBanner from "../components/MarqueeBanner";
 import Video from "../components/Video";
 import WorkEx from "../components/WorkEx";
 import TestimonialSlider from "../components/TestimonialSlider";
+import FAQ from "../components/FAQ";
+import ContactForm from "../components/ContactForm";
+import Footer from "../components/Footer";
 
 export const Route = createLazyFileRoute("/")({
   component: Index,
@@ -23,6 +26,9 @@ function Index() {
       <Video />
       <WorkEx />
       <TestimonialSlider />
+      <FAQ />
+      <ContactForm />
+      <Footer />
     </>
   );
 }

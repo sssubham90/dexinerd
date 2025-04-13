@@ -36,31 +36,32 @@ const Menu: React.FC = () => {
         className="w-[45px] h-[45px] p-2.5 rounded-full bg-[#DD5D18] text-white cursor-pointer [@media(min-width:433px)]:hidden [@media(max-width:433px)]:w-[10vw] [@media(max-width:433px)]:h-[10vw]"
       />
       {isOpen && (
-        <div
-          className="absolute right-0 mt-12.5 flex flex-col z-10 gap-3"
-          onClick={toggleMenu}
-        >
+        <div className="absolute right-0 mt-12.5 flex flex-col z-10 gap-3">
           <div className="bg-white/90 hover:bg-white rounded-2xl shadow-lg w-[316px] py-9 px-7">
             <NavigationMenu.Root>
               <NavigationMenu.List className="flex flex-col gap-2">
                 <NavigationMenu.Item className="common-list-item">
-                  <NavigationMenu.Link href="#">Home</NavigationMenu.Link>
+                  <NavigationMenu.Link href="#" onClick={toggleMenu}>
+                    Home
+                  </NavigationMenu.Link>
                 </NavigationMenu.Item>
                 <NavigationMenu.Item className="common-list-item">
-                  <NavigationMenu.Link href="#portfolio">
+                  <NavigationMenu.Link href="#portfolio" onClick={toggleMenu}>
                     Portfolio
                   </NavigationMenu.Link>
                 </NavigationMenu.Item>
                 <NavigationMenu.Item className="common-list-item">
-                  <NavigationMenu.Link href="#aboutme">
+                  <NavigationMenu.Link href="#aboutme" onClick={toggleMenu}>
                     About me
                   </NavigationMenu.Link>
                 </NavigationMenu.Item>
                 <NavigationMenu.Item className="common-list-item">
-                  <NavigationMenu.Link href="#faqs">FAQs</NavigationMenu.Link>
+                  <NavigationMenu.Link href="#faqs" onClick={toggleMenu}>
+                    FAQs
+                  </NavigationMenu.Link>
                 </NavigationMenu.Item>
                 <NavigationMenu.Item className="common-list-item">
-                  <NavigationMenu.Link href="#getintouch">
+                  <NavigationMenu.Link href="#contact" onClick={toggleMenu}>
                     Get in touch
                   </NavigationMenu.Link>
                 </NavigationMenu.Item>
@@ -77,7 +78,10 @@ const Menu: React.FC = () => {
                 placeholder="Email address"
                 className="w-[240px] border-0 border-b border-black/27 focus:outline-none focus:border-black-500 mx-2.5 py-4 placeholder-black-400"
               />
-              <button className="w-[100px] h-[45px] bg-[#DD5D18] mx-2.5 py-2.5 px-5 text-lg text-white font-open-sans rounded-4xl cursor-pointer">
+              <button
+                className="w-[100px] h-[45px] bg-[#DD5D18] mx-2.5 py-2.5 px-5 text-lg text-white font-open-sans rounded-4xl cursor-pointer"
+                onClick={toggleMenu}
+              >
                 Submit
               </button>
             </div>
@@ -92,7 +96,7 @@ const Menu: React.FC = () => {
               <NavigationMenu.Root>
                 <NavigationMenu.List className="flex flex-row items-center justify-start gap-6">
                   <NavigationMenu.Item>
-                    <NavigationMenu.Link href="">
+                    <NavigationMenu.Link href="" onClick={toggleMenu}>
                       <img
                         src={Linkedin}
                         alt="Linkedin"
@@ -101,7 +105,7 @@ const Menu: React.FC = () => {
                     </NavigationMenu.Link>
                   </NavigationMenu.Item>
                   <NavigationMenu.Item>
-                    <NavigationMenu.Link href="">
+                    <NavigationMenu.Link href="" onClick={toggleMenu}>
                       <img
                         src={Behance}
                         alt="Behance"
@@ -110,7 +114,7 @@ const Menu: React.FC = () => {
                     </NavigationMenu.Link>
                   </NavigationMenu.Item>
                   <NavigationMenu.Item>
-                    <NavigationMenu.Link href="">
+                    <NavigationMenu.Link href="" onClick={toggleMenu}>
                       <img
                         src={Dribble}
                         alt="Dribble"

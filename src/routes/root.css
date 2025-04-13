@@ -13,6 +13,38 @@
 @theme {
   --font-fustat: "fustat", sans-serif;
   --font-open-sans: "open-sans", sans-serif;
+  --shadow-up: 0 -10px 20px rgba(0, 0, 0, 0.15);
+
+  --animate-accordion-down: accordion-down 0.3s cubic-bezier(0.87, 0, 0.13, 1);
+  --animate-accordion-up: accordion-up 0.3s cubic-bezier(0.87, 0, 0.13, 1);
+  --animate-float-up: float-up 0.75s ease-out;
+
+  @keyframes accordion-down {
+    from {
+      height: 0;
+    }
+    to {
+      height: var(--radix-accordion-content-height);
+    }
+  }
+  @keyframes accordion-up {
+    from {
+      height: var(--radix-accordion-content-height);
+    }
+    to {
+      height: 0;
+    }
+  }
+  @keyframes float-up {
+    from {
+      transform: translateY(1rem);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
 }
 
 @layer base {
@@ -22,25 +54,8 @@
   }
 }
 
-@keyframes float-up {
-  from {
-    transform: translateY(1rem);
-    opacity: 0;
+@layer components {
+  .common-list-item {
+    @apply px-2.5 hover:text-[#DD5D18] cursor-pointer text-[32px];
   }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-.animate-float-up {
-  animation: float-up 0.75s ease-out forwards;
-}
-
-.shadow-up {
-  box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.15);
-}
-
-.common-list-item {
-  @apply px-2.5 hover:text-[#DD5D18] cursor-pointer font-normal font-fustat text-[32px];
 }
