@@ -1,19 +1,22 @@
 import { createRootRoute, Outlet } from "@tanstack/react-router";
 import { TanStackRouterDevtools } from "@tanstack/react-router-devtools";
 import "./root.css";
+import { Helmet } from "react-helmet";
+import Hero from "../assets/webp/Hero.webp";
 import HeadingLogo from "../assets/svg/HeadingLogo.svg";
 import Music from "../assets/svg/Music.svg";
 import Menu from "../components/Menu";
-import { preload } from "react-dom";
 
 export const Route = createRootRoute({
   component: Root,
 });
 
 function Root() {
-  preload("../assets/webp/Hero.webp", { as: "image" });
   return (
     <>
+      <Helmet>
+        <link rel="preload" as="image" href={Hero} />
+      </Helmet>
       <header className="flex justify-between items-center px-[200px] [@media(max-width:1520px)]:px-4 [@media(max-width:1520px)]:w-full py-7">
         <img
           src={HeadingLogo}
