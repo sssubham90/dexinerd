@@ -20,9 +20,11 @@ function Video() {
             Life, by Design.
           </h2>
           <p className="font-normal text-lg leading-[191%] text-[#2F2F2F] my-6.5">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae
-            mi at nisl pharetra laoreet ut a risus. Vestibulum ut purus laoreet,
-            fermentum ante bibendum, suscipit odio. Vestibulum lacinia.
+            This is a philosophy that guides everything I do. It’s about
+            recognizing that everything around us is a form of design, and we
+            can draw inspiration from it. Every choice, every moment, is shaped
+            with intention - a balance of creativity, strategy, and impact to
+            elevate the everyday.
           </p>
         </div>
         <div className="flex-grow-[328]"></div>

@@ -28,8 +28,9 @@ function WorkEx() {
             is all about. Right?
           </h2>
           <p className="font-normal text-lg leading-[191%] text-[#2F2F2F]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae
-            mi at nisl pharetra laoreet ut a risus.
+            Each of these brands represents a project where I crafted
+            user-centered experiences, focusing on design that connects,
+            engages, and enhances how users interact with the brand.
           </p>
         </div>
         <div className="flex flex-col justify-center items-center gap-3.5 [@media(max-width:1520px)]:my-8 [@media(max-width:1520px)]:flex-row [@media(max-width:1520px)]:flex-wrap">

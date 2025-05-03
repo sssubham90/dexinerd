@@ -5,24 +5,60 @@ import { useState } from "react";
 
 const FAQs = [
   {
-    question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    question: "What kind of design work do you focus on?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae mi at nisl pharetra laoreet ut a risus. Vestibulum ut purus laoreet, fermentum ante bibendum, suscipit odio. Vestibulum lacinia.",
+      "I create human-centered UI/UX designs for digital products, along with branding collaterals like logos, posters, marketing banners, campaign creatives, videos, brochures, and more — blending strategy with creativity across every format.",
   },
   {
-    question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    question: "How would you describe your design style and approach?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae mi at nisl pharetra laoreet ut a risus. Vestibulum ut purus laoreet, fermentum ante bibendum, suscipit odio. Vestibulum lacinia.",
+      "Minimal, thoughtful, and purposeful — I believe every design should tell a story, connect emotionally, and make the experience seamless for users.",
   },
   {
-    question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    question: "What makes your UX/UI designs stand out?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae mi at nisl pharetra laoreet ut a risus. Vestibulum ut purus laoreet, fermentum ante bibendum, suscipit odio. Vestibulum lacinia.",
+      "I design not just for functionality, but for feeling. Every screen, flow, and interaction is built to create a real connection between users and the product.",
   },
   {
-    question: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    question:
+      "How do you balance creativity and functionality in your projects?",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae mi at nisl pharetra laoreet ut a risus. Vestibulum ut purus laoreet, fermentum ante bibendum, suscipit odio. Vestibulum lacinia.",
+      "I believe creativity should amplify usability. I experiment with ideas but ensure they always stay grounded in real user needs and practical experiences",
+  },
+  {
+    question: "Where do you draw inspiration for your designs?",
+    answer:
+      "Inspiration comes from everyday life — nature, architecture, behavior, and even small moments. I believe life itself is the greatest design ever created.",
+  },
+  {
+    question: "How do you ensure your designs connect emotionally with users?",
+    answer:
+      "By deeply understanding user emotions, journeys, and aspirations, and weaving that empathy into every pixel, word, and interaction.",
+  },
+  {
+    question: "What role does user research play in your design process?",
+    answer:
+      "User research is my foundation. I conduct interviews, surveys, journey mapping, and competitor studies to craft solutions that truly resonate with real needs.",
+  },
+  {
+    question: "What tools do you use for your designs?",
+    answer:
+      "I work with Figma, FigJam, Figma Slides, Adobe XD, Photoshop, Illustrator, Premiere Pro, After Effects, Adobe Audition, InDesign, and Canva — covering everything from UI/UX, branding, motion graphics, to creative content.",
+  },
+  {
+    question: "Do you use any AI tools in your design workflow?",
+    answer:
+      "Yes, I integrate AI tools like ChatGPT for ideation, Midjourney and DALL·E for creative exploration, and other AI-based research tools to accelerate discovery and brainstorming phases.",
+  },
+  {
+    question: "Is there anything else you do apart from designing?",
+    answer:
+      'Beyond design, I create content under my brand "Dexinerd", where I share design philosophies, life inspirations, and creative thoughts to connect and grow within the creative community.',
+  },
+  {
+    question: "I would need some design help from you. How can I connect?",
+    answer:
+      "Use the Get in Touch section to share your details and mention the help you would need. You can expect me to connect back with you within 48 hours.",
   },
 ];
 

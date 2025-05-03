@@ -114,8 +114,9 @@ function ContactForm() {
             Connect and Collaborate
           </p>
           <p className="font-normal text-lg text-[#2F2F2F] leading-[191%] w-[622px] [@media(max-width:760px)]:w-full">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae
-            mi at nisl pharetra laoreet ut a risus.
+            I'm always open to new ideas and collaborations. Fill in your
+            details, and you can expect a response from me to talk more about
+            design and exchange ideas.
           </p>
         </div>
         <div className="flex flex-col gap-2 justify-center items-start [@media(max-width:375px)]:flex-row [@media(max-width:375px)]:justify-between [@media(max-width:375px)]:items-center">
