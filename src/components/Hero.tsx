@@ -14,6 +14,12 @@ function Hero() {
                   src={OrangeArrowDown}
                   alt="Take me to the Projects now!"
                   className="w-[65px] h-[65px] cursor-pointer"
+                  onClick={() =>
+                    window.open(
+                      "https://souravrout.myportfolio.com/uiux",
+                      "_blank"
+                    )
+                  }
                 />
               </Tooltip.Trigger>
               <Tooltip.Portal>
@@ -45,7 +51,12 @@ function Hero() {
             needs with aspirations. Every detail contributes to a larger story —
             one that resonates, elevates, and speaks without words.
           </p>
-          <button className="bg-[#DD5D18] font-open-sans text-white text-lg font-normal py-2.5 px-5 rounded-full my-2 cursor-pointer">
+          <button
+            className="bg-[#DD5D18] font-open-sans text-white text-lg font-normal py-2.5 px-5 rounded-full my-2 cursor-pointer"
+            onClick={() =>
+              window.open("https://souravrout.myportfolio.com/uiux", "_blank")
+            }
+          >
             Discover my Design Ideas
           </button>
         </div>

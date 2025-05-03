@@ -140,16 +140,25 @@ function ContactForm() {
         <div className="flex flex-row justify-start items-center gap-6">
           <img
             src={Linkedin}
+            onClick={() =>
+              window.open("https://www.linkedin.com/in/souravroutsr", "_blank")
+            }
             alt="Linkedin"
             className="w-[28.31px] h-[28.31px] cursor-pointer"
           />
           <img
             src={Behance}
+            onClick={() =>
+              window.open("https://www.behance.net/souravrout", "_blank")
+            }
             alt="Behance"
             className="w-[30.88px] h-[30.88px] cursor-pointer"
           />
           <img
             src={Dribble}
+            onClick={() =>
+              window.open("https://dribbble.com/souravrout", "_blank")
+            }
             alt="Dribble"
             className="w-[28.42px] h-[28.42px] cursor-pointer"
           />

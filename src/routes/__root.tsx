@@ -30,7 +30,10 @@ function Root() {
             alt="Music"
             className="w-[45px] h-[45px] [@media(max-width:600px)]:w-[10vw] cursor-pointer"
           />
-          <button className="w-[149px] h-[45px]  cursor-pointer [@media(max-width:600px)]:hidden bg-[#121212] py-2.5 px-5 text-white font-normal font-open-sans rounded-4xl">
+          <button
+            className="w-[149px] h-[45px]  cursor-pointer [@media(max-width:600px)]:hidden bg-[#121212] py-2.5 px-5 text-white font-normal font-open-sans rounded-4xl"
+            onClick={() => window.open("#contact", "_self")}
+          >
             Let's connect
           </button>
           <Menu />

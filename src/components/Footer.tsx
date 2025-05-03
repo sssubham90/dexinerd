@@ -30,13 +30,13 @@ function Footer() {
               <a href="/" className="inline-flex mr-auto">
                 Exhibition
               </a>
-              <a href="/" className="inline-flex mr-auto">
+              <a href="#aboutme" className="inline-flex mr-auto">
                 About me
               </a>
               <a href="/" className="inline-flex mr-auto">
                 Portfolio
               </a>
-              <a href="/" className="inline-flex mr-auto">
+              <a href="#faqs" className="inline-flex mr-auto">
                 FAQs
               </a>
               <a href="/" className="inline-flex mr-auto">
@@ -49,19 +49,39 @@ function Footer() {
               Contact
             </h3>
             <div className="flex flex-col gap-2 mt-[50px] text-lg text-[#2F2F2F] font-medium leading-[191%]">
-              <a href="/" className="inline-flex mr-auto">
+              <a
+                href="mailto:hisourav@dexinerd.com"
+                target="_blank"
+                className="inline-flex mr-auto"
+              >
                 Email
               </a>
-              <a href="/" className="inline-flex mr-auto">
+              <a
+                href="https://www.linkedin.com/in/souravroutsr"
+                target="_blank"
+                className="inline-flex mr-auto"
+              >
                 LinkedIn
               </a>
-              <a href="/" className="inline-flex mr-auto">
+              <a
+                href="https://x.com/mr_souravsr"
+                target="_blank"
+                className="inline-flex mr-auto"
+              >
                 X
               </a>
-              <a href="/" className="inline-flex mr-auto">
+              <a
+                href="https://www.behance.net/souravrout"
+                target="_blank"
+                className="inline-flex mr-auto"
+              >
                 Behance
               </a>
-              <a href="/" className="inline-flex mr-auto">
+              <a
+                href="https://dribbble.com/souravrout"
+                target="_blank"
+                className="inline-flex mr-auto"
+              >
                 Dribbble
               </a>
             </div>
