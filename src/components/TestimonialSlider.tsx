@@ -57,12 +57,12 @@ export default function TestimonialSlider() {
               <ArrowLeft
                 onClick={() => instanceRef.current?.prev()}
                 aria-disabled={config.min}
-                className="w-7 fill-[#DD5D18] aria-disabled:fill-[#DD5D1866]"
+                className="w-7 fill-[#DD5D18] aria-disabled:fill-[#DD5D1866] cursor-pointer"
               />
               <ArrowRight
                 onClick={() => instanceRef.current?.next()}
                 aria-disabled={config.max}
-                className="w-7 fill-[#DD5D18] aria-disabled:fill-[#DD5D1866]"
+                className="w-7 fill-[#DD5D18] aria-disabled:fill-[#DD5D1866] cursor-pointer"
               />
             </div>
           </div>

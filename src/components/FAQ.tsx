@@ -87,10 +87,8 @@ function FAQ() {
         >
           {FAQs.map((faq, index) => (
             <Accordion.Item key={index} value={`item-${index + 1}`}>
-              <Accordion.Trigger className="py-2.5 border-b-1 data-[state=open]:border-[#DD5D18] data-[state=close]:border-[#666666] w-full flex justify-between items-center cursor-pointer">
-                <p className="leading-[174%] text-2xl data-[state=open]:text-[#DD5D18] data-[state=close]:text-[#666666]">
-                  {faq.question}
-                </p>
+              <Accordion.Trigger className="py-2.5 border-b-1 data-[state=open]:border-[#DD5D18] data-[state=open]:text-[#DD5D18] data-[state=close]:border-[#666666] data-[state=close]:text-[#666666] w-full flex justify-between items-center cursor-pointer">
+                <p className="leading-[174%] text-2xl">{faq.question}</p>
                 {openItem === `item-${index + 1}` ? (
                   <Up className="w-8 text-[#DD5D18]" />
                 ) : (

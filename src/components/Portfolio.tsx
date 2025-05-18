@@ -13,18 +13,33 @@ function Portfolio() {
         <h3 className="font-medium text-2xl text-[#2F2F2F] mt-0.5">
           What does this mean to me?
         </h3>
-        <div className="font-normal my-15 text-[33px] leading-[174%] text-black">
-          <div className="flex flex-row justify-start items-center w-full border-b-1 border-black">
+        <div className="font-normal my-15 text-[33px] leading-[174%]">
+          <div
+            className="flex flex-row justify-start items-center w-full border-b-1 border-black cursor-pointer fill-[#DD5D18] hover:text-[#8D58FF] hover:fill-[#8D58FF]"
+            onClick={() =>
+              window.open("https://www.behance.net/souravrout", "_blank")
+            }
+          >
             <p className="p-2.5">UI/UX Designs</p>
-            <Goto className="w-4 h-9 text-[#DD5D18] inline-block" />
+            <Goto className="w-4 h-9 inline-block" />
           </div>
-          <div className="flex flex-row justify-start items-center w-full border-b-1 border-black">
+          <div
+            className="flex flex-row justify-start items-center w-full border-b-1 border-black cursor-pointer fill-[#DD5D18] hover:text-[#8D58FF] hover:fill-[#8D58FF]"
+            onClick={() =>
+              window.open("https://www.behance.net/souravrout", "_blank")
+            }
+          >
             <p className="p-2.5">Case Studies</p>
-            <Goto className="w-4 h-9 text-[#DD5D18] inline-block" />
+            <Goto className="w-4 h-9 inline-block" />
           </div>
-          <div className="flex flex-row justify-start items-center w-full border-b-1 border-black">
+          <div
+            className="flex flex-row justify-start items-center w-full border-b-1 border-black cursor-pointer fill-[#DD5D18] hover:text-[#8D58FF] hover:fill-[#8D58FF]"
+            onClick={() =>
+              window.open("https://www.behance.net/souravrout", "_blank")
+            }
+          >
             <p className="p-2.5">Graphics</p>
-            <Goto className="w-4 h-9 text-[#DD5D18] inline-block" />
+            <Goto className="w-4 h-9 inline-block" />
           </div>
         </div>
       </div>
