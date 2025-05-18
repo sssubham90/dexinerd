@@ -30,7 +30,7 @@ function Form() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="max-w-md mx-auto" id="contact">
+    <form onSubmit={handleSubmit} className="max-w-md mx-auto">
       <div className="mb-6">
         <label htmlFor="fullName" className="block text-lg font-normal mb-1">
           Full Name <span className="text-red-500">*</span>
@@ -93,7 +93,7 @@ function Form() {
 
       <button
         type="submit"
-        className="bg-[#DD5D18] hover:bg-[#D14F10] text-white font-normal font-open-sans py-2.5 px-5 rounded-[32px] cursor-pointer"
+        className="border-2 border-[#DD5D18] bg-[#DD5D18] hover:bg-[#8D58FF] text-white font-normal font-open-sans py-2.5 px-5 rounded-[32px] cursor-pointer"
       >
         Connect now
       </button>
@@ -103,7 +103,10 @@ function Form() {
 
 function ContactForm() {
   return (
-    <div className="mt-20 mb-40 py-32 px-17.5 max-w-[1520px] mx-auto [@media(max-width:1520px)]:mx-4 bg-white rounded-2xl flex flex-row flex-wrap justify-between items-center gap-y-18">
+    <div
+      id="contact"
+      className="mt-20 mb-40 py-32 px-17.5 max-w-[1520px] mx-auto [@media(max-width:1520px)]:mx-4 bg-white rounded-2xl flex flex-row flex-wrap justify-between items-center gap-y-18"
+    >
       <div className="w-[795px] [@media(max-width:1520px)]:mx-4 [@media(max-width:1520px)]:w-full flex flex-col justify-between items-start gap-18">
         <div className="w-full">
           <h3 className="font-medium text-lg text-[#DD5D18] leading-[191%]">

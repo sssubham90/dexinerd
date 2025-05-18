@@ -65,7 +65,10 @@ const FAQs = [
 function FAQ() {
   const [openItem, setOpenItem] = useState("item-1");
   return (
-    <div className="py-20 [@media(max-width:1520px)]:px-4 flex flex-row justify-between items-center bg-[#F8F8F8]">
+    <div
+      id="faqs"
+      className="py-20 [@media(max-width:1520px)]:px-4 flex flex-row justify-between items-center bg-[#F8F8F8]"
+    >
       <div className="flex-grow-[584]"></div>
 
       <div className="w-[990px] [@media(max-width:1520px)]:w-full">
@@ -76,7 +79,6 @@ function FAQ() {
           Answers to all your questions
         </h3>
         <Accordion.Root
-          id="faqs"
           className="AccordionRoot"
           type="single"
           defaultValue={openItem}
@@ -86,7 +88,7 @@ function FAQ() {
           {FAQs.map((faq, index) => (
             <Accordion.Item key={index} value={`item-${index + 1}`}>
               <Accordion.Trigger className="py-2.5 border-b-1 data-[state=open]:border-[#DD5D18] data-[state=close]:border-[#666666] w-full flex justify-between items-center cursor-pointer">
-                <p className="leading-[174%] text-[33px] data-[state=open]:text-[#DD5D18] data-[state=close]:text-[#666666]">
+                <p className="leading-[174%] text-2xl data-[state=open]:text-[#DD5D18] data-[state=close]:text-[#666666]">
                   {faq.question}
                 </p>
                 {openItem === `item-${index + 1}` ? (
@@ -96,7 +98,7 @@ function FAQ() {
                 )}
               </Accordion.Trigger>
               <Accordion.Content className="py-8 overflow-hidden transition-all transform data-[state=open]:animate-accordion-down data-[state=closed]:animate-accordion-up">
-                <p className="leading-[174%] text-[33px] text-[#2F2F2F]">
+                <p className="leading-[174%] text-2xl text-[#2F2F2F]">
                   {faq.answer}
                 </p>
               </Accordion.Content>

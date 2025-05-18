@@ -24,23 +24,26 @@ function Footer() {
               Navigation
             </h3>
             <div className="flex flex-col gap-2 mt-[50px] text-lg text-[#2F2F2F] font-medium leading-[191%]">
-              <a href="/" className="inline-flex mr-auto">
+              <a href="/" className="inline-flex mr-auto hover:text-[#8D58FF]">
                 Home
               </a>
-              <a href="/" className="inline-flex mr-auto">
-                Exhibition
-              </a>
-              <a href="#aboutme" className="inline-flex mr-auto">
+              <a
+                href="#aboutme"
+                className="inline-flex mr-auto hover:text-[#8D58FF]"
+              >
                 About me
               </a>
-              <a href="/" className="inline-flex mr-auto">
+              <a
+                href="#portfolio"
+                className="inline-flex mr-auto hover:text-[#8D58FF]"
+              >
                 Portfolio
               </a>
-              <a href="#faqs" className="inline-flex mr-auto">
+              <a
+                href="#faqs"
+                className="inline-flex mr-auto hover:text-[#8D58FF]"
+              >
                 FAQs
-              </a>
-              <a href="/" className="inline-flex mr-auto">
-                Blogs
               </a>
             </div>
           </div>
@@ -52,35 +55,42 @@ function Footer() {
               <a
                 href="mailto:hisourav@dexinerd.com"
                 target="_blank"
-                className="inline-flex mr-auto"
+                className="inline-flex mr-auto hover:text-[#8D58FF]"
               >
                 Email
               </a>
               <a
+                href="https://www.instagram.com/dexinerd.life"
+                target="_blank"
+                className="inline-flex mr-auto hover:text-[#8D58FF]"
+              >
+                Instagram
+              </a>
+              <a
                 href="https://www.linkedin.com/in/souravroutsr"
                 target="_blank"
-                className="inline-flex mr-auto"
+                className="inline-flex mr-auto hover:text-[#8D58FF]"
               >
                 LinkedIn
               </a>
               <a
                 href="https://x.com/mr_souravsr"
                 target="_blank"
-                className="inline-flex mr-auto"
+                className="inline-flex mr-auto hover:text-[#8D58FF]"
               >
                 X
               </a>
               <a
                 href="https://www.behance.net/souravrout"
                 target="_blank"
-                className="inline-flex mr-auto"
+                className="inline-flex mr-auto hover:text-[#8D58FF]"
               >
                 Behance
               </a>
               <a
                 href="https://dribbble.com/souravrout"
                 target="_blank"
-                className="inline-flex mr-auto"
+                className="inline-flex mr-auto hover:text-[#8D58FF]"
               >
                 Dribbble
               </a>

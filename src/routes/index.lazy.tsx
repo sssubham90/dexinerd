@@ -10,6 +10,7 @@ import TestimonialSlider from "../components/TestimonialSlider";
 import FAQ from "../components/FAQ";
 import ContactForm from "../components/ContactForm";
 import Footer from "../components/Footer";
+import Portfolio from "../components/Portfolio";
 
 export const Route = createLazyFileRoute("/")({
   component: Index,
@@ -24,6 +25,7 @@ function Index() {
       <Story />
       <MarqueeBanner />
       <Video />
+      <Portfolio />
       <WorkEx />
       <TestimonialSlider />
       <FAQ />

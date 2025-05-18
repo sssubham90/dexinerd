@@ -37,7 +37,7 @@ const Menu: React.FC = () => {
       />
       {isOpen && (
         <div className="absolute right-0 mt-12.5 flex flex-col z-10 gap-3">
-          <div className="bg-white/90 hover:bg-white rounded-2xl shadow-lg w-[316px] py-9 px-7">
+          <div className="bg-white/90 backdrop-blur-lg hover:bg-white rounded-2xl shadow-lg w-[316px] py-9 px-7">
             <NavigationMenu.Root>
               <NavigationMenu.List className="flex flex-col gap-2">
                 <NavigationMenu.Item className="common-list-item">
@@ -68,7 +68,7 @@ const Menu: React.FC = () => {
               </NavigationMenu.List>
             </NavigationMenu.Root>
           </div>
-          <div className="bg-white/90 hover:bg-white rounded-2xl shadow-lg w-[316px] py-9 px-7">
+          <div className="bg-white/90 backdrop-blur-lg hover:bg-white rounded-2xl shadow-lg w-[316px] py-9 px-7">
             <div className="flex flex-col gap-4">
               <p className="font-normal text-[32px] font-fustat mx-2.5">
                 Stay updated with me
@@ -79,14 +79,14 @@ const Menu: React.FC = () => {
                 className="w-[240px] border-0 border-b border-black/27 focus:outline-none focus:border-black-500 mx-2.5 py-4 placeholder-black-400"
               />
               <button
-                className="w-[100px] h-[45px] bg-[#DD5D18] mx-2.5 py-2.5 px-5 text-lg text-white font-open-sans rounded-4xl cursor-pointer"
+                className="w-[100px] h-[45px] border-2 border-[#DD5D18] bg-[#DD5D18] hover:bg-[#8D58FF] mx-2.5 py-2 px-4.5 text-lg text-white font-open-sans rounded-4xl cursor-pointer"
                 onClick={toggleMenu}
               >
                 Submit
               </button>
             </div>
           </div>
-          <div className="bg-[#171717CC] hover:bg-[#171717] rounded-2xl shadow-lg w-[316px] py-9 px-7">
+          <div className="bg-[#171717CC] backdrop-blur-lg hover:bg-[#171717] rounded-2xl shadow-lg w-[316px] py-9 px-7">
             <div className="flex flex-col gap-8">
               <p className="text-white font-normal text-[32px] font-fustat leading-10">
                 Connect with
@@ -96,7 +96,7 @@ const Menu: React.FC = () => {
               <NavigationMenu.Root>
                 <NavigationMenu.List className="flex flex-row items-center justify-start gap-6">
                   <NavigationMenu.Item>
-                    <NavigationMenu.Link href="" onClick={toggleMenu}>
+                    <NavigationMenu.Link onClick={toggleMenu}>
                       <img
                         src={Linkedin}
                         onClick={() =>
@@ -111,7 +111,7 @@ const Menu: React.FC = () => {
                     </NavigationMenu.Link>
                   </NavigationMenu.Item>
                   <NavigationMenu.Item>
-                    <NavigationMenu.Link href="" onClick={toggleMenu}>
+                    <NavigationMenu.Link onClick={toggleMenu}>
                       <img
                         src={Behance}
                         onClick={() =>
@@ -126,7 +126,7 @@ const Menu: React.FC = () => {
                     </NavigationMenu.Link>
                   </NavigationMenu.Item>
                   <NavigationMenu.Item>
-                    <NavigationMenu.Link href="" onClick={toggleMenu}>
+                    <NavigationMenu.Link onClick={toggleMenu}>
                       <img
                         src={Dribble}
                         onClick={() =>
