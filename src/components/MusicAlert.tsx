@@ -10,8 +10,8 @@ function MusicAlert({ setShowMusicAlert }: MusicAlertProps) {
       <div className="flex flex-row justify-items-center gap-2.5">
         <img src={Music} alt="Music" className="w-[33px] h-[33px]" />
         <h1 className="text-[#171717] text-lg leading-[191%] font-normal">
-          <span className="text-[#DD5D18]">Ambient Music is playing.</span>{" "}
-          Click on this icon on top to mute the music.
+          <span className="text-[#DD5D18]">Ambient Music is available.</span>{" "}
+          Click on this icon on top to play the music.
         </h1>
       </div>
       <button

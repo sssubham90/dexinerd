@@ -22,39 +22,28 @@ function Root() {
   const playAudio = useCallback(() => {
     const audio = audioRef.current;
     if (!audio || !isReady) return;
+    if (showMusicAlert) setShowMusicAlert(false);
     const isPlaying = !audio.paused && audio.currentTime > 0;
     if (isPlaying) {
       audio.pause();
       setIsMuted(true);
-      setShowMusicAlert(false);
     } else {
       audio
         .play()
-        .then(() => {
-          setIsMuted(false);
-          setShowMusicAlert(true);
-        })
+        .then(() => setIsMuted(false))
         .catch((err) => {
           console.warn("Play failed:", err);
         });
     }
-  }, [isReady]);
+  }, [isReady, showMusicAlert]);
 
   useEffect(() => {
     const audio = audioRef.current;
     if (!audio) return;
     audio.addEventListener("canplaythrough", () => {
       setIsReady(true);
+      setShowMusicAlert(true);
       audio.volume = 0.3;
-      audio
-        .play()
-        .then(() => {
-          setIsMuted(false);
-          setShowMusicAlert(true);
-        })
-        .catch((err) => {
-          console.warn("Autoplay failed:", err);
-        });
     });
   }, []);
 
