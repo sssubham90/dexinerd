@@ -4,6 +4,7 @@ import Linkedin from "../assets/svg/Linkedin.svg";
 import Behance from "../assets/svg/Behance.svg";
 import Dribble from "../assets/svg/Dribble.svg";
 import { useState } from "react";
+import axios from "axios";
 
 function Form() {
   const [formData, setFormData] = useState({
@@ -25,8 +26,18 @@ function Form() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    // Here you would typically send the data to your backend
+    try {
+      axios
+        .post("https://contact.dexinerd.workers.dev", formData)
+        .then(() => {
+          alert("Form submitted successfully!");
+        })
+        .catch((error) => {
+          console.error("Error submitting form:", error);
+        });
+    } catch (error) {
+      console.error("Error submitting form:", error);
+    }
   };
 
   return (

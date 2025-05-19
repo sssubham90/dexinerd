@@ -4,14 +4,17 @@ import Linkedin from "../assets/svg/Linkedin.svg";
 import Behance from "../assets/svg/Behance.svg";
 import Dribble from "../assets/svg/Dribble.svg";
 import { HamburgerMenuIcon } from "@radix-ui/react-icons";
+import axios from "axios";
 
 const Menu: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
-  const menuRef = useRef<HTMLDivElement>(null);
+  const menuRef = useRef<HTMLDivElement | null>(null);
 
   const toggleMenu = useCallback(() => {
     setIsOpen((prev) => !prev);
   }, []);
+
+  const input = useRef<HTMLInputElement | null>(null);
 
   //Close menu when clicking outside
   useEffect(() => {
@@ -75,12 +78,28 @@ const Menu: React.FC = () => {
               </p>
               <input
                 type="text"
+                ref={input}
                 placeholder="Email address"
                 className="w-[240px] border-0 border-b border-black/27 focus:outline-none focus:border-black-500 mx-2.5 py-4 placeholder-black-400"
               />
               <button
                 className="w-[100px] h-[45px] border-2 border-[#DD5D18] bg-[#DD5D18] hover:bg-[#8D58FF] mx-2.5 py-2 px-4.5 text-lg text-white font-open-sans rounded-4xl cursor-pointer"
-                onClick={toggleMenu}
+                onClick={() => {
+                  if (!input.current) return;
+                  const formData = { email: input.current.value };
+                  try {
+                    axios
+                      .post("https://contact.dexinerd.workers.dev", formData)
+                      .then(() => {
+                        alert("Form submitted successfully!");
+                      })
+                      .catch((error) => {
+                        console.error("Error submitting form:", error);
+                      });
+                  } catch (error) {
+                    console.error("Error submitting form:", error);
+                  }
+                }}
               >
                 Submit
               </button>
