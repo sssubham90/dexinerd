@@ -45,7 +45,7 @@ function Root() {
     if (!audio) return;
     audio.addEventListener("canplaythrough", () => {
       setIsReady(true);
-      audio.volume = 0.1;
+      audio.volume = 0.3;
       audio
         .play()
         .then(() => {
