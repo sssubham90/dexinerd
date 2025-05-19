@@ -17,7 +17,7 @@ function Portfolio() {
           <div
             className="flex flex-row justify-start items-center w-full border-b-1 border-black cursor-pointer fill-[#DD5D18] hover:text-[#8D58FF] hover:fill-[#8D58FF]"
             onClick={() =>
-              window.open("https://www.behance.net/souravrout", "_blank")
+              window.open("https://souravrout.myportfolio.com/uiux", "_blank")
             }
           >
             <p className="p-2.5">UI/UX Designs</p>
@@ -26,7 +26,10 @@ function Portfolio() {
           <div
             className="flex flex-row justify-start items-center w-full border-b-1 border-black cursor-pointer fill-[#DD5D18] hover:text-[#8D58FF] hover:fill-[#8D58FF]"
             onClick={() =>
-              window.open("https://www.behance.net/souravrout", "_blank")
+              window.open(
+                "https://souravrout.myportfolio.com/casestudy",
+                "_blank"
+              )
             }
           >
             <p className="p-2.5">Case Studies</p>
@@ -35,7 +38,10 @@ function Portfolio() {
           <div
             className="flex flex-row justify-start items-center w-full border-b-1 border-black cursor-pointer fill-[#DD5D18] hover:text-[#8D58FF] hover:fill-[#8D58FF]"
             onClick={() =>
-              window.open("https://www.behance.net/souravrout", "_blank")
+              window.open(
+                "https://souravrout.myportfolio.com/graphic",
+                "_blank"
+              )
             }
           >
             <p className="p-2.5">Graphics</p>
