@@ -26,6 +26,11 @@ const Menu: React.FC = () => {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
+  const validateEmail = (email: string) => {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(email);
+  };
+
   return (
     <div className="relative inline-block text-left" ref={menuRef}>
       <button
@@ -77,7 +82,8 @@ const Menu: React.FC = () => {
                 Stay updated with me
               </p>
               <input
-                type="text"
+                type="email"
+                required
                 ref={input}
                 placeholder="Email address"
                 className="w-[240px] border-0 border-b border-black/27 focus:outline-none focus:border-black-500 mx-2.5 py-4 placeholder-black-400"
@@ -86,6 +92,10 @@ const Menu: React.FC = () => {
                 className="w-[100px] h-[45px] border-2 border-[#DD5D18] bg-[#DD5D18] hover:bg-[#8D58FF] mx-2.5 py-2 px-4.5 text-lg text-white font-open-sans rounded-4xl cursor-pointer"
                 onClick={() => {
                   if (!input.current) return;
+                  if (validateEmail(input.current.value) === false) {
+                    alert("Please enter a valid email address.");
+                    return;
+                  }
                   const formData = { email: input.current.value };
                   try {
                     axios
