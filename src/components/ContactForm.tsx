@@ -28,7 +28,7 @@ function Form() {
     e.preventDefault();
     try {
       axios
-        .post("https://contact.dexinerd.workers.dev", formData)
+        .post("https://api.dexinerd.com", formData)
         .then(() => {
           alert("Form submitted successfully!");
         })
