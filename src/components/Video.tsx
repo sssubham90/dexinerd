@@ -7,7 +7,7 @@ function EnclosedVideo({
   setExpanded: (value: boolean) => void;
 }) {
   return (
-    <div className="mt-5 mb-32 [@media(max-width:1520px)]:mb-4 mx-[200px] [@media(max-width:1520px)]:mx-0 relative">
+    <div className="mt-5 mb-32 [@media(max-width:1520px)]:mb-4 mx-[200px] [@media(max-width:1520px)]:mx-4 relative">
       <button
         className="bg-white/[13%] text-white font-medium tracking-[-4%] text-lg px-5 py-2.5 w-44 rounded-[58px] absolute right-17 [top:calc(48px+3.5vw)] cursor-pointer"
         onClick={() => setExpanded(true)}
@@ -29,9 +29,9 @@ function ExpandedVideo({
   setExpanded: (value: boolean) => void;
 }) {
   return (
-    <div className="mt-5 mb-32 [@media(max-width:1520px)]:mb-4 mx-[200px] [@media(max-width:1520px)]:mx-0 relative">
-      <div className="bg-white p-2.5 border-1 border-white rounded-2xl flex flex-row justify-between items-center width-full">
-        <div className="flex flex-col m-16">
+    <div className="mt-5 mb-32 [@media(max-width:1520px)]:mb-4 mx-[200px] [@media(max-width:1520px)]:mx-4 relative">
+      <div className="bg-white p-2.5 border-1 border-white rounded-2xl [@media(max-width:1814px)]:w-full flex flex-row flex-wrap-reverse justify-between items-stretch width-full">
+        <div className="flex flex-col flex-1/2 shrink-0 p-16 ">
           <h3 className="font-normal text-lg leading-[135%]">Hey again,</h3>
           <h2 className="font-normal text-[37px] leading-[135%]">
             I am <span className="text-[#DD5D18]">Sourav Rout</span>.
@@ -60,7 +60,7 @@ function ExpandedVideo({
             Download Resume
           </button>
         </div>
-        <div className="relative w-[760px] h-[700px] shrink-0">
+        <div className="flex flex-col flex-1/2 shrink-0 relative">
           <button
             className="bg-white/[13%] text-white font-medium tracking-[-4%] text-lg px-5 py-2.5 w-44 rounded-[58px] absolute right-17 [top:calc(48px+2.6vw)] cursor-pointer"
             onClick={() => setExpanded(false)}
@@ -70,7 +70,7 @@ function ExpandedVideo({
           <img
             src={VideoThumbnail}
             alt="Video Thumbnail"
-            className="w-[760px] h-[700px] object-cover rounded-2xl block"
+            className="w-full h-full [@media(min-width:650px)]:min-w-[650px] object-cover rounded-2xl block"
           />
         </div>
       </div>
@@ -87,7 +87,7 @@ function Video() {
       ) : (
         <EnclosedVideo setExpanded={setExpanded} />
       )}
-      <div className="py-1.5 flex flex-row justify-between items-center">
+      <div className="py-1.5 [@media(max-width:1520px)]:mx-4 flex flex-row justify-between items-center">
         <div className="flex-grow-[527]"></div>
         <div className="w-[894px] mb-8">
           <h2 className="font-normal text-[33px] leading-[174%] text-black">
