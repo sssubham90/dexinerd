@@ -41,7 +41,7 @@ function FAQ() {
   return (
     <div
       id="faqs"
-      className="py-20 [@media(max-width:1520px)]:px-4 flex flex-row justify-between items-center bg-[#F8F8F8]"
+      className="my-20 [@media(max-width:1520px)]:px-4 flex flex-row justify-between items-center bg-[#F8F8F8]"
     >
       <div className="flex-grow-[584]"></div>
 

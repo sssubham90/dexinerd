@@ -4,7 +4,7 @@ function Portfolio() {
   return (
     <div
       id="portfolio"
-      className="py-[180px] px-[160px] [@media(max-width:1520px)]:px-4 flex flex-row justify-between items-center bg-[#F8F8F8]"
+      className="my-[180px] mx-[160px] flex flex-row justify-between items-center bg-[#F8F8F8] [@media(max-width:1120px)]:mx-4 [@media(max-width:1120px)]:my-25 [@media(max-width:840px)]:my-10"
     >
       <div className="flex-grow-[527]"></div>
 

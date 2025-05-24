@@ -116,7 +116,7 @@ function ContactForm() {
   return (
     <div
       id="contact"
-      className="mt-20 mb-40 py-32 px-17.5 max-w-[1520px] mx-auto [@media(max-width:1520px)]:mx-4 bg-white rounded-2xl flex flex-row flex-wrap justify-between items-center gap-y-18"
+      className="mt-20 mb-40 py-32 px-17.5 max-w-[1520px] mx-auto bg-white rounded-2xl flex flex-row flex-wrap justify-between items-center gap-y-18 [@media(max-width:1520px)]:mx-4 [@media(max-width:1520px)]:mb-20 [@media(max-width:1520px)]:px-0 [@media(max-width:1520px)]:py-16"
     >
       <div className="w-[795px] [@media(max-width:1520px)]:mx-4 [@media(max-width:1520px)]:w-full flex flex-col justify-between items-start gap-18">
         <div className="w-full">

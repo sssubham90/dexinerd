@@ -89,7 +89,7 @@ function Video() {
       )}
       <div className="py-1.5 [@media(max-width:1520px)]:mx-4 flex flex-row justify-between items-center">
         <div className="flex-grow-[527]"></div>
-        <div className="w-[894px] mb-8">
+        <div className="max-w-[894px] [@media(min-width:840px)]:mb-8 ">
           <h2 className="font-normal text-[33px] leading-[174%] text-black">
             Life, by Design.
           </h2>

@@ -4,7 +4,7 @@ function Footer() {
   return (
     <div className="flex flex-col px-[calc((100vw-1520px)/2)] [@media(max-width:1520px)]:px-4 pt-[116px] pb-[54px] bg-white">
       <div className="flex flex-row flex-wrap justify-between [@media(max-width:1520px)]:w-[calc(100vw-32px)]">
-        <div className="flex flex-col flex-grow">
+        <div className="flex flex-col flex-7 [@media(min-width:406px)]:min-w-[406px]">
           <img
             src={HeadingLogo}
             alt="Dexinerd"
@@ -18,7 +18,7 @@ function Footer() {
             Bengaluru, Karnataka, India
           </p>
         </div>
-        <div className="flex flex-row gap-[144px] [@media(max-width:1520px)]:gap-20 [@media(max-width:1024px)]:gap-15">
+        <div className="flex flex-row flex-3 min-w-[280px] gap-[144px] [@media(max-width:1520px)]:gap-20 [@media(max-width:1024px)]:gap-15 justify-center">
           <div className="flex flex-col">
             <h3 className="text-2xl text-[#DD5D18] font-medium leading-[191%]">
               Navigation
