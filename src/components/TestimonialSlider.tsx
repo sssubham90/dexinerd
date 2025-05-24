@@ -1,25 +1,33 @@
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import { useState } from "react";
+import Tejaswee from "../assets/webp/Tejaswee.webp";
+import Raman from "../assets/webp/Raman.webp";
+import Odyra from "../assets/webp/Odyra.webp";
 import ArrowLeft from "../assets/svg/ArrowLeft.svg?react";
 import ArrowRight from "../assets/svg/ArrowRight.svg?react";
 
 const testimonials = [
   {
-    name: "Ramanjeet Mohanty",
-    title: "Founder & CEO, Finocontrol Consultancy Services LLP",
-    image:
-      "https://media.licdn.com/dms/image/v2/C4E03AQFBqHhfxhaZaQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1600965991866?e=2147483647&v=beta&t=PHJ50S-39QfOZm4brjN7RU9YFplHCzmwht3tX2CbY5A",
+    name: "Tejaswee Tripathy",
+    title: "LinkedIn Top Voice",
+    image: Tejaswee,
     quote:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae mi at nisl pharetra laoreet ut a risus. Vestibulum ut purus laoreet, fermentum ante bibendum, suscipit odio. Vestibulum lacinia.",
+      "Sourav brings something rare to the table—he understands that design is not just about visuals; it's about human connection. As someone deeply invested in people, culture, and experiences, I’ve seen how his design sensibility helps brands speak more clearly, feel more approachable, and connect more meaningfully. His work goes beyond aesthetics—he designs with intent and an understanding of how people think and behave. It’s no surprise that teams trust him not just as a designer, but as a creative thinker who elevates the entire experience.",
   },
   {
-    name: "Jane Doe",
-    title: "CTO, SomeTech Inc.",
-    image:
-      "https://media.licdn.com/dms/image/v2/C4E03AQFBqHhfxhaZaQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1600965991866?e=2147483647&v=beta&t=PHJ50S-39QfOZm4brjN7RU9YFplHCzmwht3tX2CbY5A",
+    name: "Ramanjeet Mohanty",
+    title: "Co-Founder & CEO, Finocontrol",
+    image: Raman,
     quote:
-      "Vestibulum ut purus laoreet, fermentum ante bibendum, suscipit odio. Vestibulum lacinia.",
+      "Watching Sourav grow as a designer over the years has been truly inspiring. He started with raw curiosity and a keen eye, and over time, turned that into a sharp design instinct grounded in real understanding of users and business needs. I’ve seen him transform abstract ideas into visual identities and help brands find their voice through design. What sets him apart is that he doesn’t just make things look good - he makes them work beautifully. Whether it’s a website, a logo, or an entire product experience, Sourav brings clarity, consistency, and meaning to every pixel.",
+  },
+  {
+    name: "Madhusmita Satapathy",
+    title: "Co-Founder & CEO, Odyra Lifestyle",
+    image: Odyra,
+    quote:
+      "I’ve worked with many designers, but what makes Sourav different is how deeply he listens before he even starts sketching. He doesn't rush to pretty screens - he first understands the real user need and the problem we’re solving. His wireframes tell a story, and his prototypes feel like the product is already alive.",
   },
 ];
 

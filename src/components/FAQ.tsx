@@ -15,32 +15,6 @@ const FAQs = [
       "Minimal, thoughtful, and purposeful — I believe every design should tell a story, connect emotionally, and make the experience seamless for users.",
   },
   {
-    question: "What makes your UX/UI designs stand out?",
-    answer:
-      "I design not just for functionality, but for feeling. Every screen, flow, and interaction is built to create a real connection between users and the product.",
-  },
-  {
-    question:
-      "How do you balance creativity and functionality in your projects?",
-    answer:
-      "I believe creativity should amplify usability. I experiment with ideas but ensure they always stay grounded in real user needs and practical experiences",
-  },
-  {
-    question: "Where do you draw inspiration for your designs?",
-    answer:
-      "Inspiration comes from everyday life — nature, architecture, behavior, and even small moments. I believe life itself is the greatest design ever created.",
-  },
-  {
-    question: "How do you ensure your designs connect emotionally with users?",
-    answer:
-      "By deeply understanding user emotions, journeys, and aspirations, and weaving that empathy into every pixel, word, and interaction.",
-  },
-  {
-    question: "What role does user research play in your design process?",
-    answer:
-      "User research is my foundation. I conduct interviews, surveys, journey mapping, and competitor studies to craft solutions that truly resonate with real needs.",
-  },
-  {
     question: "What tools do you use for your designs?",
     answer:
       "I work with Figma, FigJam, Figma Slides, Adobe XD, Photoshop, Illustrator, Premiere Pro, After Effects, Adobe Audition, InDesign, and Canva — covering everything from UI/UX, branding, motion graphics, to creative content.",

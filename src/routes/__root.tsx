@@ -60,7 +60,7 @@ function Root() {
         loop
         hidden
       />
-      <header className="flex justify-between items-center px-[200px] [@media(max-width:1520px)]:px-4 [@media(max-width:1520px)]:w-full py-7">
+      <header className="flex justify-between items-center mx-[200px] my-7 [@media(max-width:1120px)]:mx-auto [@media(max-width:1120px)]:px-4">
         <img
           src={HeadingLogo}
           alt="Dexinerd"
