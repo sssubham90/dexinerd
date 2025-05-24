@@ -1,7 +1,8 @@
 import { useState } from "react";
-import VideoThumbnail from "../assets/webp/VideoThumbnail.webp";
+import KnowMoreImg from "../assets/webp/KnowMore.webp";
+import KnowMoreExpandedImg from "../assets/webp/ExpandedKnowMore.webp";
 
-function EnclosedVideo({
+function KnowMoreComponent({
   setExpanded,
 }: {
   setExpanded: (value: boolean) => void;
@@ -9,13 +10,13 @@ function EnclosedVideo({
   return (
     <div className="mt-5 mb-32 [@media(max-width:1520px)]:mb-4 mx-[200px] [@media(max-width:1520px)]:mx-4 relative">
       <button
-        className="bg-white/[13%] text-white font-medium tracking-[-4%] text-lg px-5 py-2.5 w-44 rounded-[58px] absolute right-17 [top:calc(48px+3.5vw)] cursor-pointer"
+        className="bg-white/[13%] backdrop-blur-lg text-white font-medium tracking-[-4%] text-lg px-5 py-2.5 w-44 rounded-[58px] absolute right-[2.5vw] top-[2.5vw] cursor-pointer [@media(max-width:900px)]:right-6"
         onClick={() => setExpanded(true)}
       >
         Know about me
       </button>
       <img
-        src={VideoThumbnail}
+        src={KnowMoreImg}
         alt="Video Thumbnail"
         className="w-full h-auto rounded-2xl block"
       />
@@ -23,15 +24,15 @@ function EnclosedVideo({
   );
 }
 
-function ExpandedVideo({
+function ExpandedKnowMoreComponent({
   setExpanded,
 }: {
   setExpanded: (value: boolean) => void;
 }) {
   return (
-    <div className="mt-5 mb-32 [@media(max-width:1520px)]:mb-4 mx-[200px] [@media(max-width:1520px)]:mx-4 relative">
-      <div className="bg-white p-2.5 border-1 border-white rounded-2xl [@media(max-width:1814px)]:w-full flex flex-row flex-wrap-reverse justify-between items-stretch width-full">
-        <div className="flex flex-col flex-1/2 shrink-0 p-16 ">
+    <div className="mt-5 mb-32 mx-[200px] relative [@media(max-width:1520px)]:mb-4 [@media(max-width:1520px)]:mx-4">
+      <div className="bg-white p-2.5 border-1 border-white rounded-2xl flex flex-row flex-wrap-reverse justify-between items-stretch">
+        <div className="flex flex-col flex-1/2 shrink-0 p-16 [@media(max-width:900px)]:px-0 [@media(max-width:900px)]:py-4">
           <h3 className="font-normal text-lg leading-[135%]">Hey again,</h3>
           <h2 className="font-normal text-[37px] leading-[135%]">
             I am <span className="text-[#DD5D18]">Sourav Rout</span>.
@@ -62,15 +63,15 @@ function ExpandedVideo({
         </div>
         <div className="flex flex-col flex-1/2 shrink-0 relative">
           <button
-            className="bg-white/[13%] text-white font-medium tracking-[-4%] text-lg px-5 py-2.5 w-44 rounded-[58px] absolute right-17 [top:calc(48px+2.6vw)] cursor-pointer"
+            className="bg-white/[13%] backdrop-blur-lg text-white font-medium tracking-[-4%] text-lg px-5 py-2.5 w-44 rounded-[58px] absolute right-[2.5vw] top-[2.5vw] cursor-pointer"
             onClick={() => setExpanded(false)}
           >
             Exit this view
           </button>
           <img
-            src={VideoThumbnail}
+            src={KnowMoreExpandedImg}
             alt="Video Thumbnail"
-            className="w-full h-full [@media(min-width:650px)]:min-w-[650px] object-cover rounded-2xl block"
+            className="w-full h-full object-cover rounded-2xl block"
           />
         </div>
       </div>
@@ -78,14 +79,14 @@ function ExpandedVideo({
   );
 }
 
-function Video() {
+function KnowMore() {
   const [expanded, setExpanded] = useState(false);
   return (
     <>
       {expanded ? (
-        <ExpandedVideo setExpanded={setExpanded} />
+        <ExpandedKnowMoreComponent setExpanded={setExpanded} />
       ) : (
-        <EnclosedVideo setExpanded={setExpanded} />
+        <KnowMoreComponent setExpanded={setExpanded} />
       )}
       <div className="py-1.5 [@media(max-width:1520px)]:mx-4 flex flex-row justify-between items-center">
         <div className="flex-grow-[527]"></div>
@@ -108,4 +109,4 @@ function Video() {
   );
 }
 
-export default Video;
+export default KnowMore;

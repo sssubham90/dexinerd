@@ -2,7 +2,7 @@ import { createLazyFileRoute } from "@tanstack/react-router";
 import Hero from "../components/Hero";
 import Story from "../components/Story";
 import MarqueeBanner from "../components/MarqueeBanner";
-import Video from "../components/Video";
+import KnowMore from "../components/KnowMore";
 import WorkEx from "../components/WorkEx";
 import TestimonialSlider from "../components/TestimonialSlider";
 import FAQ from "../components/FAQ";
@@ -20,7 +20,7 @@ function Index() {
       <Hero />
       <Story />
       <MarqueeBanner />
-      <Video />
+      <KnowMore />
       <Portfolio />
       <WorkEx />
       <TestimonialSlider />
