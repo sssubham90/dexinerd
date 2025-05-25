@@ -1,7 +1,7 @@
-import { Accordion } from "radix-ui";
+import { Root, Item, Trigger, Content } from "@radix-ui/react-accordion";
+import { useState } from "react";
 import Up from "../assets/svg/Up.svg?react";
 import Down from "../assets/svg/Down.svg?react";
-import { useState } from "react";
 
 const FAQs = [
   {
@@ -52,7 +52,7 @@ function FAQ() {
         <h3 className="font-medium text-2xl text-[#2F2F2F] tracking-[-4%] mb-14">
           Answers to all your questions
         </h3>
-        <Accordion.Root
+        <Root
           className="AccordionRoot"
           type="single"
           defaultValue={openItem}
@@ -60,23 +60,23 @@ function FAQ() {
           collapsible
         >
           {FAQs.map((faq, index) => (
-            <Accordion.Item key={index} value={`item-${index + 1}`}>
-              <Accordion.Trigger className="py-2.5 border-b-1 data-[state=open]:border-[#DD5D18] data-[state=open]:text-[#DD5D18] data-[state=closed]:border-[#66666633] data-[state=close]:text-[#666666] w-full flex justify-between items-center cursor-pointer">
+            <Item key={index} value={`item-${index + 1}`}>
+              <Trigger className="py-2.5 border-b-1 data-[state=open]:border-[#DD5D18] data-[state=open]:text-[#DD5D18] data-[state=closed]:border-[#66666633] data-[state=close]:text-[#666666] w-full flex justify-between items-center cursor-pointer">
                 <p className="leading-[174%] text-2xl">{faq.question}</p>
                 {openItem === `item-${index + 1}` ? (
                   <Up className="w-8 text-[#DD5D18]" />
                 ) : (
                   <Down className="w-8 text-[#666666]" />
                 )}
-              </Accordion.Trigger>
-              <Accordion.Content className="py-8 overflow-hidden transition-all transform data-[state=open]:animate-accordion-down data-[state=closed]:animate-accordion-up">
+              </Trigger>
+              <Content className="py-8 overflow-hidden transition-all transform data-[state=open]:animate-accordion-down data-[state=closed]:animate-accordion-up">
                 <p className="leading-[174%] text-2xl text-[#2F2F2F]">
                   {faq.answer}
                 </p>
-              </Accordion.Content>
-            </Accordion.Item>
+              </Content>
+            </Item>
           ))}
-        </Accordion.Root>
+        </Root>
       </div>
 
       <div className="flex-grow-[350]"></div>

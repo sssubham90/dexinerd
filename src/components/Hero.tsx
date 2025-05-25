@@ -1,5 +1,5 @@
+import { Root, Trigger, Portal, Content } from "@radix-ui/react-hover-card";
 import OrangeArrowDown from "../assets/svg/OrangeArrowDown.svg?react";
-import { HoverCard } from "radix-ui";
 import HeroImage from "../assets/webp/Hero.webp";
 
 function Hero() {
@@ -7,15 +7,15 @@ function Hero() {
     <div className="px-[69px] pt-[79px] my-[39px] mx-auto max-w-[1521px] flex flex-row justify-between bg-white rounded-2xl [@media(max-width:1553px)]:mx-4 [@media(max-width:955px)]:px-4 [@media(max-width:850px)]:flex-col [@media(max-width:850px)]:pt-8 [@media(max-width:432px)]:my-10">
       <div className="flex-1 flex flex-col justify-items-start">
         <div className="w-[104px] h-[104px] rounded-full bg-linear-to-br from-0%-100% from-[#F8F8F8] to-[#E7E7E7] p-5 mb-28 [@media(max-width:850px)]:hidden">
-          <HoverCard.Root openDelay={0} closeDelay={0}>
-            <HoverCard.Trigger asChild>
+          <Root openDelay={0} closeDelay={0}>
+            <Trigger asChild>
               <OrangeArrowDown
                 className="w-[65px] h-[65px] rounded-full cursor-pointer fill-[#DD5D18] hover:fill-[#8D58FF]"
                 onClick={() => window.open("#portfolio", "_self")}
               />
-            </HoverCard.Trigger>
-            <HoverCard.Portal>
-              <HoverCard.Content
+            </Trigger>
+            <Portal>
+              <Content
                 className="HoverCardContent"
                 side="right"
                 sideOffset={36}
@@ -23,9 +23,9 @@ function Hero() {
                 <p className="font-normal text-lg">
                   Take me to the Projects now!
                 </p>
-              </HoverCard.Content>
-            </HoverCard.Portal>
-          </HoverCard.Root>
+              </Content>
+            </Portal>
+          </Root>
         </div>
         <div
           className="flex flex-row mx-auto items-center justify-between min-w-[208px] mt-9 mb-8 border-1 border-[#2F2F2F] rounded-4xl [@media(min-width:851px)]:hidden"

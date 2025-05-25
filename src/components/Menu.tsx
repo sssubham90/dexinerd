@@ -1,10 +1,10 @@
-import React, { useState, useRef, useEffect, useCallback } from "react";
-import * as NavigationMenu from "@radix-ui/react-navigation-menu";
+import { useState, useRef, useEffect, useCallback } from "react";
+import { Root, List, Item, Link } from "@radix-ui/react-navigation-menu";
+import { HamburgerMenuIcon } from "@radix-ui/react-icons";
+import axios from "axios";
 import Linkedin from "../assets/svg/Linkedin.svg";
 import Behance from "../assets/svg/Behance.svg";
 import Dribble from "../assets/svg/Dribble.svg";
-import { HamburgerMenuIcon } from "@radix-ui/react-icons";
-import axios from "axios";
 
 const Menu: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -46,35 +46,35 @@ const Menu: React.FC = () => {
       {isOpen && (
         <div className="absolute right-0 mt-12.5 flex flex-col z-10 gap-3">
           <div className="bg-white/90 backdrop-blur-lg hover:bg-white rounded-2xl shadow-lg w-[316px] py-9 px-7">
-            <NavigationMenu.Root>
-              <NavigationMenu.List className="flex flex-col gap-2">
-                <NavigationMenu.Item className="common-list-item">
-                  <NavigationMenu.Link href="#" onClick={toggleMenu}>
+            <Root>
+              <List className="flex flex-col gap-2">
+                <Item className="common-list-item">
+                  <Link href="#" onClick={toggleMenu}>
                     Home
-                  </NavigationMenu.Link>
-                </NavigationMenu.Item>
-                <NavigationMenu.Item className="common-list-item">
-                  <NavigationMenu.Link href="#portfolio" onClick={toggleMenu}>
+                  </Link>
+                </Item>
+                <Item className="common-list-item">
+                  <Link href="#portfolio" onClick={toggleMenu}>
                     Portfolio
-                  </NavigationMenu.Link>
-                </NavigationMenu.Item>
-                <NavigationMenu.Item className="common-list-item">
-                  <NavigationMenu.Link href="#aboutme" onClick={toggleMenu}>
+                  </Link>
+                </Item>
+                <Item className="common-list-item">
+                  <Link href="#aboutme" onClick={toggleMenu}>
                     About me
-                  </NavigationMenu.Link>
-                </NavigationMenu.Item>
-                <NavigationMenu.Item className="common-list-item">
-                  <NavigationMenu.Link href="#faqs" onClick={toggleMenu}>
+                  </Link>
+                </Item>
+                <Item className="common-list-item">
+                  <Link href="#faqs" onClick={toggleMenu}>
                     FAQs
-                  </NavigationMenu.Link>
-                </NavigationMenu.Item>
-                <NavigationMenu.Item className="common-list-item">
-                  <NavigationMenu.Link href="#contact" onClick={toggleMenu}>
+                  </Link>
+                </Item>
+                <Item className="common-list-item">
+                  <Link href="#contact" onClick={toggleMenu}>
                     Get in touch
-                  </NavigationMenu.Link>
-                </NavigationMenu.Item>
-              </NavigationMenu.List>
-            </NavigationMenu.Root>
+                  </Link>
+                </Item>
+              </List>
+            </Root>
           </div>
           <div className="bg-white/90 backdrop-blur-lg hover:bg-white rounded-2xl shadow-lg w-[316px] py-9 px-7">
             <div className="flex flex-col gap-4">
@@ -122,10 +122,10 @@ const Menu: React.FC = () => {
                 <br />
                 me
               </p>
-              <NavigationMenu.Root>
-                <NavigationMenu.List className="flex flex-row items-center justify-start gap-6">
-                  <NavigationMenu.Item>
-                    <NavigationMenu.Link onClick={toggleMenu}>
+              <Root>
+                <List className="flex flex-row items-center justify-start gap-6">
+                  <Item>
+                    <Link onClick={toggleMenu}>
                       <img
                         src={Linkedin}
                         onClick={() =>
@@ -137,10 +137,10 @@ const Menu: React.FC = () => {
                         alt="Linkedin"
                         className="w-[28.31px] h-[28.31px] cursor-pointer"
                       />
-                    </NavigationMenu.Link>
-                  </NavigationMenu.Item>
-                  <NavigationMenu.Item>
-                    <NavigationMenu.Link onClick={toggleMenu}>
+                    </Link>
+                  </Item>
+                  <Item>
+                    <Link onClick={toggleMenu}>
                       <img
                         src={Behance}
                         onClick={() =>
@@ -152,10 +152,10 @@ const Menu: React.FC = () => {
                         alt="Behance"
                         className="w-[30.88px] h-[30.88px] cursor-pointer"
                       />
-                    </NavigationMenu.Link>
-                  </NavigationMenu.Item>
-                  <NavigationMenu.Item>
-                    <NavigationMenu.Link onClick={toggleMenu}>
+                    </Link>
+                  </Item>
+                  <Item>
+                    <Link onClick={toggleMenu}>
                       <img
                         src={Dribble}
                         onClick={() =>
@@ -167,10 +167,10 @@ const Menu: React.FC = () => {
                         alt="Dribble"
                         className="w-[28.42px] h-[28.42px] cursor-pointer"
                       />
-                    </NavigationMenu.Link>
-                  </NavigationMenu.Item>
-                </NavigationMenu.List>
-              </NavigationMenu.Root>
+                    </Link>
+                  </Item>
+                </List>
+              </Root>
             </div>
           </div>
         </div>

@@ -1,10 +1,10 @@
+import { useState } from "react";
+import axios from "axios";
 import Mail from "../assets/svg/Mail.svg";
 import Marker from "../assets/svg/Marker.svg";
 import Linkedin from "../assets/svg/Linkedin.svg";
 import Behance from "../assets/svg/Behance.svg";
 import Dribble from "../assets/svg/Dribble.svg";
-import { useState } from "react";
-import axios from "axios";
 
 function Form() {
   const [formData, setFormData] = useState({

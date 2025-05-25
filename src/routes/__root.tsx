@@ -1,12 +1,12 @@
 import { createRootRoute, Outlet } from "@tanstack/react-router";
-import "./root.css";
 import { Helmet } from "react-helmet";
+import { useCallback, useEffect, useRef, useState } from "react";
+import "./root.css";
 import Hero from "../assets/webp/Hero.webp";
 import HeadingLogo from "../assets/svg/HeadingLogo.svg";
 import Music from "../assets/svg/Music.svg";
 import MusicMuted from "../assets/svg/MusicMuted.svg";
 import Menu from "../components/Menu";
-import { useCallback, useEffect, useRef, useState } from "react";
 import MusicAlert from "../components/MusicAlert";
 
 export const Route = createRootRoute({
