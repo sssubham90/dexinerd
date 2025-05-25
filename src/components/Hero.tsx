@@ -4,9 +4,9 @@ import HeroImage from "../assets/webp/Hero.webp";
 
 function Hero() {
   return (
-    <div className="pt-4 pb-2 my-[100px] mx-auto max-w-[1521px] flex flex-row flex-wrap-reverse justify-between items-center bg-[#F8F8F8] [@media(max-width:1553px)]:px-4 [@media(max-width:1120px)]:justify-center [@media(max-width:1120px)]:w-auto [@media(max-width:712px)]:mx-4 [@media(max-width:712px)]:pt-0 [@media(max-width:432px)]:my-10">
-      <div className="flex flex-col justify-items-start w-[672px] [@media(max-width:1792px)]:w-[50%] [@media(max-width:1024)]:w-full [@media(min-width:432px)]:min-w-[400px] [@media(max-width:432px)]:w-full">
-        <div className="w-[104px] h-[104px] rounded-full bg-linear-to-br from-0%-100% from-[#F8F8F8] to-[#E7E7E7] p-5 mb-28 [@media(max-width:432px)]:mb-4">
+    <div className="px-[69px] pt-[79px] my-[39px] mx-auto max-w-[1521px] flex flex-row justify-between bg-white rounded-2xl [@media(max-width:1553px)]:mx-4 [@media(max-width:955px)]:px-4 [@media(max-width:850px)]:flex-col [@media(max-width:850px)]:pt-8 [@media(max-width:432px)]:my-10">
+      <div className="flex-1 flex flex-col justify-items-start">
+        <div className="w-[104px] h-[104px] rounded-full bg-linear-to-br from-0%-100% from-[#F8F8F8] to-[#E7E7E7] p-5 mb-28 [@media(max-width:850px)]:hidden">
           <HoverCard.Root openDelay={0} closeDelay={0}>
             <HoverCard.Trigger asChild>
               <OrangeArrowDown
@@ -26,6 +26,17 @@ function Hero() {
               </HoverCard.Content>
             </HoverCard.Portal>
           </HoverCard.Root>
+        </div>
+        <div
+          className="flex flex-row mx-auto items-center justify-between min-w-[208px] mt-9 mb-8 border-1 border-[#2F2F2F] rounded-4xl [@media(min-width:851px)]:hidden"
+          onClick={() => window.open("#portfolio", "_self")}
+        >
+          <div className="w-9 h-9 rounded-full bg-linear-to-br from-0%-100% from-[#F8F8F8] to-[#E7E7E7] p-1.5">
+            <OrangeArrowDown className="w-6 h-6 rounded-full cursor-pointer fill-[#DD5D18] hover:fill-[#8D58FF]" />
+          </div>
+          <p className="font-normal text-xs px-4">
+            Take me to the Projects now!
+          </p>
         </div>
         <div className="w-full pb-5.5">
           <h2 className="text-[#DD5D18] text-lg font-medium my-1">Namaste!</h2>
@@ -51,11 +62,11 @@ function Hero() {
           </button>
         </div>
       </div>
-      <img
-        src={HeroImage}
-        alt="Hero"
-        className="w-[794px]  mb-10 [@media(max-width:1792px)]:w-[50%] [@media(max-width:1024)]:w-full [@media(min-width:432px)]:min-w-[400px] [@media(max-width:432px)]:w-full"
-      />
+      <div className="flex-1 flex flex-col justify-items-end">
+        <div className="mt-auto">
+          <img src={HeroImage} alt="Hero" />
+        </div>
+      </div>
     </div>
   );
 }
