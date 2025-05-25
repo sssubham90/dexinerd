@@ -14,7 +14,6 @@
 
 @theme {
   --font-fustat: "fustat", sans-serif;
-  --font-open-sans: "open-sans", sans-serif;
   --shadow-up: 0 -10px 20px rgba(0, 0, 0, 0.15);
 
   --animate-accordion-down: accordion-down 0.3s cubic-bezier(0.87, 0, 0.13, 1);
@@ -58,6 +57,6 @@
 
 @layer components {
   .common-list-item {
-    @apply px-2.5 hover:text-[#DD5D18] cursor-pointer text-[32px];
+    @apply px-2.5 hover:text-[#8D58FF] cursor-pointer text-[32px];
   }
 }

@@ -60,28 +60,30 @@ function Root() {
         loop
         hidden
       />
-      <header className="flex justify-between items-center mx-[200px] my-7 [@media(max-width:1120px)]:mx-auto [@media(max-width:1120px)]:px-4">
-        <img
-          src={HeadingLogo}
-          alt="Dexinerd"
-          className="w-[246.71px] [@media(max-width:600px)]:w-[55vw]"
-        />
-        <div className="flex items-center gap-5 [@media(max-width:600px)]:gap-[2vw]">
+      <div className="sticky top-0 bg-white/50 backdrop-blur-lg z-50 shadow [@media(max-width:1553px)]:px-4 py-7">
+        <header className="flex justify-between items-center mx-auto max-w-[1521px]">
           <img
-            onClick={playAudio}
-            src={isReady && !isMuted ? Music : MusicMuted}
-            alt="Music"
-            className="w-[45px] h-[45px] [@media(max-width:600px)]:w-[10vw] cursor-pointer"
+            src={HeadingLogo}
+            alt="Dexinerd"
+            className="w-[246.71px] [@media(max-width:600px)]:w-[55vw]"
           />
-          <button
-            className="w-[149px] h-[45px]  cursor-pointer [@media(max-width:600px)]:hidden bg-[#121212] py-2.5 px-5 text-white font-normal font-open-sans rounded-4xl"
-            onClick={() => window.open("#contact", "_self")}
-          >
-            Let's connect
-          </button>
-          <Menu />
-        </div>
-      </header>
+          <div className="flex items-center gap-5 [@media(max-width:600px)]:gap-[2vw]">
+            <img
+              onClick={playAudio}
+              src={isReady && !isMuted ? Music : MusicMuted}
+              alt="Music"
+              className="w-[45px] h-[45px] [@media(max-width:600px)]:w-[10vw] cursor-pointer"
+            />
+            <button
+              className="w-[149px] h-[45px]  cursor-pointer [@media(max-width:600px)]:hidden bg-[#121212] py-2.5 px-5 text-white font-normal rounded-4xl"
+              onClick={() => window.open("#contact", "_self")}
+            >
+              Let's connect
+            </button>
+            <Menu />
+          </div>
+        </header>
+      </div>
       <Outlet />
       {showMusicAlert && <MusicAlert setShowMusicAlert={setShowMusicAlert} />}
     </>

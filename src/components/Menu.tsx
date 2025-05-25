@@ -35,7 +35,7 @@ const Menu: React.FC = () => {
     <div className="relative inline-block text-left" ref={menuRef}>
       <button
         onClick={toggleMenu}
-        className="w-[89px] h-[45px] [@media(max-width:432px)]:hidden bg-[#DD5D18] py-2.5 px-5 text-white font-normal font-open-sans rounded-4xl cursor-pointer"
+        className="w-[89px] h-[45px] [@media(max-width:432px)]:hidden bg-[#DD5D18] py-2.5 px-5 text-white font-normal rounded-4xl cursor-pointer"
       >
         Menu
       </button>
@@ -89,7 +89,7 @@ const Menu: React.FC = () => {
                 className="w-[240px] border-0 border-b border-black/27 focus:outline-none focus:border-black-500 mx-2.5 py-4 placeholder-black-400"
               />
               <button
-                className="w-[100px] h-[45px] border-2 border-[#DD5D18] bg-[#DD5D18] hover:bg-[#8D58FF] mx-2.5 py-2 px-4.5 text-lg text-white font-open-sans rounded-4xl cursor-pointer"
+                className="w-[100px] h-[45px] border-2 border-[#DD5D18] bg-[#DD5D18] hover:bg-[#8D58FF] mx-2.5 py-2 px-4.5 text-lg text-white rounded-4xl cursor-pointer"
                 onClick={() => {
                   if (!input.current) return;
                   if (validateEmail(input.current.value) === false) {

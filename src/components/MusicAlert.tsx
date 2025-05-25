@@ -11,11 +11,11 @@ function MusicAlert({ setShowMusicAlert }: MusicAlertProps) {
         <img src={Music} alt="Music" className="w-[33px] h-[33px]" />
         <h1 className="text-[#171717] text-lg leading-[191%] font-normal">
           <span className="text-[#DD5D18]">Ambient Music is available.</span>{" "}
-          Click on this icon on top to play the music.
+          Click on this icon on top to play the Dexinerd Anthem.
         </h1>
       </div>
       <button
-        className="bg-[#DD5D18] text-white font-open-sans text-lg font-normal py-2.5 px-5 rounded-full cursor-pointer"
+        className="bg-[#DD5D18] text-white text-lg font-normal py-2.5 px-5 rounded-full cursor-pointer"
         onClick={() => setShowMusicAlert(false)}
       >
         Close

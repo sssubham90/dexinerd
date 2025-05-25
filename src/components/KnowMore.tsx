@@ -34,8 +34,8 @@ function ExpandedKnowMoreComponent({
       <div className="bg-white p-2.5 border-1 border-white rounded-2xl flex flex-row flex-wrap-reverse justify-between items-stretch">
         <div className="flex flex-col flex-1/2 shrink-0 p-16 [@media(max-width:900px)]:px-0 [@media(max-width:900px)]:py-4">
           <h3 className="font-normal text-lg leading-[135%]">Hey again,</h3>
-          <h2 className="font-normal text-[37px] leading-[135%]">
-            I am <span className="text-[#DD5D18]">Sourav Rout</span>.
+          <h2 className="font-normal text-[37px] pt-3 leading-[135%]">
+            I am <span className="text-[#DD5D18]">Sourav Rout</span>
           </h2>
           <p className="font-normal text-lg leading-[191%] text-[#2F2F2F] mt-6.5 mb-2">
             I am a self-taught UX/UI designer from India with over 3 years of
@@ -55,7 +55,7 @@ function ExpandedKnowMoreComponent({
             inspiration with a wider audience.
           </p>
           <button
-            className="w-[202px] border-2 border-[#DD5D18] bg-[#DD5D18] hover:bg-[#8D58FF] font-open-sans text-white text-lg font-normal py-2.5 px-5 rounded-full my-2 cursor-pointer"
+            className="w-[202px] border-2 border-[#DD5D18] bg-[#DD5D18] hover:bg-[#8D58FF] text-white text-lg font-normal py-2.5 px-5 rounded-full my-2 cursor-pointer"
             onClick={() => setExpanded(false)}
           >
             Download Resume
@@ -82,15 +82,15 @@ function ExpandedKnowMoreComponent({
 function KnowMore() {
   const [expanded, setExpanded] = useState(false);
   return (
-    <>
+    <div id="aboutme">
       {expanded ? (
         <ExpandedKnowMoreComponent setExpanded={setExpanded} />
       ) : (
         <KnowMoreComponent setExpanded={setExpanded} />
       )}
-      <div className="py-1.5 [@media(max-width:1520px)]:mx-4 flex flex-row justify-between items-center">
+      <div className="py-1.5 mx-[160px] flex flex-row justify-between items-center [@media(max-width:1520px)]:mx-4 ">
         <div className="flex-grow-[527]"></div>
-        <div className="max-w-[894px] [@media(min-width:840px)]:mb-8 ">
+        <div className="w-[1012px] [@media(min-width:840px)]:mb-8 ">
           <h2 className="font-normal text-[33px] leading-[174%] text-black">
             Life, by Design.
           </h2>
@@ -105,7 +105,7 @@ function KnowMore() {
         <div className="flex-grow-[328]"></div>
       </div>
       <div className="max-w-[1520px] [@media(max-width:1520px)]:w-full h-0.5 bg-black/17 my-7 mx-auto"></div>
-    </>
+    </div>
   );
 }
 

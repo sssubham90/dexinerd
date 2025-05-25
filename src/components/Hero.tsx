@@ -5,21 +5,13 @@ import HeroImage from "../assets/webp/Hero.webp";
 function Hero() {
   return (
     <div className="pt-4 pb-2 pl-10 my-[100px] mx-auto w-[84%] flex flex-row flex-wrap-reverse justify-between items-center bg-[#F8F8F8] [@media(max-width:1120px)]:justify-center [@media(max-width:1120px)]:w-auto [@media(max-width:712px)]:mx-4 [@media(max-width:712px)]:pl-0 [@media(max-width:712px)]:pt-0 [@media(max-width:432px)]:my-10">
-      <div
-        id="aboutme"
-        className="flex flex-col justify-items-start w-[672px] [@media(max-width:1792px)]:w-[50%] [@media(max-width:1024)]:w-full [@media(min-width:432px)]:min-w-[400px] [@media(max-width:432px)]:w-full"
-      >
+      <div className="flex flex-col justify-items-start w-[672px] [@media(max-width:1792px)]:w-[50%] [@media(max-width:1024)]:w-full [@media(min-width:432px)]:min-w-[400px] [@media(max-width:432px)]:w-full">
         <div className="w-[104px] h-[104px] rounded-full bg-linear-to-br from-0%-100% from-[#F8F8F8] to-[#E7E7E7] p-5 mb-28 [@media(max-width:432px)]:mb-4">
           <HoverCard.Root openDelay={0} closeDelay={0}>
             <HoverCard.Trigger asChild>
               <OrangeArrowDown
                 className="w-[65px] h-[65px] rounded-full cursor-pointer fill-[#DD5D18] hover:fill-[#8D58FF]"
-                onClick={() =>
-                  window.open(
-                    "https://souravrout.myportfolio.com/uiux",
-                    "_blank"
-                  )
-                }
+                onClick={() => window.open("#portfolio", "_self")}
               />
             </HoverCard.Trigger>
             <HoverCard.Portal>
@@ -50,7 +42,7 @@ function Hero() {
             one that resonates, elevates, and speaks without words.
           </p>
           <button
-            className="border-2 border-[#DD5D18] bg-[#DD5D18] hover:bg-[#8D58FF] font-open-sans text-white text-lg font-normal py-2.5 px-5 rounded-full my-2 cursor-pointer"
+            className="border-2 border-[#DD5D18] bg-[#DD5D18] hover:bg-[#8D58FF] text-white text-lg font-normal py-3 px-6 rounded-full my-2 cursor-pointer"
             onClick={() =>
               window.open("https://www.instagram.com/dexinerd.life", "_blank")
             }

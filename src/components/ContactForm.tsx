@@ -104,7 +104,7 @@ function Form() {
 
       <button
         type="submit"
-        className="border-2 border-[#DD5D18] bg-[#DD5D18] hover:bg-[#8D58FF] text-white font-normal font-open-sans py-2.5 px-5 rounded-[32px] cursor-pointer"
+        className="border-2 border-[#DD5D18] bg-[#DD5D18] hover:bg-[#8D58FF] text-white font-normal py-3 px-6 rounded-[32px] cursor-pointer"
       >
         Connect now
       </button>
