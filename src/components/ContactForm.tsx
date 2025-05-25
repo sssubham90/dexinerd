@@ -116,10 +116,10 @@ function ContactForm() {
   return (
     <div
       id="contact"
-      className="mt-20 mb-40 py-32 px-17.5 max-w-[1520px] mx-auto bg-white rounded-2xl flex flex-row flex-wrap justify-between items-center gap-y-18 [@media(max-width:1520px)]:mx-4 [@media(max-width:1520px)]:mb-20 [@media(max-width:1520px)]:px-0 [@media(max-width:1520px)]:py-16"
+      className="mt-20 mb-40 py-32 px-17.5 max-w-[1520px] mx-auto bg-white rounded-2xl flex flex-row flex-wrap justify-between items-center gap-y-18 [@media(max-width:1553px)]:mx-4 [@media(max-width:1553px)]:mb-20 [@media(max-width:1207px)]:px-4 [@media(max-width:686px)]:flex-col"
     >
-      <div className="w-[795px] [@media(max-width:1520px)]:mx-4 [@media(max-width:1520px)]:w-full flex flex-col justify-between items-start gap-18">
-        <div className="w-full">
+      <div className="flex-6 flex flex-col justify-between items-start gap-18 [@media(min-width:686px)]:min-w-[622px] [@media(max-width:686px)]:w-full">
+        <div className="w-full max-w-[622px]">
           <h3 className="font-medium text-lg text-[#DD5D18] leading-[191%]">
             Get in Touch
           </h3>
@@ -127,7 +127,7 @@ function ContactForm() {
             Would love to <br />
             Connect and Collaborate
           </p>
-          <p className="font-normal text-lg text-[#2F2F2F] leading-[191%] w-[622px] [@media(max-width:760px)]:w-full">
+          <p className="font-normal text-lg text-[#2F2F2F] leading-[191%] [@media(max-width:760px)]:w-full">
             I'm always open to new ideas and collaborations. Fill in your
             details, and you can expect a response from me to talk more about
             design and exchange ideas.
@@ -178,7 +178,7 @@ function ContactForm() {
           />
         </div>
       </div>
-      <div className="w-[396px] mx-20 [@media(max-width:1520px)]:mx-4 [@media(max-width:1520px)]:w-full">
+      <div className="flex-4 px-20 [@media(max-width:1340px)]:px-4 [@media(min-width:478px)]:min-w-[414px] [@media(max-width:478px)]:w-full">
         <Form />
       </div>
     </div>
