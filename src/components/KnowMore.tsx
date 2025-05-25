@@ -8,7 +8,7 @@ function KnowMoreComponent({
   setExpanded: (value: boolean) => void;
 }) {
   return (
-    <div className="mt-5 mb-32 [@media(max-width:1520px)]:mb-4 mx-[200px] [@media(max-width:1520px)]:mx-4 relative">
+    <div className="mt-5 mb-32 [@media(max-width:1300px)]:mb-4 mx-[200px] [@media(max-width:1300px)]:mx-4 relative">
       <button
         className="bg-white/[13%] backdrop-blur-lg text-white font-medium tracking-[-4%] text-lg px-5 py-2.5 w-44 rounded-[58px] absolute right-[2.5vw] top-[2.5vw] cursor-pointer [@media(max-width:900px)]:right-6"
         onClick={() => setExpanded(true)}
@@ -30,7 +30,7 @@ function ExpandedKnowMoreComponent({
   setExpanded: (value: boolean) => void;
 }) {
   return (
-    <div className="mt-5 mb-32 mx-[200px] relative [@media(max-width:1520px)]:mb-4 [@media(max-width:1520px)]:mx-4">
+    <div className="mt-5 mb-32 mx-[200px] relative [@media(max-width:1300px)]:mb-4 [@media(max-width:1300px)]:mx-4">
       <div className="bg-white p-2.5 border-1 border-white rounded-2xl flex flex-row flex-wrap-reverse justify-between items-stretch">
         <div className="flex flex-col flex-1/2 shrink-0 p-16 [@media(max-width:900px)]:px-0 [@media(max-width:900px)]:py-4">
           <h3 className="font-normal text-lg leading-[135%]">Hey again,</h3>
@@ -61,7 +61,7 @@ function ExpandedKnowMoreComponent({
             Download Resume
           </button>
         </div>
-        <div className="flex flex-col flex-1/2 shrink-0 relative">
+        <div className="flex flex-col flex-1/2 min-w-[333px] shrink-0 relative">
           <button
             className="bg-white/[13%] backdrop-blur-lg text-white font-medium tracking-[-4%] text-lg px-5 py-2.5 w-44 rounded-[58px] absolute right-[2.5vw] top-[2.5vw] cursor-pointer"
             onClick={() => setExpanded(false)}
@@ -88,7 +88,7 @@ function KnowMore() {
       ) : (
         <KnowMoreComponent setExpanded={setExpanded} />
       )}
-      <div className="py-1.5 mx-[160px] flex flex-row justify-between items-center [@media(max-width:1520px)]:mx-4 ">
+      <div className="py-1.5 mx-[160px] flex flex-row justify-between items-center [@media(max-width:1300px)]:mx-4 ">
         <div className="flex-grow-[527]"></div>
         <div className="w-[1012px] [@media(min-width:840px)]:mb-8 ">
           <h2 className="font-normal text-[33px] leading-[174%] text-black">
@@ -104,7 +104,7 @@ function KnowMore() {
         </div>
         <div className="flex-grow-[328]"></div>
       </div>
-      <div className="max-w-[1520px] [@media(max-width:1520px)]:w-full h-0.5 bg-black/17 my-7 mx-auto"></div>
+      <div className="max-w-[1521px] h-0.5 bg-black/17 my-7 mx-auto [@media(max-width:1553px)]:mx-4"></div>
     </div>
   );
 }

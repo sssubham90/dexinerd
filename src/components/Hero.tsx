@@ -4,7 +4,7 @@ import HeroImage from "../assets/webp/Hero.webp";
 
 function Hero() {
   return (
-    <div className="pt-4 pb-2 pl-10 my-[100px] mx-auto w-[84%] flex flex-row flex-wrap-reverse justify-between items-center bg-[#F8F8F8] [@media(max-width:1120px)]:justify-center [@media(max-width:1120px)]:w-auto [@media(max-width:712px)]:mx-4 [@media(max-width:712px)]:pl-0 [@media(max-width:712px)]:pt-0 [@media(max-width:432px)]:my-10">
+    <div className="pt-4 pb-2 my-[100px] mx-auto max-w-[1521px] flex flex-row flex-wrap-reverse justify-between items-center bg-[#F8F8F8] [@media(max-width:1553px)]:px-4 [@media(max-width:1120px)]:justify-center [@media(max-width:1120px)]:w-auto [@media(max-width:712px)]:mx-4 [@media(max-width:712px)]:pt-0 [@media(max-width:432px)]:my-10">
       <div className="flex flex-col justify-items-start w-[672px] [@media(max-width:1792px)]:w-[50%] [@media(max-width:1024)]:w-full [@media(min-width:432px)]:min-w-[400px] [@media(max-width:432px)]:w-full">
         <div className="w-[104px] h-[104px] rounded-full bg-linear-to-br from-0%-100% from-[#F8F8F8] to-[#E7E7E7] p-5 mb-28 [@media(max-width:432px)]:mb-4">
           <HoverCard.Root openDelay={0} closeDelay={0}>

@@ -61,7 +61,7 @@ function Root() {
         hidden
       />
       <div className="sticky top-0 bg-white/50 backdrop-blur-lg z-50 shadow [@media(max-width:1553px)]:px-4 py-7">
-        <header className="flex justify-between items-center mx-auto max-w-[1521px]">
+        <header className="flex justify-between items-center max-w-[1521px] mx-auto">
           <img
             src={HeadingLogo}
             alt="Dexinerd"
