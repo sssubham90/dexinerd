@@ -49,8 +49,8 @@ export default function TestimonialSlider() {
   const [config, setConfig] = useState({ min: false, max: false });
 
   return (
-    <div className="mx-4">
-      <div className="py-[140px] [@media(max-width:1520px)]:mx-4 [@media(max-width:1520px)]:py-4 flex flex-row justify-center items-center">
+    <div className="mx-[160px] [@media(max-width:1024px)]:mx-4">
+      <div className="py-[140px] flex flex-row justify-center items-center">
         <div className="flex-grow-[585]"></div>
 
         <div className="w-[990px] [@media(max-width:1520px)]:w-full">
