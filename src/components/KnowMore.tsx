@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import KnowMoreImg from "../assets/webp/KnowMore.webp";
 import KnowMoreExpandedImg from "../assets/webp/ExpandedKnowMore.webp";
 
@@ -26,8 +26,10 @@ function KnowMoreComponent({
 
 function ExpandedKnowMoreComponent({
   setExpanded,
+  isMobile,
 }: {
   setExpanded: (value: boolean) => void;
+  isMobile: boolean;
 }) {
   return (
     <div className="mt-5 mb-32 mx-[200px] relative [@media(max-width:1300px)]:mb-4 [@media(max-width:1300px)]:mx-4">
@@ -62,12 +64,14 @@ function ExpandedKnowMoreComponent({
           </button>
         </div>
         <div className="flex flex-col flex-1/2 min-w-[333px] shrink-0 relative">
-          <button
-            className="bg-white/[13%] backdrop-blur-lg text-white font-medium tracking-[-4%] text-lg px-5 py-2.5 w-44 rounded-[58px] absolute right-[2.5vw] top-[2.5vw] cursor-pointer"
-            onClick={() => setExpanded(false)}
-          >
-            Exit this view
-          </button>
+          {!isMobile && (
+            <button
+              className="bg-white/[13%] backdrop-blur-lg text-white font-medium tracking-[-4%] text-lg px-5 py-2.5 w-44 rounded-[58px] absolute right-[2.5vw] top-[2.5vw] cursor-pointer"
+              onClick={() => setExpanded(false)}
+            >
+              Exit this view
+            </button>
+          )}
           <img
             src={KnowMoreExpandedImg}
             alt="Video Thumbnail"
@@ -80,11 +84,22 @@ function ExpandedKnowMoreComponent({
 }
 
 function KnowMore() {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const [expanded, setExpanded] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth <= 768);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <div id="aboutme" className="scroll-mt-30">
-      {expanded ? (
-        <ExpandedKnowMoreComponent setExpanded={setExpanded} />
+      {expanded || isMobile ? (
+        <ExpandedKnowMoreComponent
+          setExpanded={setExpanded}
+          isMobile={isMobile}
+        />
       ) : (
         <KnowMoreComponent setExpanded={setExpanded} />
       )}
