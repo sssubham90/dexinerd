@@ -82,7 +82,7 @@ function ExpandedKnowMoreComponent({
 function KnowMore() {
   const [expanded, setExpanded] = useState(false);
   return (
-    <div id="aboutme">
+    <div id="aboutme" className="scroll-mt-30">
       {expanded ? (
         <ExpandedKnowMoreComponent setExpanded={setExpanded} />
       ) : (
