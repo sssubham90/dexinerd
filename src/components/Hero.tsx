@@ -9,17 +9,15 @@ function Hero() {
         <div className="w-[104px] h-[104px] rounded-full bg-linear-to-br from-0%-100% from-[#F8F8F8] to-[#E7E7E7] p-5 mb-28 [@media(max-width:850px)]:hidden">
           <Root openDelay={0} closeDelay={0}>
             <Trigger asChild>
-              <OrangeArrowDown
-                className="w-[65px] h-[65px] rounded-full cursor-pointer fill-[#DD5D18] hover:fill-[#8D58FF]"
-                onClick={() => window.open("#portfolio", "_self")}
-              />
+              <div>
+                <OrangeArrowDown
+                  className="w-[65px] h-[65px] rounded-full cursor-pointer fill-[#DD5D18] hover:fill-[#8D58FF]"
+                  onClick={() => window.open("#portfolio", "_self")}
+                />
+              </div>
             </Trigger>
             <Portal>
-              <Content
-                className="HoverCardContent"
-                side="right"
-                sideOffset={36}
-              >
+              <Content side="right" sideOffset={36}>
                 <p className="font-normal text-lg">
                   Take me to the Projects now!
                 </p>
