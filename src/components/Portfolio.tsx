@@ -44,7 +44,7 @@ function Portfolio() {
               )
             }
           >
-            <p className="p-2.5">Graphics</p>
+            <p className="p-2.5">Graphic Designs</p>
             <Goto className="w-4 h-9 inline-block" />
           </div>
         </div>

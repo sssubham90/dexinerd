@@ -41,7 +41,7 @@ const Menu: React.FC = () => {
         className="w-[45px] h-[45px] p-2.5 rounded-full bg-[#DD5D18] text-white cursor-pointer [@media(min-width:433px)]:hidden [@media(max-width:433px)]:w-[10vw] [@media(max-width:433px)]:h-[10vw]"
       />
       {isOpen && (
-        <div className="absolute right-0 mt-12.5 flex flex-col z-10 gap-3">
+        <div className="absolute z-50 right-0 mt-12.5 flex flex-col gap-3">
           <div className="bg-white/90 backdrop-blur-lg hover:bg-white rounded-2xl shadow-lg w-[316px] py-9 px-7">
             <Root>
               <List className="flex flex-col gap-2">
