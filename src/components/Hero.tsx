@@ -38,7 +38,7 @@ function Hero() {
             Take me to the Projects now!
           </p>
         </div>
-        <div className="w-full pb-5.5">
+        <div className="w-full pb-5.5 [@media(max-width:850px)]:text-center">
           <h2 className="text-[#DD5D18] text-lg font-medium my-1">Namaste!</h2>
           <h1 className="text-[#171717] text-[52.82px] font-semibold">
             I’m Sourav Rout,
