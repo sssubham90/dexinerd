@@ -33,7 +33,7 @@ function ExpandedKnowMoreComponent({
 }) {
   return (
     <div className="mt-5 mb-32 mx-auto max-w-[1521px] relative [@media(max-width:1553px)]:mb-4 [@media(max-width:1553px)]:mx-4">
-      <div className="bg-white p-2.5 border-1 border-white rounded-2xl flex flex-row flex-wrap-reverse justify-between items-stretch">
+      <div className="bg-white p-2.5 border-1 border-white rounded-2xl flex flex-row flex-wrap-reverse justify-between items-stretch [@media(max-width:900px)]:gap-4">
         <div className="flex flex-col flex-1/2 shrink-0 p-16 [@media(max-width:900px)]:px-0 [@media(max-width:900px)]:py-4">
           <h3 className="font-normal text-lg leading-[135%]">Hey again,</h3>
           <h2 className="font-normal text-[37px] pt-3 leading-[135%]">
