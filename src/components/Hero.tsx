@@ -12,7 +12,14 @@ function Hero() {
               <div>
                 <OrangeArrowDown
                   className="w-[65px] h-[65px] rounded-full cursor-pointer fill-[#DD5D18] hover:fill-[#8D58FF]"
-                  onClick={() => window.open("#portfolio", "_self")}
+                  onClick={() =>
+                    window.scrollTo({
+                      top:
+                        (document.getElementById("portfolio")?.offsetTop ??
+                          120) - 120,
+                      behavior: "smooth",
+                    })
+                  }
                 />
               </div>
             </Trigger>
@@ -27,7 +34,13 @@ function Hero() {
         </div>
         <div
           className="flex flex-row mx-auto items-center justify-between min-w-[208px] p-1.5 mt-9 mb-8 border-1 border-[#2F2F2F] rounded-4xl [@media(min-width:851px)]:hidden"
-          onClick={() => window.open("#portfolio", "_self")}
+          onClick={() =>
+            window.scrollTo({
+              top:
+                (document.getElementById("portfolio")?.offsetTop ?? 120) - 120,
+              behavior: "smooth",
+            })
+          }
         >
           <div className="w-9 h-9 rounded-full bg-linear-to-br from-0%-100% from-[#F8F8F8] to-[#E7E7E7] p-1.5">
             <OrangeArrowDown className="w-6 h-6 rounded-full cursor-pointer fill-[#DD5D18] hover:fill-[#8D58FF]" />

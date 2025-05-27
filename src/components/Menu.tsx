@@ -45,28 +45,91 @@ const Menu: React.FC = () => {
           <div className="bg-white/90 backdrop-blur-lg hover:bg-white rounded-2xl shadow-lg w-[316px] py-9 px-7">
             <Root>
               <List className="flex flex-col gap-4">
-                <Item className="common-list-item">
-                  <Link href="#" onClick={toggleMenu}>
+                <Item>
+                  <Link
+                    href="#"
+                    className="px-2.5 hover:text-[#8D58FF] cursor-pointer text-3xl"
+                    onClick={(e) => {
+                      toggleMenu();
+                      e.preventDefault();
+                      window.scrollTo({
+                        top: 0,
+                        behavior: "smooth",
+                      });
+                    }}
+                  >
                     Home
                   </Link>
                 </Item>
-                <Item className="common-list-item">
-                  <Link href="#portfolio" onClick={toggleMenu}>
+                <Item>
+                  <Link
+                    href="#portfolio"
+                    className="px-2.5 hover:text-[#8D58FF] cursor-pointer text-3xl"
+                    onClick={(e) => {
+                      toggleMenu();
+                      e.preventDefault();
+                      window.scrollTo({
+                        top:
+                          (document.getElementById("portfolio")?.offsetTop ??
+                            120) - 120,
+                        behavior: "smooth",
+                      });
+                    }}
+                  >
                     Portfolio
                   </Link>
                 </Item>
-                <Item className="common-list-item">
-                  <Link href="#aboutme" onClick={toggleMenu}>
+                <Item>
+                  <Link
+                    href="#aboutme"
+                    className="px-2.5 hover:text-[#8D58FF] cursor-pointer text-3xl"
+                    onClick={(e) => {
+                      toggleMenu();
+                      e.preventDefault();
+                      window.scrollTo({
+                        top:
+                          (document.getElementById("aboutme")?.offsetTop ??
+                            120) - 120,
+                        behavior: "smooth",
+                      });
+                    }}
+                  >
                     About me
                   </Link>
                 </Item>
-                <Item className="common-list-item">
-                  <Link href="#faqs" onClick={toggleMenu}>
+                <Item>
+                  <Link
+                    href="#faqs"
+                    className="px-2.5 hover:text-[#8D58FF] cursor-pointer text-3xl"
+                    onClick={(e) => {
+                      toggleMenu();
+                      e.preventDefault();
+                      window.scrollTo({
+                        top:
+                          (document.getElementById("faqs")?.offsetTop ?? 120) -
+                          120,
+                        behavior: "smooth",
+                      });
+                    }}
+                  >
                     FAQs
                   </Link>
                 </Item>
-                <Item className="common-list-item">
-                  <Link href="#contact" onClick={toggleMenu}>
+                <Item>
+                  <Link
+                    href="#contact"
+                    className="px-2.5 hover:text-[#8D58FF] cursor-pointer text-3xl"
+                    onClick={(e) => {
+                      toggleMenu();
+                      e.preventDefault();
+                      window.scrollTo({
+                        top:
+                          (document.getElementById("contact")?.offsetTop ??
+                            120) - 120,
+                        behavior: "smooth",
+                      });
+                    }}
+                  >
                     Get in touch
                   </Link>
                 </Item>

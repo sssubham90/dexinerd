@@ -28,24 +28,58 @@ function Footer() {
                 <a
                   href="/"
                   className="inline-flex mr-auto hover:text-[#8D58FF]"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.scrollTo({
+                      top: 0,
+                      behavior: "smooth",
+                    });
+                  }}
                 >
                   Home
                 </a>
                 <a
                   href="#aboutme"
                   className="inline-flex mr-auto hover:text-[#8D58FF]"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.scrollTo({
+                      top:
+                        (document.getElementById("aboutme")?.offsetTop ?? 120) -
+                        120,
+                      behavior: "smooth",
+                    });
+                  }}
                 >
                   About me
                 </a>
                 <a
                   href="#portfolio"
                   className="inline-flex mr-auto hover:text-[#8D58FF]"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.scrollTo({
+                      top:
+                        (document.getElementById("portfolio")?.offsetTop ??
+                          120) - 120,
+                      behavior: "smooth",
+                    });
+                  }}
                 >
                   Portfolio
                 </a>
                 <a
                   href="#faqs"
                   className="inline-flex mr-auto hover:text-[#8D58FF]"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.scrollTo({
+                      top:
+                        (document.getElementById("faqs")?.offsetTop ?? 120) -
+                        120,
+                      behavior: "smooth",
+                    });
+                  }}
                 >
                   FAQs
                 </a>

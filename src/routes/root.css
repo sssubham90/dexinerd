@@ -48,9 +48,3 @@
     @apply bg-[#F8F8F8];
   }
 }
-
-@layer components {
-  .common-list-item {
-    @apply px-2.5 hover:text-[#8D58FF] cursor-pointer text-3xl;
-  }
-}

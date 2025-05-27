@@ -109,8 +109,8 @@ function Root() {
         loop
         hidden
       />
-      <div className="sticky top-0 bg-white/50 backdrop-blur-lg z-50 shadow [@media(max-width:1553px)]:px-4 py-7">
-        <header className="flex justify-between items-center max-w-[1521px] mx-auto">
+      <div className="sticky top-0 bg-white/50 backdrop-blur-lg z-50 shadow py-7">
+        <header className="flex justify-between items-center mx-auto max-w-[1521px] [@media(max-width:1553px)]:mx-4">
           <img
             src={HeadingLogo}
             alt="Dexinerd"
@@ -120,7 +120,14 @@ function Root() {
             {getMusicIcon()}
             <button
               className="w-[149px] h-[45px] cursor-pointer border-2 border-black hover:border-[#DD5D18] hover:bg-[#8D58FF] bg-[#121212] py-2.5 px-5 text-white font-normal rounded-4xl [@media(max-width:600px)]:hidden"
-              onClick={() => window.open("#contact", "_self")}
+              onClick={() =>
+                window.scrollTo({
+                  top:
+                    (document.getElementById("contact")?.offsetTop ?? 120) -
+                    120,
+                  behavior: "smooth",
+                })
+              }
             >
               Let's connect
             </button>
