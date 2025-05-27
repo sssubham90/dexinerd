@@ -32,7 +32,7 @@ const Menu: React.FC = () => {
     <div className="relative inline-block text-left" ref={menuRef}>
       <button
         onClick={toggleMenu}
-        className="w-[89px] h-[45px] bg-[#DD5D18] py-2.5 px-5 text-white font-normal rounded-4xl cursor-pointer [@media(max-width:432px)]:hidden"
+        className="w-[89px] h-[45px] bg-[#DD5D18] py-2.5 px-5 text-white font-normal rounded-4xl cursor-pointer hover:bg-[#8D58FF] [@media(max-width:432px)]:hidden"
       >
         Menu
       </button>

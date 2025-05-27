@@ -22,7 +22,7 @@ function MusicAlert({ playAudio, setShowMusicAlert }: MusicAlertProps) {
           </h1>
         </div>
         <button
-          className="bg-[#DD5D18] text-white text-lg font-normal py-2.5 px-5 rounded-full cursor-pointer"
+          className="bg-[#DD5D18] text-white text-lg font-normal py-2.5 px-5 rounded-full cursor-pointer hover:bg-[#8D58FF]"
           onClick={() => setShowMusicAlert(false)}
         >
           Close
