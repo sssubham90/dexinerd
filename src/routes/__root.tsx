@@ -1,6 +1,6 @@
 import { createRootRoute, Outlet } from "@tanstack/react-router";
 import { Helmet } from "react-helmet";
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import "./root.css";
 import Hero from "../assets/webp/Hero.webp";
 import HeadingLogo from "../assets/svg/HeadingLogo.svg";
@@ -16,12 +16,28 @@ export const Route = createRootRoute({
 function Root() {
   const [showMusicAlert, setShowMusicAlert] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
+  const [isDownloading, setIsDownloading] = useState(false);
   const [isReady, setIsReady] = useState(false);
   const [isMuted, setIsMuted] = useState(false);
 
   const playAudio = useCallback(() => {
     const audio = audioRef.current;
-    if (!audio || !isReady) return;
+    if (!audio) return;
+    if (!isDownloading) {
+      console.log("Loading audio...");
+      audio.load();
+      audio
+        .play()
+        .then(() => {
+          setIsMuted(false);
+          setShowMusicAlert(false);
+        })
+        .catch((err) => {
+          console.warn("Play failed:", err);
+        });
+      return;
+    }
+    if (!isReady) return;
     if (showMusicAlert) setShowMusicAlert(false);
     const isPlaying = !audio.paused && audio.currentTime > 0;
     if (isPlaying) {
@@ -35,17 +51,24 @@ function Root() {
           console.warn("Play failed:", err);
         });
     }
-  }, [isReady, showMusicAlert]);
+  }, [isDownloading, isReady, showMusicAlert]);
 
   useEffect(() => {
     const audio = audioRef.current;
     if (!audio) return;
+    setShowMusicAlert(true);
+    audio.addEventListener("loadeddata", () => setIsDownloading(true));
     audio.addEventListener("canplaythrough", () => {
       setIsReady(true);
-      setShowMusicAlert(true);
       audio.volume = 0.3;
     });
   }, []);
+
+  const musicIconSource = useMemo(() => {
+    if (!isDownloading) return Music;
+    if (!isReady) return MusicMuted;
+    return isMuted ? MusicMuted : Music;
+  }, [isDownloading, isReady, isMuted]);
 
   return (
     <>
@@ -70,7 +93,7 @@ function Root() {
           <div className="flex items-center gap-5 [@media(max-width:600px)]:gap-[2vw]">
             <img
               onClick={playAudio}
-              src={isReady && !isMuted ? Music : MusicMuted}
+              src={musicIconSource}
               alt="Music"
               className="w-[45px] h-[45px] [@media(max-width:600px)]:w-[10vw] cursor-pointer"
             />
