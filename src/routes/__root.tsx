@@ -1,11 +1,11 @@
 import { createRootRoute, Outlet } from "@tanstack/react-router";
 import { Helmet } from "react-helmet";
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import "./root.css";
+import Music from "../assets/svg/Music.svg?react";
+import MusicMuted from "../assets/svg/MusicMuted.svg?react";
 import Hero from "../assets/webp/Hero.webp";
 import HeadingLogo from "../assets/svg/HeadingLogo.svg";
-import Music from "../assets/svg/Music.svg";
-import MusicMuted from "../assets/svg/MusicMuted.svg";
 import Menu from "../components/Menu";
 import MusicAlert from "../components/MusicAlert";
 
@@ -64,11 +64,33 @@ function Root() {
     });
   }, []);
 
-  const musicIconSource = useMemo(() => {
-    if (!isDownloading) return Music;
-    if (!isReady) return MusicMuted;
-    return isMuted ? MusicMuted : Music;
-  }, [isDownloading, isReady, isMuted]);
+  const getMusicIcon = () => {
+    if (!isDownloading)
+      return (
+        <Music
+          onClick={playAudio}
+          className="w-[45px] h-[45px] fill-[#DD5D18] hover:fill-[#8D58FF] cursor-pointer [@media(max-width:600px)]:w-[10vw]"
+        />
+      );
+    if (!isReady)
+      return (
+        <MusicMuted
+          onClick={playAudio}
+          className="w-[45px] h-[45px] fill-[#DD5D18] hover:fill-[#8D58FF] cursor-pointer [@media(max-width:600px)]:w-[10vw]"
+        />
+      );
+    return isMuted ? (
+      <MusicMuted
+        onClick={playAudio}
+        className="w-[45px] h-[45px] fill-[#DD5D18] hover:fill-[#8D58FF] cursor-pointer [@media(max-width:600px)]:w-[10vw]"
+      />
+    ) : (
+      <Music
+        onClick={playAudio}
+        className="w-[45px] h-[45px] fill-[#DD5D18] hover:fill-[#8D58FF] cursor-pointer [@media(max-width:600px)]:w-[10vw]"
+      />
+    );
+  };
 
   return (
     <>
@@ -91,12 +113,7 @@ function Root() {
             className="w-[246.71px] [@media(max-width:600px)]:w-[55vw]"
           />
           <div className="flex items-center gap-5 [@media(max-width:600px)]:gap-[2vw]">
-            <img
-              onClick={playAudio}
-              src={musicIconSource}
-              alt="Music"
-              className="w-[45px] h-[45px] [@media(max-width:600px)]:w-[10vw] cursor-pointer"
-            />
+            {getMusicIcon()}
             <button
               className="w-[149px] h-[45px]  cursor-pointer hover:bg-[#8D58FF] bg-[#121212] py-2.5 px-5 text-white font-normal rounded-4xl [@media(max-width:600px)]:hidden"
               onClick={() => window.open("#contact", "_self")}

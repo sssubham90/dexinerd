@@ -39,9 +39,9 @@ function WorkEx() {
           <img src={KIIT} alt="KIIT" className="w-11 mx-auto" />
           <img src={MasterCard} alt="MasterCard" className="w-12 mx-auto" />
           <img src={Durex} alt="Durex" className="w-13 mx-auto" />
-          <img src={ODGov} alt="ODGov" className="w-10 mx-auto" />
-          <img src={KFC} alt="KFC" className="w-14 mx-auto" />
           <img src={Hult} alt="Hult Prize" className="w-24 mx-auto" />
+          <img src={KFC} alt="KFC" className="w-14 mx-auto" />
+          <img src={ODGov} alt="ODGov" className="w-10 mx-auto" />
           <img src={BJP} alt="BJP" className="w-7 mx-auto" />
           <img src={SeventhGear} alt="7thGear" className="w-22 mx-auto" />
           <img src={Highradius} alt="Highradius" className="w-31 mx-auto" />
