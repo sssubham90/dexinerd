@@ -69,25 +69,25 @@ function Root() {
       return (
         <Music
           onClick={playAudio}
-          className="w-[45px] h-[45px] fill-[#DD5D18] hover:fill-[#8D58FF] cursor-pointer [@media(max-width:600px)]:w-[10vw]"
+          className="w-[45px] h-[45px] fill-[#DD5D18] border-2 border-[#DD5D18] rounded-full hover:fill-[#8D58FF] cursor-pointer [@media(max-width:600px)]:w-[10vw]"
         />
       );
     if (!isReady)
       return (
         <MusicMuted
           onClick={playAudio}
-          className="w-[45px] h-[45px] fill-[#DD5D18] hover:fill-[#8D58FF] cursor-pointer [@media(max-width:600px)]:w-[10vw]"
+          className="w-[45px] h-[45px] fill-[#DD5D18] border-2 border-[#DD5D18] rounded-full hover:fill-[#8D58FF] cursor-pointer [@media(max-width:600px)]:w-[10vw]"
         />
       );
     return isMuted ? (
       <MusicMuted
         onClick={playAudio}
-        className="w-[45px] h-[45px] fill-[#DD5D18] hover:fill-[#8D58FF] cursor-pointer [@media(max-width:600px)]:w-[10vw]"
+        className="w-[45px] h-[45px] fill-[#DD5D18] border-2 border-[#DD5D18] rounded-full hover:fill-[#8D58FF] cursor-pointer [@media(max-width:600px)]:w-[10vw]"
       />
     ) : (
       <Music
         onClick={playAudio}
-        className="w-[45px] h-[45px] fill-[#DD5D18] hover:fill-[#8D58FF] cursor-pointer [@media(max-width:600px)]:w-[10vw]"
+        className="w-[45px] h-[45px] fill-[#DD5D18] border-2 border-[#DD5D18] rounded-full hover:fill-[#8D58FF] cursor-pointer [@media(max-width:600px)]:w-[10vw]"
       />
     );
   };
@@ -115,7 +115,7 @@ function Root() {
           <div className="flex items-center gap-5 [@media(max-width:600px)]:gap-[2vw]">
             {getMusicIcon()}
             <button
-              className="w-[149px] h-[45px]  cursor-pointer hover:bg-[#8D58FF] bg-[#121212] py-2.5 px-5 text-white font-normal rounded-4xl [@media(max-width:600px)]:hidden"
+              className="w-[149px] h-[45px] cursor-pointer border-2 hover:border-[#DD5D18] hover:bg-[#8D58FF] bg-[#121212] py-2.5 px-5 text-white font-normal rounded-4xl [@media(max-width:600px)]:hidden"
               onClick={() => window.open("#contact", "_self")}
             >
               Let's connect

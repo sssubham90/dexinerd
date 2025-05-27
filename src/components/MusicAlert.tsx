@@ -12,7 +12,7 @@ function MusicAlert({ playAudio, setShowMusicAlert }: MusicAlertProps) {
         <div className="flex flex-row justify-items-center gap-2.5">
           <Music
             onClick={playAudio}
-            className="w-[33px] h-[33px] cursor-pointer fill-[#DD5D18] hover:fill-[#8D58FF]"
+            className="w-[33px] h-[33px] cursor-pointer border-2 border-[#DD5D18] rounded-full fill-[#DD5D18] hover:fill-[#8D58FF]"
           />
           <h1 className="text-[#171717] text-lg leading-[191%] font-normal">
             <span className="text-[#DD5D18]">Ambient Music is available.</span>{" "}
@@ -20,7 +20,7 @@ function MusicAlert({ playAudio, setShowMusicAlert }: MusicAlertProps) {
           </h1>
         </div>
         <button
-          className="bg-[#DD5D18] text-white text-lg font-normal py-2.5 px-5 rounded-full cursor-pointer hover:bg-[#8D58FF]"
+          className="bg-[#DD5D18] text-white text-lg font-normal py-2.5 px-5 rounded-full cursor-pointer border-2 border-[#DD5D18] hover:bg-[#8D58FF]"
           onClick={() => setShowMusicAlert(false)}
         >
           Close
