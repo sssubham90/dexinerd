@@ -63,7 +63,7 @@ function ExpandedKnowMoreComponent({
             Download Resume
           </button>
         </div>
-        <div className="flex flex-col flex-1/2 min-w-[333px] shrink-0 relative">
+        <div className="flex flex-col flex-1/2 min-w-[333px] shrink-0 relative [@media(max-width:400px)]:min-w-[260px]">
           {!isMobile && (
             <button
               className="bg-white/[13%] backdrop-blur-lg text-white font-medium tracking-[-4%] text-lg px-5 py-2.5 w-44 rounded-[58px] absolute right-[2.5vw] top-[2.5vw] cursor-pointer"

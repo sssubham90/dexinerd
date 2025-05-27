@@ -9,7 +9,6 @@ import KFC from "../assets/svg/KFC.svg";
 import Hult from "../assets/svg/Hult.svg";
 import Highradius from "../assets/svg/Highradius.svg";
 import SeventhGear from "../assets/svg/SeventhGear.svg";
-import DAV from "../assets/svg/DAV.svg";
 import BJP from "../assets/svg/BJP.svg";
 
 import Workex from "../assets/webp/Workex.webp";
@@ -33,72 +32,19 @@ function WorkEx() {
             engages, and enhances how users interact with the brand.
           </p>
         </div>
-        <div className="flex flex-col justify-center items-center gap-3.5 [@media(max-width:1520px)]:my-8 [@media(max-width:1520px)]:flex-row [@media(max-width:1520px)]:flex-wrap">
-          <div className="flex flex-row flex-wrap justify-between items-center h-10.5 w-[600px] [@media(max-width:1520px)]:h-auto [@media(max-width:1520px)]:w-full">
-            <img
-              src={Deloitte}
-              alt="Deloitte"
-              className="w-24 [@media(max-width:1520px)]:m-2"
-            />
-            <img
-              src={TCS}
-              alt="TCS"
-              className="w-22 [@media(max-width:1520px)]:m-2"
-            />
-            <img
-              src={RedBull}
-              alt="RedBull"
-              className="w-16 [@media(max-width:1520px)]:m-2"
-            />
-            <img
-              src={KIIT}
-              alt="KIIT"
-              className="w-11 [@media(max-width:1520px)]:m-2"
-            />
-            <img
-              src={MasterCard}
-              alt="MasterCard"
-              className="w-12 [@media(max-width:1520px)]:m-2"
-            />
-            <img
-              src={Durex}
-              alt="Durex"
-              className="w-13 [@media(max-width:1520px)]:m-2"
-            />
-            <img
-              src={ODGov}
-              alt="ODGov"
-              className="w-10 [@media(max-width:1520px)]:m-2"
-            />
-          </div>
-          <div className="flex flex-row flex-wrap justify-between items-center h-10.5 w-[600px] [@media(max-width:1520px)]:h-auto [@media(max-width:1520px)]:w-full">
-            <img
-              src={KFC}
-              alt="KFC"
-              className="w-14 [@media(max-width:1520px)]:m-2"
-            />
-            <img
-              src={Hult}
-              alt="Hult Prize"
-              className="w-24 [@media(max-width:1520px)]:m-2"
-            />
-            <img
-              src={Highradius}
-              alt="Highradius"
-              className="w-31 [@media(max-width:1520px)]:m-2"
-            />
-            <img
-              src={SeventhGear}
-              alt="7thGear"
-              className="w-22 [@media(max-width:1520px)]:m-2"
-            />
-            <img
-              src={DAV}
-              alt="DAV College Managing Comittee"
-              className="w-12"
-            />
-            <img src={BJP} alt="BJP" className="w-7" />
-          </div>
+        <div className="grid grid-cols-6 gap-6 max-w-6xl mx-auto px-4 items-center [@media(max-width:1024px)]:grid-cols-4 [@media(max-width:640px)]:grid-cols-2">
+          <img src={Deloitte} alt="Deloitte" className="w-24 mx-auto" />
+          <img src={TCS} alt="TCS" className="w-22 mx-auto" />
+          <img src={RedBull} alt="RedBull" className="w-16 mx-auto" />
+          <img src={KIIT} alt="KIIT" className="w-11 mx-auto" />
+          <img src={MasterCard} alt="MasterCard" className="w-12 mx-auto" />
+          <img src={Durex} alt="Durex" className="w-13 mx-auto" />
+          <img src={ODGov} alt="ODGov" className="w-10 mx-auto" />
+          <img src={KFC} alt="KFC" className="w-14 mx-auto" />
+          <img src={Hult} alt="Hult Prize" className="w-24 mx-auto" />
+          <img src={Highradius} alt="Highradius" className="w-31 mx-auto" />
+          <img src={SeventhGear} alt="7thGear" className="w-22 mx-auto" />
+          <img src={BJP} alt="BJP" className="w-7 mx-auto" />
         </div>
       </div>
       <div className="flex-1 flex flex-col">
