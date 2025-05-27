@@ -70,7 +70,7 @@ function Root() {
         <Music
           style={{ backgroundColor: "#DD5D18" }}
           onClick={playAudio}
-          className="w-[45px] h-[45px] fill-[#DD5D18] border-2 border-[#DD5D18] rounded-full hover:fill-[#8D58FF] cursor-pointer max-[600px]:w-[10vw]"
+          className="w-[45px] h-auto fill-[#DD5D18] border-2 border-[#DD5D18] rounded-full hover:fill-[#8D58FF] cursor-pointer max-[600px]:w-[10vw]"
         />
       );
     if (!isReady)
@@ -78,20 +78,20 @@ function Root() {
         <MusicMuted
           style={{ backgroundColor: "#DD5D18" }}
           onClick={playAudio}
-          className="w-[45px] h-[45px] fill-[#DD5D18] border-2 border-[#DD5D18] rounded-full hover:fill-[#8D58FF] cursor-pointer max-[600px]:w-[10vw]"
+          className="w-[45px] h-auto fill-[#DD5D18] border-2 border-[#DD5D18] rounded-full hover:fill-[#8D58FF] cursor-pointer max-[600px]:w-[10vw]"
         />
       );
     return isMuted ? (
       <MusicMuted
         style={{ backgroundColor: "#DD5D18" }}
         onClick={playAudio}
-        className="w-[45px] h-[45px] fill-[#DD5D18] border-2 border-[#DD5D18] rounded-full hover:fill-[#8D58FF] cursor-pointer max-[600px]:w-[10vw]"
+        className="w-[45px] h-auto fill-[#DD5D18] border-2 border-[#DD5D18] rounded-full hover:fill-[#8D58FF] cursor-pointer max-[600px]:w-[10vw]"
       />
     ) : (
       <Music
         onClick={playAudio}
         style={{ backgroundColor: "#DD5D18" }}
-        className="w-[45px] h-[45px] fill-[#DD5D18] border-2 border-[#DD5D18] rounded-full hover:fill-[#8D58FF] cursor-pointer max-[600px]:w-[10vw]"
+        className="w-[45px] h-auto fill-[#DD5D18] border-2 border-[#DD5D18] rounded-full hover:fill-[#8D58FF] cursor-pointer max-[600px]:w-[10vw]"
       />
     );
   };
@@ -111,13 +111,15 @@ function Root() {
       />
       <div className="sticky top-0 bg-white/50 backdrop-blur-lg z-50 shadow py-7">
         <header className="flex justify-between items-center mx-auto max-w-[1521px] max-[1553px]:mx-4">
-          <img
-            src={HeadingLogo}
-            alt="Dexinerd"
-            className="w-[246.71px] max-[600px]:w-[55vw]"
-          />
+          <div className="flex items-center justify-center">
+            <img
+              src={HeadingLogo}
+              alt="Dexinerd"
+              className="max-w-[246.71px] max-[600px]:max-w-[55vw]"
+            />
+          </div>
           <div className="flex items-center gap-5 max-[600px]:gap-[2vw]">
-            {getMusicIcon()}
+            <div className="inline-block">{getMusicIcon()}</div>
             <button
               className="w-[149px] h-[45px] cursor-pointer border-2 border-black hover:border-[#DD5D18] hover:bg-[#8D58FF] bg-[#121212] py-2.5 px-5 text-white font-normal rounded-4xl max-[600px]:hidden"
               onClick={() =>
