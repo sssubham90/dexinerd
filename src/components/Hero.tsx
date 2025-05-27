@@ -4,7 +4,7 @@ import HeroImage from "../assets/webp/Hero.webp";
 
 function Hero() {
   return (
-    <div className="px-[69px] pt-[79px] my-4 mx-auto max-w-[1521px] flex flex-row justify-between bg-white rounded-2xl [@media(max-width:1553px)]:mx-4 [@media(max-width:955px)]:px-4 [@media(max-width:850px)]:flex-col [@media(max-width:850px)]:pt-8 [@media(max-width:432px)]:my-10">
+    <div className="px-[59px] pt-[79px] my-4 mx-auto max-w-[1521px] flex flex-row justify-between bg-white rounded-2xl [@media(max-width:1553px)]:mx-4 [@media(max-width:955px)]:px-4 [@media(max-width:850px)]:flex-col [@media(max-width:850px)]:pt-8 [@media(max-width:432px)]:my-10">
       <div className="flex-1 flex flex-col justify-items-start">
         <div className="w-[104px] h-[104px] rounded-full bg-linear-to-br from-0%-100% from-[#F8F8F8] to-[#E7E7E7] p-5 mb-28 [@media(max-width:1440px)]:mb-20 [@media(max-width:850px)]:hidden">
           <Root openDelay={0} closeDelay={0}>
