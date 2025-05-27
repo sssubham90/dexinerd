@@ -4,7 +4,7 @@ import Cross from "../assets/svg/Cross.svg";
 
 function MarqueeBanner() {
   return (
-    <Marquee className="font-normal text-[52.82px] text-[#171717]">
+    <Marquee className="font-normal text-[50px] text-[#171717] [@media(max-width:1440px)]:text-[47px]">
       <div className="inline-block whitespace-nowrap px-2.5 py-2.5">
         <h3>Life, by Design</h3>
       </div>

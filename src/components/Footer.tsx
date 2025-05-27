@@ -12,7 +12,7 @@ function Footer() {
               className="w-[355px] [@media(max-width:400px)]:w-full"
             />
             <p className="text-lg text-[#2F2F2F] font-medium leading-[191%] mt-[68px] mb-[50px] max-w-[688px]">
-              With Dexinerd, design isn't just a craft — it's a journey of
+              With Dexinerd, design isn't just a craft - it's a journey of
               creativity, purpose, and meaningful connections
             </p>
             <p className="text-lg text-[#2F2F2F] font-medium leading-[191%] mt-[68px] mb-[50px]">

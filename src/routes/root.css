@@ -51,6 +51,6 @@
 
 @layer components {
   .common-list-item {
-    @apply px-2.5 hover:text-[#8D58FF] cursor-pointer text-[32px];
+    @apply px-2.5 hover:text-[#8D58FF] cursor-pointer text-3xl;
   }
 }

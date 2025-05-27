@@ -13,7 +13,7 @@ const testimonials = [
     title: "LinkedIn Top Voice",
     image: Tejaswee,
     quote:
-      "Sourav brings something rare to the table—he understands that design is not just about visuals; it's about human connection. As someone deeply invested in people, culture, and experiences, I’ve seen how his design sensibility helps brands speak more clearly, feel more approachable, and connect more meaningfully. His work goes beyond aesthetics—he designs with intent and an understanding of how people think and behave. It’s no surprise that teams trust him not just as a designer, but as a creative thinker who elevates the entire experience.",
+      "Sourav brings something rare to the table - he understands that design is not just about visuals; it's about human connection. As someone deeply invested in people, culture, and experiences, I’ve seen how his design sensibility helps brands speak more clearly, feel more approachable, and connect more meaningfully. His work goes beyond aesthetics - he designs with intent and an understanding of how people think and behave. It’s no surprise that teams trust him not just as a designer, but as a creative thinker who elevates the entire experience.",
   },
   {
     name: "Ramanjeet Mohanty",
@@ -49,8 +49,8 @@ export default function TestimonialSlider() {
   const [config, setConfig] = useState({ min: false, max: false });
 
   return (
-    <div className="mx-[160px] [@media(max-width:1024px)]:mx-4">
-      <div className="py-[140px] flex flex-row justify-center items-center">
+    <div className="my-27 mx-[160px] [@media(max-width:1024px)]:mx-4">
+      <div className="flex flex-row justify-center items-center">
         <div className="flex-grow-[585]"></div>
 
         <div className="w-[990px] [@media(max-width:1520px)]:w-full">
@@ -78,7 +78,7 @@ export default function TestimonialSlider() {
           <div ref={sliderRef} className="keen-slider">
             {testimonials.map((t, idx) => (
               <div className="keen-slider__slide" key={idx}>
-                <blockquote className="text-[33px] leading-[174%] text-black mb-14">
+                <blockquote className="text-2xl font-bold leading-[174%] text-black mb-14">
                   “{t.quote}”
                 </blockquote>
                 <div className="flex flex-row items-center gap-4">
@@ -102,7 +102,7 @@ export default function TestimonialSlider() {
 
         <div className="flex-grow-[348]"></div>
       </div>
-      <div className="max-w-[1520px] [@media(max-width:1520px)]:w-full h-0.5 bg-black/17 mb-23 mx-auto"></div>
+      <div className="my-27 max-w-[1520px] [@media(max-width:1520px)]:w-full h-0.5 bg-black/17 mb-23 mx-auto"></div>
     </div>
   );
 }

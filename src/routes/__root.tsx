@@ -108,7 +108,12 @@ function Root() {
         </header>
       </div>
       <Outlet />
-      {showMusicAlert && <MusicAlert setShowMusicAlert={setShowMusicAlert} />}
+      {showMusicAlert && (
+        <MusicAlert
+          playAudio={playAudio}
+          setShowMusicAlert={setShowMusicAlert}
+        />
+      )}
     </>
   );
 }

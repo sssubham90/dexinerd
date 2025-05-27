@@ -15,10 +15,10 @@ import Workex from "../assets/webp/Workex.webp";
 
 function WorkEx() {
   return (
-    <div className="mb-7 p-5 max-w-[1521px] mx-auto bg-white rounded-2xl flex flex-row justify-center gap-5 items-stretch [@media(max-width:1553px)]:mx-4 [@media(max-width:1024px)]:flex-col-reverse">
-      <div className="flex-1 flex flex-col justify-between items-center w-[720px] px-13 mt-[148px] mb-[81px] [@media(max-width:1553px)]:w-full [@media(max-width:1553px)]:px-0 [@media(max-width:1024px)]:my-8">
+    <div className="p-5 max-w-[1521px] mx-auto bg-white rounded-2xl flex flex-row justify-center gap-5 items-stretch [@media(max-width:1553px)]:mx-4 [@media(max-width:1024px)]:flex-col-reverse">
+      <div className="flex-1 flex flex-col justify-between items-center w-[720px] p-16 [@media(max-width:1553px)]:w-full">
         <div className="w-[600px] [@media(max-width:1521px)]:w-full">
-          <h2 className="font-normal text-[37px] leading-[156%] text-black">
+          <h2 className="mb-6.5 font-normal text-[37px] leading-[156%] text-black">
             Designs that you can feel,
             <br />
             that’s what <span className="font-medium text-[#DD5D18]">

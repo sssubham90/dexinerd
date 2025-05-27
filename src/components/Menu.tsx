@@ -32,19 +32,19 @@ const Menu: React.FC = () => {
     <div className="relative inline-block text-left" ref={menuRef}>
       <button
         onClick={toggleMenu}
-        className="w-[89px] h-[45px] [@media(max-width:432px)]:hidden bg-[#DD5D18] py-2.5 px-5 text-white font-normal rounded-4xl cursor-pointer"
+        className="w-[89px] h-[45px] bg-[#DD5D18] py-2.5 px-5 text-white font-normal rounded-4xl cursor-pointer [@media(max-width:432px)]:hidden"
       >
         Menu
       </button>
       <HamburgerMenuIcon
         onClick={toggleMenu}
-        className="w-[45px] h-[45px] p-2.5 rounded-full bg-[#DD5D18] text-white cursor-pointer [@media(min-width:433px)]:hidden [@media(max-width:433px)]:w-[10vw] [@media(max-width:433px)]:h-[10vw]"
+        className="w-[45px] h-[45px] p-2.5 rounded-full bg-[#DD5D18] text-white cursor-pointer [@media(max-width:433px)]:w-[10vw] [@media(max-width:433px)]:h-[10vw] [@media(min-width:433px)]:hidden"
       />
       {isOpen && (
-        <div className="absolute z-50 right-0 mt-12.5 flex flex-col gap-3">
+        <div className="absolute z-50 right-0 mt-11 flex flex-col gap-3">
           <div className="bg-white/90 backdrop-blur-lg hover:bg-white rounded-2xl shadow-lg w-[316px] py-9 px-7">
             <Root>
-              <List className="flex flex-col gap-2">
+              <List className="flex flex-col gap-4">
                 <Item className="common-list-item">
                   <Link href="#" onClick={toggleMenu}>
                     Home
@@ -75,7 +75,7 @@ const Menu: React.FC = () => {
           </div>
           <div className="bg-[#171717CC] backdrop-blur-lg hover:bg-[#171717] rounded-2xl shadow-lg w-[316px] py-9 px-7">
             <div className="flex flex-col gap-4">
-              <p className="font-normal text-white text-[32px] font-fustat mx-2.5">
+              <p className="font-normal text-white text-3xl font-fustat mx-2.5">
                 Stay updated with me
               </p>
               <input

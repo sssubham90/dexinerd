@@ -123,7 +123,7 @@ function ContactForm() {
           <h3 className="font-medium text-lg text-[#DD5D18] leading-[191%]">
             Get in Touch
           </h3>
-          <p className="font-normal text-4xl text-black leading-[156%]">
+          <p className="font-normal text-4xl text-black leading-[156%] mb-6.5">
             Would love to <br />
             Connect and Collaborate
           </p>

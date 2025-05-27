@@ -7,17 +7,17 @@ const FAQs = [
   {
     question: "What kind of design work do you focus on?",
     answer:
-      "I create human-centered UI/UX designs for digital products, along with branding collaterals like logos, posters, marketing banners, campaign creatives, videos, brochures, and more — blending strategy with creativity across every format.",
+      "I create human-centered UI/UX designs for digital products, along with branding collaterals like logos, posters, marketing banners, campaign creatives, videos, brochures, and more - blending strategy with creativity across every format.",
   },
   {
     question: "How would you describe your design style and approach?",
     answer:
-      "Minimal, thoughtful, and purposeful — I believe every design should tell a story, connect emotionally, and make the experience seamless for users.",
+      "Minimal, thoughtful, and purposeful - I believe every design should tell a story, connect emotionally, and make the experience seamless for users.",
   },
   {
     question: "What tools do you use for your designs?",
     answer:
-      "I work with Figma, FigJam, Figma Slides, Adobe XD, Photoshop, Illustrator, Premiere Pro, After Effects, Adobe Audition, InDesign, and Canva — covering everything from UI/UX, branding, motion graphics, to creative content.",
+      "I work with Figma, FigJam, Figma Slides, Adobe XD, Photoshop, Illustrator, Premiere Pro, After Effects, Adobe Audition, InDesign, and Canva - covering everything from UI/UX, branding, motion graphics, to creative content.",
   },
   {
     question: "Do you use any AI tools in your design workflow?",
@@ -41,7 +41,7 @@ function FAQ() {
   return (
     <div
       id="faqs"
-      className="scroll-mt-30 my-20 mx-[160px] flex flex-row justify-between items-center bg-[#F8F8F8] [@media(max-width:1024px)]:mx-4"
+      className="scroll-mt-30 my-27 mx-[160px] flex flex-row justify-between items-center bg-[#F8F8F8] [@media(max-width:1024px)]:mx-4"
     >
       <div className="flex-grow-[584]"></div>
 
