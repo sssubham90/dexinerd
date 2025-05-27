@@ -116,9 +116,9 @@ function ContactForm() {
   return (
     <div
       id="contact"
-      className="scroll-mt-30 mt-20 mb-40 py-32 px-[59px] max-w-[1520px] mx-auto bg-white rounded-2xl flex flex-row flex-wrap justify-between items-center gap-y-18 [@media(max-width:1553px)]:mx-4 [@media(max-width:1553px)]:mb-20 [@media(max-width:1207px)]:px-4 [@media(max-width:686px)]:flex-col"
+      className="scroll-mt-30 mt-20 mb-40 py-32 px-[59px] max-w-[1520px] mx-auto bg-white rounded-2xl flex flex-row flex-wrap justify-between items-center gap-y-18 max-[1553px]:mx-4 max-[1553px]:mb-20 max-[1207px]:px-4 max-[686px]:flex-col"
     >
-      <div className="flex-6 flex flex-col justify-between items-start gap-18 [@media(min-width:686px)]:min-w-[622px] [@media(max-width:686px)]:w-full">
+      <div className="flex-6 flex flex-col justify-between items-start gap-18 min-[686px]:min-w-[622px] max-[686px]:w-full">
         <div className="w-full max-w-[622px]">
           <h3 className="font-medium text-lg text-[#DD5D18] leading-[191%]">
             Get in Touch
@@ -127,16 +127,16 @@ function ContactForm() {
             Would love to <br />
             Connect and Collaborate
           </p>
-          <p className="font-normal text-lg text-[#2F2F2F] leading-[191%] [@media(max-width:760px)]:w-full">
+          <p className="font-normal text-lg text-[#2F2F2F] leading-[191%] max-[760px]:w-full">
             I'm always open to new ideas and collaborations. Fill in your
             details, and you can expect a response from me to talk more about
             design and exchange ideas.
           </p>
         </div>
-        <div className="flex flex-col gap-2 justify-center items-start [@media(max-width:375px)]:flex-row [@media(max-width:375px)]:justify-between [@media(max-width:375px)]:items-center">
+        <div className="flex flex-col gap-2 justify-center items-start max-[375px]:flex-row max-[375px]:justify-between max-[375px]:items-center">
           <div className="flex flex-row justify-start items-center gap-4">
             <img src={Mail} alt="Mail" className="w-[22.5px] h-[17.5px]" />
-            <p className="font-normal text-lg text-black leading-[191%] [@media(max-width:375px)]:hidden">
+            <p className="font-normal text-lg text-black leading-[191%] max-[375px]:hidden">
               hisourav@dexinerd.com
             </p>
           </div>
@@ -146,7 +146,7 @@ function ContactForm() {
               alt="Marker"
               className="w-[18px] h-[23px] mx-0.5"
             />
-            <p className="font-normal text-lg text-black leading-[191%] [@media(max-width:375px)]:hidden">
+            <p className="font-normal text-lg text-black leading-[191%] max-[375px]:hidden">
               Bengaluru, Karnataka, India
             </p>
           </div>
@@ -178,7 +178,7 @@ function ContactForm() {
           />
         </div>
       </div>
-      <div className="flex-4 px-20 [@media(max-width:1340px)]:px-4 [@media(min-width:478px)]:min-w-[414px] [@media(max-width:478px)]:w-full">
+      <div className="flex-4 px-20 max-[1340px]:px-4 min-[478px]:min-w-[414px] max-[478px]:w-full">
         <Form />
       </div>
     </div>

@@ -8,9 +8,9 @@ function KnowMoreComponent({
   setExpanded: (value: boolean) => void;
 }) {
   return (
-    <div className="my-5 mx-auto max-w-[1521px] relative [@media(max-width:1553px)]:mx-4 [@media(max-width:1553px)]:mb-4">
+    <div className="my-5 mx-auto max-w-[1521px] relative max-[1553px]:mx-4 max-[1553px]:mb-4">
       <button
-        className="bg-white/[13%] backdrop-blur-lg text-white font-medium tracking-[-4%] text-lg border-2 border-white/[13%] hover:border-[#DD5D18] hover:bg-[#8D58FF] px-5 py-2.5 w-44 rounded-[58px] absolute right-[2.5vw] top-[2.5vw] cursor-pointer [@media(max-width:900px)]:right-6"
+        className="bg-white/[13%] backdrop-blur-lg text-white font-medium tracking-[-4%] text-lg border-2 border-white/[13%] hover:border-[#DD5D18] hover:bg-[#8D58FF] px-5 py-2.5 w-44 rounded-[58px] absolute right-[2.5vw] top-[2.5vw] cursor-pointer max-[900px]:right-6"
         onClick={() => setExpanded(true)}
       >
         Know about me
@@ -32,9 +32,9 @@ function ExpandedKnowMoreComponent({
   isMobile: boolean;
 }) {
   return (
-    <div className="my-5 mx-auto max-w-[1521px] relative [@media(max-width:1553px)]:mb-4 [@media(max-width:1553px)]:mx-4">
-      <div className="bg-white p-2.5 border-1 border-white rounded-2xl flex flex-row flex-wrap-reverse justify-between items-stretch [@media(max-width:900px)]:gap-4">
-        <div className="flex flex-col flex-1/2 shrink-0 p-16 [@media(max-width:900px)]:px-0 [@media(max-width:900px)]:py-4">
+    <div className="my-5 mx-auto max-w-[1521px] relative max-[1553px]:mb-4 max-[1553px]:mx-4">
+      <div className="bg-white p-2.5 border-1 border-white rounded-2xl flex flex-row flex-wrap-reverse justify-between items-stretch max-[900px]:gap-4">
+        <div className="flex flex-col flex-1/2 shrink-0 p-16 max-[900px]:px-0 max-[900px]:py-4">
           <h3 className="font-normal text-lg leading-[135%]">Hey again,</h3>
           <h2 className="font-normal text-[37px] pt-3 leading-[135%] mb-6.5">
             I am <span className="text-[#DD5D18]">Sourav Rout</span>
@@ -63,7 +63,7 @@ function ExpandedKnowMoreComponent({
             Download Resume
           </button>
         </div>
-        <div className="flex flex-col flex-1/2 min-w-[333px] shrink-0 relative [@media(max-width:400px)]:min-w-[260px]">
+        <div className="flex flex-col flex-1/2 min-w-[333px] shrink-0 relative max-[400px]:min-w-[260px]">
           {!isMobile && (
             <button
               className="bg-white/[13%] backdrop-blur-lg text-white font-medium tracking-[-4%] text-lg border-2 border-white/[13%] hover:border-[#DD5D18] hover:bg-[#8D58FF] px-5 py-2.5 w-44 rounded-[58px] absolute right-[2.5vw] top-[2.5vw] cursor-pointer"
@@ -104,7 +104,7 @@ function KnowMore() {
         <KnowMoreComponent setExpanded={setExpanded} />
       )}
 
-      <div className="py-1.5 my-27 mx-[160px] flex flex-row justify-between items-center [@media(max-width:1440px)]:my-24 [@media(max-width:1300px)]:mx-4">
+      <div className="py-1.5 my-27 mx-[160px] flex flex-row justify-between items-center max-[1440px]:my-24 max-[1300px]:mx-4">
         <div className="flex-grow-[527]"></div>
         <div className="w-[1012px]">
           <h2 className="font-normal text-[33px] leading-[174%] text-black">
@@ -120,7 +120,7 @@ function KnowMore() {
         </div>
         <div className="flex-grow-[328]"></div>
       </div>
-      <div className="max-w-[1521px] h-0.5 bg-black/17 my-7 mx-auto [@media(max-width:1553px)]:mx-4"></div>
+      <div className="max-w-[1521px] h-0.5 bg-black/17 my-7 mx-auto max-[1553px]:mx-4"></div>
     </div>
   );
 }

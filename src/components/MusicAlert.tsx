@@ -8,7 +8,7 @@ type MusicAlertProps = {
 function MusicAlert({ playAudio, setShowMusicAlert }: MusicAlertProps) {
   return (
     <div className="bg-white z-50 sticky bottom-0 animate-float-up shadow-up pb-[env(safe-area-inset-bottom)]">
-      <div className="py-6 mx-auto max-w-[1521px] flex flex-row justify-between items-center [@media(max-width:1553px)]:mx-4">
+      <div className="py-6 mx-auto max-w-[1521px] flex flex-row justify-between items-center max-[1553px]:mx-4">
         <div className="flex flex-row justify-items-center gap-2.5">
           <Music
             style={{ backgroundColor: "#DD5D18" }}

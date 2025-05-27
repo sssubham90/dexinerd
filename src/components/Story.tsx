@@ -1,6 +1,6 @@
 function Story() {
   return (
-    <div className="my-27 mx-[160px] flex flex-row justify-between items-center bg-[#F8F8F8] [@media(max-width:1120px)]:mx-4 [@media(max-width:1120px)]:my-25 [@media(max-width:840px)]:my-10">
+    <div className="my-27 mx-[160px] flex flex-row justify-between items-center bg-[#F8F8F8] max-[1120px]:mx-4 max-[1120px]:my-25 max-[840px]:my-10">
       <div className="flex-grow-[527]"></div>
 
       <div className="w-[1012px]">

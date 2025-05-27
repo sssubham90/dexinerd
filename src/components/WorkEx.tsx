@@ -15,9 +15,9 @@ import Workex from "../assets/webp/Workex.webp";
 
 function WorkEx() {
   return (
-    <div className="p-5 max-w-[1521px] mx-auto bg-white rounded-2xl flex flex-row justify-center gap-5 items-stretch [@media(max-width:1553px)]:mx-4 [@media(max-width:1024px)]:flex-col-reverse">
-      <div className="flex-1 flex flex-col justify-between items-start w-[720px] p-[39px] [@media(max-width:1553px)]:w-full">
-        <div className="w-[600px] [@media(max-width:1521px)]:w-full">
+    <div className="p-5 max-w-[1521px] mx-auto bg-white rounded-2xl flex flex-row justify-center gap-5 items-stretch max-[1553px]:mx-4 max-[1024px]:flex-col-reverse">
+      <div className="flex-1 flex flex-col justify-between items-start w-[720px] p-[39px] max-[1553px]:w-full">
+        <div className="w-[600px] max-[1521px]:w-full">
           <h2 className="my-6.5 font-normal text-[37px] leading-[156%] text-black">
             Designs that you can feel,
             <br />
@@ -32,7 +32,7 @@ function WorkEx() {
             engages, and enhances how users interact with the brand.
           </p>
         </div>
-        <div className="grid grid-cols-6 gap-6 max-w-6xl mx-auto mt-8 px-4 items-center [@media(max-width:1024px)]:grid-cols-4 [@media(max-width:640px)]:grid-cols-2">
+        <div className="grid grid-cols-6 gap-6 max-w-6xl mx-auto mt-8 px-4 items-center max-[1024px]:grid-cols-4 max-[640px]:grid-cols-2">
           <img src={Deloitte} alt="Deloitte" className="w-24 mx-auto" />
           <img src={TCS} alt="TCS" className="w-22 mx-auto" />
           <img src={RedBull} alt="RedBull" className="w-16 mx-auto" />

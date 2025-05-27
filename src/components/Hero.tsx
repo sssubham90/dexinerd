@@ -4,9 +4,9 @@ import HeroImage from "../assets/webp/Hero.webp";
 
 function Hero() {
   return (
-    <div className="px-[59px] pt-[79px] my-4 mx-auto max-w-[1521px] flex flex-row justify-between bg-white rounded-2xl [@media(max-width:1553px)]:mx-4 [@media(max-width:955px)]:px-4 [@media(max-width:850px)]:flex-col [@media(max-width:850px)]:pt-8 [@media(max-width:432px)]:my-10">
+    <div className="px-[59px] pt-[79px] my-4 mx-auto max-w-[1521px] flex flex-row justify-between bg-white rounded-2xl max-[1553px]:mx-4 max-[955px]:px-4 max-[850px]:flex-col max-[850px]:pt-8 max-[432px]:my-10">
       <div className="flex-1 flex flex-col justify-items-start">
-        <div className="w-[104px] h-[104px] rounded-full bg-linear-to-br from-0%-100% from-[#F8F8F8] to-[#E7E7E7] p-5 mb-28 [@media(max-width:1440px)]:mb-20 [@media(max-width:850px)]:hidden">
+        <div className="w-[104px] h-[104px] rounded-full bg-linear-to-br from-0%-100% from-[#F8F8F8] to-[#E7E7E7] p-5 mb-28 max-[1440px]:mb-20 max-[850px]:hidden">
           <Root openDelay={0} closeDelay={0}>
             <Trigger asChild>
               <div>
@@ -33,7 +33,7 @@ function Hero() {
           </Root>
         </div>
         <div
-          className="flex flex-row mx-auto items-center justify-between min-w-[208px] p-1.5 mt-9 mb-8 border-1 border-[#2F2F2F] rounded-4xl [@media(min-width:851px)]:hidden"
+          className="flex flex-row mx-auto items-center justify-between min-w-[208px] p-1.5 mt-9 mb-8 border-1 border-[#2F2F2F] rounded-4xl min-[850px]:hidden"
           onClick={() =>
             window.scrollTo({
               top:
@@ -49,12 +49,12 @@ function Hero() {
             Take me to the Projects now!
           </p>
         </div>
-        <div className="w-full pb-5.5 [@media(max-width:850px)]:text-center">
+        <div className="w-full pb-5.5 max-[850px]:text-center">
           <h2 className="text-[#DD5D18] text-lg font-medium my-1">Namaste!</h2>
-          <h1 className="text-[#171717] text-[50px] font-semibold [@media(max-width:1440px)]:text-[47px]">
+          <h1 className="text-[#171717] text-[50px] font-semibold max-[1440px]:text-[47px] max-[1350px]:text-[36px] max-[1066px]:text-[24px]">
             I’m Sourav Rout,
           </h1>
-          <h1 className="text-[#171717] text-[50px] font-semibold mb-0.5 [@media(max-width:1440px)]:text-[47px]">
+          <h1 className="text-[#171717] text-[50px] font-semibold mb-0.5 max-[1440px]:text-[47px] max-[1350px]:text-[36px] max-[1066px]:text-[24px]">
             a U<span className="text-[#DD5D18]">X</span>/U
             <span className="text-[#DD5D18]">I</span> Designer from India.
           </h1>

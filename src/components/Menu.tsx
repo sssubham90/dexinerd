@@ -32,13 +32,13 @@ const Menu: React.FC = () => {
     <div className="relative inline-block text-left" ref={menuRef}>
       <button
         onClick={toggleMenu}
-        className="w-[89px] h-[45px] bg-[#DD5D18] py-2.5 px-5 text-white font-normal rounded-4xl cursor-pointer border-2 border-[#DD5D18] hover:bg-[#8D58FF] [@media(max-width:432px)]:hidden"
+        className="w-[89px] h-[45px] bg-[#DD5D18] py-2.5 px-5 text-white font-normal rounded-4xl cursor-pointer border-2 border-[#DD5D18] hover:bg-[#8D58FF] max-[432px]:hidden"
       >
         Menu
       </button>
       <HamburgerMenuIcon
         onClick={toggleMenu}
-        className="w-[45px] h-[45px] p-2.5 rounded-full bg-[#DD5D18] text-white cursor-pointer [@media(max-width:433px)]:w-[10vw] [@media(max-width:433px)]:h-[10vw] [@media(min-width:433px)]:hidden"
+        className="w-[45px] h-[45px] p-2.5 rounded-full bg-[#DD5D18] text-white cursor-pointer max-[433px]:w-[10vw] max-[433px]:h-[10vw] min-[433px]:hidden"
       />
       {isOpen && (
         <div className="absolute z-50 right-0 mt-11 flex flex-col gap-3">
