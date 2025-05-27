@@ -10,7 +10,7 @@ function KnowMoreComponent({
   return (
     <div className="my-5 mx-auto max-w-[1521px] relative [@media(max-width:1553px)]:mx-4 [@media(max-width:1553px)]:mb-4">
       <button
-        className="bg-white/[13%] backdrop-blur-lg text-white font-medium tracking-[-4%] text-lg border-2 border-transparent hover:border-[#DD5D18] hover:bg-[#8D58FF] px-5 py-2.5 w-44 rounded-[58px] absolute right-[2.5vw] top-[2.5vw] cursor-pointer [@media(max-width:900px)]:right-6"
+        className="bg-white/[13%] backdrop-blur-lg text-white font-medium tracking-[-4%] text-lg border-2 border-white/[13%] hover:border-[#DD5D18] hover:bg-[#8D58FF] px-5 py-2.5 w-44 rounded-[58px] absolute right-[2.5vw] top-[2.5vw] cursor-pointer [@media(max-width:900px)]:right-6"
         onClick={() => setExpanded(true)}
       >
         Know about me
@@ -66,7 +66,7 @@ function ExpandedKnowMoreComponent({
         <div className="flex flex-col flex-1/2 min-w-[333px] shrink-0 relative [@media(max-width:400px)]:min-w-[260px]">
           {!isMobile && (
             <button
-              className="bg-white/[13%] backdrop-blur-lg text-white font-medium tracking-[-4%] text-lg border-2 border-transparent hover:border-[#DD5D18] hover:bg-[#8D58FF] px-5 py-2.5 w-44 rounded-[58px] absolute right-[2.5vw] top-[2.5vw] cursor-pointer"
+              className="bg-white/[13%] backdrop-blur-lg text-white font-medium tracking-[-4%] text-lg border-2 border-white/[13%] hover:border-[#DD5D18] hover:bg-[#8D58FF] px-5 py-2.5 w-44 rounded-[58px] absolute right-[2.5vw] top-[2.5vw] cursor-pointer"
               onClick={() => setExpanded(false)}
             >
               Exit this view
