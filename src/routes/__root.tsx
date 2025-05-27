@@ -68,6 +68,7 @@ function Root() {
     if (!isDownloading)
       return (
         <Music
+          style={{ backgroundColor: "#DD5D18" }}
           onClick={playAudio}
           className="w-[45px] h-[45px] fill-[#DD5D18] border-2 border-[#DD5D18] rounded-full hover:fill-[#8D58FF] cursor-pointer [@media(max-width:600px)]:w-[10vw]"
         />
@@ -75,18 +76,21 @@ function Root() {
     if (!isReady)
       return (
         <MusicMuted
+          style={{ backgroundColor: "#DD5D18" }}
           onClick={playAudio}
           className="w-[45px] h-[45px] fill-[#DD5D18] border-2 border-[#DD5D18] rounded-full hover:fill-[#8D58FF] cursor-pointer [@media(max-width:600px)]:w-[10vw]"
         />
       );
     return isMuted ? (
       <MusicMuted
+        style={{ backgroundColor: "#DD5D18" }}
         onClick={playAudio}
         className="w-[45px] h-[45px] fill-[#DD5D18] border-2 border-[#DD5D18] rounded-full hover:fill-[#8D58FF] cursor-pointer [@media(max-width:600px)]:w-[10vw]"
       />
     ) : (
       <Music
         onClick={playAudio}
+        style={{ backgroundColor: "#DD5D18" }}
         className="w-[45px] h-[45px] fill-[#DD5D18] border-2 border-[#DD5D18] rounded-full hover:fill-[#8D58FF] cursor-pointer [@media(max-width:600px)]:w-[10vw]"
       />
     );

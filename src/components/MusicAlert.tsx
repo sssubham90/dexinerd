@@ -11,6 +11,7 @@ function MusicAlert({ playAudio, setShowMusicAlert }: MusicAlertProps) {
       <div className="py-6 mx-auto max-w-[1521px] flex flex-row justify-between items-center [@media(max-width:1553px)]:mx-4">
         <div className="flex flex-row justify-items-center gap-2.5">
           <Music
+            style={{ backgroundColor: "#DD5D18" }}
             onClick={playAudio}
             className="w-[33px] h-[33px] cursor-pointer border-2 border-[#DD5D18] rounded-full fill-[#DD5D18] hover:fill-[#8D58FF]"
           />
