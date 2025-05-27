@@ -8,7 +8,7 @@ function KnowMoreComponent({
   setExpanded: (value: boolean) => void;
 }) {
   return (
-    <div className="mt-5 mb-32 [@media(max-width:1300px)]:mb-4 mx-[200px] [@media(max-width:1300px)]:mx-4 relative">
+    <div className="mt-5 mb-32 mx-auto max-w-[1521px] relative [@media(max-width:1553px)]:mx-4 [@media(max-width:1553px)]:mb-4">
       <button
         className="bg-white/[13%] backdrop-blur-lg text-white font-medium tracking-[-4%] text-lg px-5 py-2.5 w-44 rounded-[58px] absolute right-[2.5vw] top-[2.5vw] cursor-pointer [@media(max-width:900px)]:right-6"
         onClick={() => setExpanded(true)}
@@ -32,7 +32,7 @@ function ExpandedKnowMoreComponent({
   isMobile: boolean;
 }) {
   return (
-    <div className="mt-5 mb-32 mx-[200px] relative [@media(max-width:1300px)]:mb-4 [@media(max-width:1300px)]:mx-4">
+    <div className="mt-5 mb-32 mx-auto max-w-[1521px] relative [@media(max-width:1553px)]:mb-4 [@media(max-width:1553px)]:mx-4">
       <div className="bg-white p-2.5 border-1 border-white rounded-2xl flex flex-row flex-wrap-reverse justify-between items-stretch">
         <div className="flex flex-col flex-1/2 shrink-0 p-16 [@media(max-width:900px)]:px-0 [@media(max-width:900px)]:py-4">
           <h3 className="font-normal text-lg leading-[135%]">Hey again,</h3>

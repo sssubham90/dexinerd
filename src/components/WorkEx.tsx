@@ -15,9 +15,9 @@ import Workex from "../assets/webp/Workex.webp";
 
 function WorkEx() {
   return (
-    <div className="mb-7 p-5 max-w-[1520px] mx-auto bg-white rounded-2xl flex flex-row flex-wrap-reverse justify-center gap-5 items-center [@media(max-width:1552px)]:mx-4 [@media(max-width:1024px)]:flex-col">
-      <div className="flex-1 flex flex-col justify-between items-center w-[720px] h-[701px] px-13 pt-36 pb-20 [@media(max-width:1520px)]:w-full [@media(max-width:1520px)]:h-auto [@media(max-width:1520px)]:py-8 [@media(max-width:1520px)]:px-0">
-        <div className="mt-1 w-[600px] [@media(max-width:1520px)]:w-full">
+    <div className="mb-7 p-5 max-w-[1521px] mx-auto bg-white rounded-2xl flex flex-row justify-center gap-5 items-stretch [@media(max-width:1553px)]:mx-4 [@media(max-width:1024px)]:flex-col-reverse">
+      <div className="flex-1 flex flex-col justify-between items-center w-[720px] px-13 mt-[148px] mb-[81px] [@media(max-width:1553px)]:w-full [@media(max-width:1553px)]:px-0 [@media(max-width:1024px)]:my-8">
+        <div className="w-[600px] [@media(max-width:1521px)]:w-full">
           <h2 className="font-normal text-[37px] leading-[156%] text-black">
             Designs that you can feel,
             <br />
@@ -32,7 +32,7 @@ function WorkEx() {
             engages, and enhances how users interact with the brand.
           </p>
         </div>
-        <div className="grid grid-cols-6 gap-6 max-w-6xl mx-auto px-4 items-center [@media(max-width:1024px)]:grid-cols-4 [@media(max-width:640px)]:grid-cols-2">
+        <div className="grid grid-cols-6 gap-6 max-w-6xl mx-auto mt-8 px-4 items-center [@media(max-width:1024px)]:grid-cols-4 [@media(max-width:640px)]:grid-cols-2">
           <img src={Deloitte} alt="Deloitte" className="w-24 mx-auto" />
           <img src={TCS} alt="TCS" className="w-22 mx-auto" />
           <img src={RedBull} alt="RedBull" className="w-16 mx-auto" />
@@ -47,7 +47,7 @@ function WorkEx() {
           <img src={BJP} alt="BJP" className="w-7 mx-auto" />
         </div>
       </div>
-      <div className="flex-1 flex flex-col">
+      <div className="flex-1 flex flex-col justify-center">
         <img src={Workex} alt="Workex" className="w-full rounded-lg" />
       </div>
     </div>
