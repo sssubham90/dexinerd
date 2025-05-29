@@ -1,6 +1,7 @@
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 import { useState } from "react";
+import Girish from "../assets/webp/Girish.webp";
 import Tejaswee from "../assets/webp/Tejaswee.webp";
 import Raman from "../assets/webp/Raman.webp";
 import Odyra from "../assets/webp/Odyra.webp";
@@ -8,6 +9,13 @@ import ArrowLeft from "../assets/svg/ArrowLeft.svg?react";
 import ArrowRight from "../assets/svg/ArrowRight.svg?react";
 
 const testimonials = [
+  {
+    name: "Girish Mohanty",
+    title: "Ollywood Film Director, Producer, Award-winning Choreographer",
+    image: Girish,
+    quote:
+      "As a film director, I deeply value collaborators who can translate vision into powerful visuals, and Sourav does this with remarkable finesse. His designs don’t just look good; they tell a story, elevate the mood, and spark emotion. Sourav’s creative instincts, attention to detail, and ability to think beyond the obvious have brought a unique edge to our projects.",
+  },
   {
     name: "Tejaswee Tripathy",
     title: "LinkedIn Top Voice",
@@ -65,12 +73,12 @@ export default function TestimonialSlider() {
               <ArrowLeft
                 onClick={() => instanceRef.current?.prev()}
                 aria-disabled={config.min}
-                className="w-7 fill-[#DD5D18] aria-disabled:fill-[#DD5D1866] cursor-pointer"
+                className="w-7 fill-[#DD5D18] aria-disabled:fill-[#DD5D1866] hover:fill-[#8D58FF] cursor-pointer"
               />
               <ArrowRight
                 onClick={() => instanceRef.current?.next()}
                 aria-disabled={config.max}
-                className="w-7 fill-[#DD5D18] aria-disabled:fill-[#DD5D1866] cursor-pointer"
+                className="w-7 fill-[#DD5D18] aria-disabled:fill-[#DD5D1866] hover:fill-[#8D58FF] cursor-pointer"
               />
             </div>
           </div>

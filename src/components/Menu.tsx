@@ -32,7 +32,7 @@ const Menu: React.FC = () => {
     <div className="relative inline-block text-left" ref={menuRef}>
       <button
         onClick={toggleMenu}
-        className="w-[89px] h-[45px] bg-[#DD5D18] py-2.5 px-5 text-white font-normal rounded-4xl cursor-pointer border-2 border-[#DD5D18] hover:bg-[#8D58FF] max-[432px]:hidden"
+        className="text-lg bg-[#DD5D18] py-2.5 px-5 text-white font-normal rounded-4xl cursor-pointer border-2 border-[#DD5D18] hover:bg-[#8D58FF] max-[1440px]:text-[16px] max-[432px]:hidden"
       >
         Menu
       </button>
@@ -63,24 +63,6 @@ const Menu: React.FC = () => {
                 </Item>
                 <Item>
                   <Link
-                    href="#portfolio"
-                    className="px-2.5 hover:text-[#8D58FF] cursor-pointer text-3xl"
-                    onClick={(e) => {
-                      toggleMenu();
-                      e.preventDefault();
-                      window.scrollTo({
-                        top:
-                          (document.getElementById("portfolio")?.offsetTop ??
-                            120) - 120,
-                        behavior: "smooth",
-                      });
-                    }}
-                  >
-                    Portfolio
-                  </Link>
-                </Item>
-                <Item>
-                  <Link
                     href="#aboutme"
                     className="px-2.5 hover:text-[#8D58FF] cursor-pointer text-3xl"
                     onClick={(e) => {
@@ -95,6 +77,24 @@ const Menu: React.FC = () => {
                     }}
                   >
                     About me
+                  </Link>
+                </Item>
+                <Item>
+                  <Link
+                    href="#portfolio"
+                    className="px-2.5 hover:text-[#8D58FF] cursor-pointer text-3xl"
+                    onClick={(e) => {
+                      toggleMenu();
+                      e.preventDefault();
+                      window.scrollTo({
+                        top:
+                          (document.getElementById("portfolio")?.offsetTop ??
+                            120) - 120,
+                        behavior: "smooth",
+                      });
+                    }}
+                  >
+                    Portfolio
                   </Link>
                 </Item>
                 <Item>
@@ -139,7 +139,7 @@ const Menu: React.FC = () => {
           <div className="bg-[#171717CC] backdrop-blur-lg hover:bg-[#171717] rounded-2xl shadow-lg w-[316px] py-9 px-7">
             <div className="flex flex-col gap-4">
               <p className="font-normal text-white text-3xl font-fustat mx-2.5">
-                Stay updated with me
+                Stay updated
               </p>
               <input
                 type="email"

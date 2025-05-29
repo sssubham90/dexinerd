@@ -113,15 +113,21 @@ function Root() {
         <header className="flex justify-between items-center mx-auto max-w-[1521px] max-[1553px]:mx-4">
           <div className="flex items-center justify-center">
             <img
+              onClick={() =>
+                window.scrollTo({
+                  top: 0,
+                  behavior: "smooth",
+                })
+              }
               src={HeadingLogo}
               alt="Dexinerd"
-              className="max-w-[246.71px] max-[600px]:max-w-[55vw]"
+              className="max-w-[246.71px] max-[600px]:max-w-[55vw] cursor-pointer"
             />
           </div>
           <div className="flex items-center gap-5 max-[600px]:gap-[2vw]">
             <div className="inline-block">{getMusicIcon()}</div>
             <button
-              className="w-[149px] h-[45px] cursor-pointer border-2 border-black hover:border-[#DD5D18] hover:bg-[#8D58FF] bg-[#121212] py-2.5 px-5 text-white font-normal rounded-4xl max-[600px]:hidden"
+              className="cursor-pointer text-lg border-2 border-black hover:border-[#DD5D18] hover:bg-[#8D58FF] bg-[#121212] py-2.5 px-5 text-white font-normal rounded-4xl max-[600px]:hidden max-[1232px]:text-[16px]"
               onClick={() =>
                 window.scrollTo({
                   top:

@@ -15,8 +15,8 @@ import Workex from "../assets/webp/Workex.webp";
 
 function WorkEx() {
   return (
-    <div className="p-5 max-w-[1521px] mx-auto bg-white rounded-2xl flex flex-row justify-center gap-5 items-stretch max-[1553px]:mx-4 max-[1024px]:flex-col-reverse">
-      <div className="flex-1 flex flex-col justify-between items-start w-[720px] p-[39px] max-[1553px]:w-full max-[900px]:px-0">
+    <div className="p-5 max-w-[1521px] mx-auto bg-white rounded-2xl flex flex-row justify-center gap-5 items-stretch max-[1553px]:mx-4 max-[1024px]:flex-col-reverse max-[1024px]:gap-0">
+      <div className="flex-1 flex flex-col justify-between items-start w-[720px] p-[39px] max-[1024px]:w-full max-[1024px]:py-4 max-[900px]:px-0">
         <div className="w-[600px] max-[1521px]:w-full">
           <h2 className="my-6.5 font-normal text-[37px] leading-[156%] text-black max-[1440px]:text-[24px]">
             Designs that you can feel,

@@ -4,14 +4,14 @@ import HeroImage from "../assets/webp/Hero.webp";
 
 function Hero() {
   return (
-    <div className="px-[59px] pt-[79px] my-4 mx-auto max-w-[1521px] flex flex-row justify-between bg-white rounded-2xl max-[1553px]:mx-4 max-[955px]:px-4 max-[850px]:flex-col max-[850px]:pt-8 max-[432px]:my-10">
+    <div className="px-[59px] pt-[79px] my-4 mx-auto max-w-[1521px] flex flex-row justify-between bg-white rounded-2xl max-[1553px]:mx-4 max-[955px]:px-4 max-[850px]:flex-col max-[850px]:pt-8">
       <div className="flex-1 flex flex-col justify-items-start">
-        <div className="w-[104px] h-[104px] rounded-full bg-linear-to-br from-0%-100% from-[#F8F8F8] to-[#E7E7E7] p-5 mb-28 max-[1440px]:mb-20 max-[850px]:hidden">
+        <div className="size-[104px] rounded-full bg-linear-to-br from-0%-100% from-[#F8F8F8] to-[#E7E7E7] p-5 mb-28 max-[1440px]:mb-20 max-[850px]:hidden max-[1440px]:size-[76px] max-[1440px]:p-4">
           <Root openDelay={0} closeDelay={0}>
             <Trigger asChild>
               <div>
                 <OrangeArrowDown
-                  className="w-[65px] h-[65px] rounded-full cursor-pointer fill-[#DD5D18] hover:fill-[#8D58FF]"
+                  className="size-[64px] rounded-full cursor-pointer fill-[#DD5D18] hover:fill-[#8D58FF] max-[1440px]:size-[44px]"
                   onClick={() =>
                     window.scrollTo({
                       top:
