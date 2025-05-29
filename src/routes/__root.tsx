@@ -8,6 +8,7 @@ import Hero from "../assets/webp/Hero.webp";
 import HeadingLogo from "../assets/svg/HeadingLogo.svg";
 import Menu from "../components/Menu";
 import MusicAlert from "../components/MusicAlert";
+import Alert from "../components/Alert";
 
 export const Route = createRootRoute({
   component: Root,
@@ -150,6 +151,7 @@ function Root() {
           setShowMusicAlert={setShowMusicAlert}
         />
       )}
+      <Alert />
     </>
   );
 }

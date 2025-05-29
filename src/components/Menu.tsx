@@ -2,10 +2,12 @@ import { useState, useRef, useEffect, useCallback } from "react";
 import { Root, List, Item, Link } from "@radix-ui/react-navigation-menu";
 import { HamburgerMenuIcon } from "@radix-ui/react-icons";
 import axios from "axios";
+import { useAlert } from "../hooks/useAlert";
 
 const Menu: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const menuRef = useRef<HTMLDivElement | null>(null);
+  const alert = useAlert();
 
   const toggleMenu = useCallback(() => {
     setIsOpen((prev) => !prev);
@@ -153,22 +155,22 @@ const Menu: React.FC = () => {
                 onClick={() => {
                   if (!input.current) return;
                   if (validateEmail(input.current.value) === false) {
-                    alert("Please enter a valid email address.");
+                    alert("Please enter a valid email address.", "error");
                     return;
                   }
                   const formData = { email: input.current.value };
-                  try {
-                    axios
-                      .post("https://api.dexinerd.com", formData)
-                      .then(() => {
-                        alert("Form submitted successfully!");
-                      })
-                      .catch((error) => {
-                        console.error("Error submitting form:", error);
-                      });
-                  } catch (error) {
-                    console.error("Error submitting form:", error);
-                  }
+                  axios
+                    .post("https://api.dexinerd.com", formData)
+                    .then(() => {
+                      alert(
+                        "Form submitted successfully! We will update you about our journey",
+                        "success"
+                      );
+                    })
+                    .catch((error) => {
+                      alert("Error submitting the form", "error");
+                      console.error("Error submitting form:", error);
+                    });
                 }}
               >
                 Submit

@@ -5,8 +5,10 @@ import Marker from "../assets/svg/Marker.svg";
 import Linkedin from "../assets/svg/Linkedin.svg";
 import Behance from "../assets/svg/Behance.svg";
 import Dribble from "../assets/svg/Dribble.svg";
+import { useAlert } from "../hooks/useAlert";
 
 function Form() {
+  const alert = useAlert();
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -26,18 +28,18 @@ function Form() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    try {
-      axios
-        .post("https://api.dexinerd.com", formData)
-        .then(() => {
-          alert("Form submitted successfully!");
-        })
-        .catch((error) => {
-          console.error("Error submitting form:", error);
-        });
-    } catch (error) {
-      console.error("Error submitting form:", error);
-    }
+    axios
+      .post("https://api.dexinerd.com", formData)
+      .then(() => {
+        alert(
+          "Form submitted successfully! We will contact you soon.",
+          "success"
+        );
+      })
+      .catch((error) => {
+        alert("Error submitting the form", "error");
+        console.error("Error submitting form:", error);
+      });
   };
 
   return (
