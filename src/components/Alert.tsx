@@ -1,11 +1,12 @@
 import { useAtom } from "jotai";
 import { alertAtom } from "../store/alertStore";
-import { CheckCircledIcon, CrossCircledIcon } from "@radix-ui/react-icons";
+import SuccessIcon from "../assets/svg/SuccessIcon.svg?react";
+import ErrorIcon from "../assets/svg/ErrorIcon.svg?react";
 
 function ErrorMessage({ message }: { message: string }) {
   return (
     <div className="flex items-center gap-2">
-      <CrossCircledIcon className="text-red-500 w-[35px] h-auto" />
+      <ErrorIcon className="text-red-500 w-[35px] h-auto" />
       <span className="text-[#171717] text-lg font-normal max-[1440px]:text-[16px]">
         {message}
       </span>
@@ -16,7 +17,7 @@ function ErrorMessage({ message }: { message: string }) {
 function SuccessMessage({ message }: { message: string }) {
   return (
     <div className="flex items-center gap-2">
-      <CheckCircledIcon className="text-green-500 w-[35px] h-auto" />
+      <SuccessIcon className="text-green-500 w-[35px] h-auto" />
       <span className="text-[#171717] text-lg font-normal max-[1440px]:text-[16px]">
         {message}
       </span>

@@ -32,12 +32,12 @@ function Form() {
       .post("https://api.dexinerd.com", formData)
       .then(() => {
         alert(
-          "Form submitted successfully! We will contact you soon.",
+          "Response shared successfully. We will contact you soon.",
           "success"
         );
       })
       .catch((error) => {
-        alert("Error submitting the form", "error");
+        alert("Unable to share your response.", "error");
         console.error("Error submitting form:", error);
       });
   };
@@ -135,7 +135,7 @@ function ContactForm() {
       id="contact"
       className="scroll-mt-30 mt-20 mb-40 py-32 px-[59px] max-w-[1520px] mx-auto bg-white rounded-2xl flex flex-row justify-between items-center gap-y-18 max-[1553px]:mx-4 max-[1553px]:mb-20 max-[1440px]:py-24 max-[1207px]:px-4 max-[768px]:flex-col max-[768px]:items-start gap-4"
     >
-      <div className="flex flex-col justify-between items-start gap-18">
+      <div className="flex flex-1 flex-col justify-between items-start gap-18">
         <div className="w-full max-w-[622px]">
           <h3 className="font-medium text-lg text-[#DD5D18] leading-[191%] max-[1440px]:text-[16px]">
             Get in Touch
@@ -195,7 +195,7 @@ function ContactForm() {
           />
         </div>
       </div>
-      <div className="flex flex-col px-20 max-[1340px]:px-4 w-full">
+      <div className="flex flex-1 flex-col px-20 max-[1340px]:px-4 w-full">
         <Form />
       </div>
     </div>

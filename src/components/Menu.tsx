@@ -155,7 +155,7 @@ const Menu: React.FC = () => {
                 onClick={() => {
                   if (!input.current) return;
                   if (validateEmail(input.current.value) === false) {
-                    alert("Please enter a valid email address.", "error");
+                    alert("Enter a valid Email address.", "error");
                     return;
                   }
                   const formData = { email: input.current.value };
@@ -163,12 +163,12 @@ const Menu: React.FC = () => {
                     .post("https://api.dexinerd.com", formData)
                     .then(() => {
                       alert(
-                        "Form submitted successfully! We will update you about our journey",
+                        "Response shared successfully. We will keep you updated.",
                         "success"
                       );
                     })
                     .catch((error) => {
-                      alert("Error submitting the form", "error");
+                      alert("Unable to share your response.", "error");
                       console.error("Error submitting form:", error);
                     });
                 }}

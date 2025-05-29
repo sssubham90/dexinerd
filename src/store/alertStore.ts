@@ -21,6 +21,6 @@ export const showAlertAtom = atom(
     set(alertAtom, { show: true, type, message });
     setTimeout(() => {
       set(alertAtom, { ...get(alertAtom), show: false });
-    }, 3000);
+    }, 7000);
   }
 );
