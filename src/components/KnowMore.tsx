@@ -60,7 +60,14 @@ function ExpandedKnowMoreComponent({
           </p>
           <button
             className="mt-6.5 w-[202px] border-2 border-[#DD5D18] bg-[#DD5D18] hover:bg-[#8D58FF] text-white text-lg font-normal py-2.5 px-5 rounded-full my-2 cursor-pointer max-[1440px]:text-[16px]"
-            onClick={() => setExpanded(false)}
+            onClick={() => {
+              const link = document.createElement("a");
+              link.href = "./SouravRout_DexinerdResume.pdf";
+              link.download = "SouravRout_DexinerdResume.pdf";
+              document.body.appendChild(link);
+              link.click();
+              document.body.removeChild(link);
+            }}
           >
             Download Resume
           </button>

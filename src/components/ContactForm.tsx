@@ -41,10 +41,7 @@ function Form() {
   };
 
   return (
-    <form
-      onSubmit={handleSubmit}
-      className="w-full min-w-[360px] max-[768px]:min-w-[100%]"
-    >
+    <form onSubmit={handleSubmit} className="w-full min-w-[360px]">
       <div className="mb-6">
         <label
           htmlFor="fullName"
@@ -193,7 +190,7 @@ function ContactForm() {
           />
         </div>
       </div>
-      <div className="flex flex-1 flex-col px-20 max-[1340px]:px-4">
+      <div className="flex flex-col px-20 max-[1340px]:px-4 w-full">
         <Form />
       </div>
     </div>
