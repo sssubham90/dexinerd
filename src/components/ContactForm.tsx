@@ -43,7 +43,10 @@ function Form() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="w-full min-w-[360px]">
+    <form
+      onSubmit={handleSubmit}
+      className="w-full min-w-[360px] max-[425px]:min-w-[0px]"
+    >
       <div className="mb-6">
         <label
           htmlFor="fullName"
