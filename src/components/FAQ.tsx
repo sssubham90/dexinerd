@@ -10,7 +10,7 @@ const FAQs = [
       "I create human-centered UI/UX designs for digital products, along with branding collaterals like logos, posters, marketing banners, campaign creatives, videos, brochures, and more - blending strategy with creativity across every format.",
   },
   {
-    question: "How would you describe your design style and approach?",
+    question: "What's your design style and approach?",
     answer:
       "Minimal, thoughtful, and purposeful - I believe every design should tell a story, connect emotionally, and make the experience seamless for users.",
   },
@@ -30,7 +30,7 @@ const FAQs = [
       'Beyond design, I create content under my brand "Dexinerd", where I share design philosophies, life inspirations, and creative thoughts to connect and grow within the creative community.',
   },
   {
-    question: "I would need some design help from you. How can I connect?",
+    question: "How can I connect with you?",
     answer:
       "Use the Get in Touch section to share your details and mention the help you would need. You can expect me to connect back with you within 48 hours.",
   },
@@ -46,10 +46,10 @@ function FAQ() {
       <div className="flex-grow-[584]"></div>
 
       <div className="w-[990px] max-[1520px]:w-full">
-        <h2 className="font-medium text-2xl text-[#DD5D18] tracking-[-4%]">
+        <h2 className="font-medium text-2xl text-[#DD5D18] tracking-[-4%] max-[1440px]:text-[20px]">
           FAQs
         </h2>
-        <h3 className="font-medium text-2xl text-[#2F2F2F] tracking-[-4%] mb-14">
+        <h3 className="font-medium text-2xl text-[#2F2F2F] tracking-[-4%] mb-14 max-[1440px]:text-[20px]">
           Answers to all your questions
         </h3>
         <Root
@@ -62,15 +62,17 @@ function FAQ() {
           {FAQs.map((faq, index) => (
             <Item key={index} value={`item-${index + 1}`}>
               <Trigger className="py-2.5 border-b-1 data-[state=open]:border-[#DD5D18] data-[state=open]:text-[#DD5D18] data-[state=closed]:border-[#66666633] data-[state=close]:text-[#666666] w-full flex justify-between items-center cursor-pointer">
-                <p className="leading-[174%] text-2xl">{faq.question}</p>
+                <p className="leading-[174%] text-2xl text-left max-[1440px]:text-[16px]">
+                  {faq.question}
+                </p>
                 {openItem === `item-${index + 1}` ? (
-                  <Up className="w-8 text-[#DD5D18]" />
+                  <Up className="w-8 text-[#DD5D18] max-[1440px]:w-5" />
                 ) : (
-                  <Down className="w-8 text-[#666666]" />
+                  <Down className="w-8 text-[#666666] max-[1440px]:w-5" />
                 )}
               </Trigger>
               <Content className="py-8 overflow-hidden transition-all transform data-[state=open]:animate-accordion-down data-[state=closed]:animate-accordion-up">
-                <p className="leading-[174%] text-2xl text-[#2F2F2F]">
+                <p className="leading-[174%] text-2xl text-[#2F2F2F] max-[1440px]:text-[16px]">
                   {faq.answer}
                 </p>
               </Content>

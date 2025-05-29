@@ -10,7 +10,7 @@ function KnowMoreComponent({
   return (
     <div className="my-5 mx-auto max-w-[1521px] relative max-[1553px]:mx-4 max-[1553px]:mb-4">
       <button
-        className="bg-white/[13%] backdrop-blur-lg text-white font-medium tracking-[-4%] text-lg border-2 border-white/[13%] hover:border-[#DD5D18] hover:bg-[#8D58FF] px-5 py-2.5 w-44 rounded-[58px] absolute right-[2.5vw] top-[2.5vw] cursor-pointer max-[900px]:right-6"
+        className="bg-white/[13%] backdrop-blur-lg text-white font-medium tracking-[-4%] text-lg border-2 border-white/[13%] hover:border-[#DD5D18] hover:bg-[#8D58FF] px-5 py-2.5 w-44 rounded-[58px] absolute right-[2.5vw] top-[2.5vw] cursor-pointer max-[900px]:right-6 max-[1440px]:text-[16px]"
         onClick={() => setExpanded(true)}
       >
         Know about me
@@ -35,21 +35,23 @@ function ExpandedKnowMoreComponent({
     <div className="my-5 mx-auto max-w-[1521px] relative max-[1553px]:mb-4 max-[1553px]:mx-4">
       <div className="bg-white p-2.5 border-1 border-white rounded-2xl flex flex-row flex-wrap-reverse justify-between items-stretch max-[900px]:gap-4">
         <div className="flex flex-col flex-1/2 shrink-0 p-16 max-[900px]:px-0 max-[900px]:py-4">
-          <h3 className="font-normal text-lg leading-[135%]">Hey again,</h3>
-          <h2 className="font-normal text-[37px] pt-3 leading-[135%] mb-6.5">
+          <h3 className="font-normal text-lg leading-[135%] max-[1440px]:text-[16px]">
+            Hey again,
+          </h3>
+          <h2 className="font-normal text-[37px] pt-3 leading-[135%] mb-6.5 max-[1440px]:text-[24px]">
             I am <span className="text-[#DD5D18]">Sourav Rout</span>
           </h2>
-          <p className="font-normal text-lg leading-[191%] text-[#2F2F2F] mb-2">
-            I am a self-taught UX/UI designer from India with over 3 years of
+          <p className="font-normal text-lg leading-[191%] text-[#2F2F2F] mb-2 max-[1440px]:text-[16px]">
+            I am a self-taught UX/UI designer from India with over 4 years of
             experience. My journey into design began during my time as a
             co-founder of ReadyGo Cabs, where I took charge of the company’s
             design work. This hands-on experience sparked my passion for design,
             leading me to teach myself the skills needed to create user-centered
             digital experiences.
           </p>
-          <p className="font-normal text-lg leading-[191%] text-[#2F2F2F] mt-2">
-            Over the years, I’ve refined my craft through roles at TCS and
-            Deloitte, and by collaborating with multiple brands on various
+          <p className="font-normal text-lg leading-[191%] text-[#2F2F2F] mt-2 max-[1440px]:text-[16px]">
+            Over the years, I’ve refined my craft through roles at Deloitte and
+            TCS, and by collaborating with multiple brands on various
             initiatives. My focus is always on blending creativity,
             functionality, and user needs to deliver impactful designs.
             Recently, I’ve also ventured into content creation under my brand
@@ -57,7 +59,7 @@ function ExpandedKnowMoreComponent({
             inspiration with a wider audience.
           </p>
           <button
-            className="mt-6.5 w-[202px] border-2 border-[#DD5D18] bg-[#DD5D18] hover:bg-[#8D58FF] text-white text-lg font-normal py-2.5 px-5 rounded-full my-2 cursor-pointer"
+            className="mt-6.5 w-[202px] border-2 border-[#DD5D18] bg-[#DD5D18] hover:bg-[#8D58FF] text-white text-lg font-normal py-2.5 px-5 rounded-full my-2 cursor-pointer max-[1440px]:text-[16px]"
             onClick={() => setExpanded(false)}
           >
             Download Resume
@@ -66,7 +68,7 @@ function ExpandedKnowMoreComponent({
         <div className="flex flex-col flex-1/2 min-w-[333px] shrink-0 relative max-[400px]:min-w-[260px]">
           {!isMobile && (
             <button
-              className="bg-white/[13%] backdrop-blur-lg text-white font-medium tracking-[-4%] text-lg border-2 border-white/[13%] hover:border-[#DD5D18] hover:bg-[#8D58FF] px-5 py-2.5 w-44 rounded-[58px] absolute right-[2.5vw] top-[2.5vw] cursor-pointer"
+              className="bg-white/[13%] backdrop-blur-lg text-white font-medium tracking-[-4%] text-lg border-2 border-white/[13%] hover:border-[#DD5D18] hover:bg-[#8D58FF] px-5 py-2.5 w-44 rounded-[58px] absolute right-[2.5vw] top-[2.5vw] cursor-pointer max-[1440px]:text-[16px]"
               onClick={() => setExpanded(false)}
             >
               Exit this view
@@ -107,10 +109,10 @@ function KnowMore() {
       <div className="py-1.5 my-27 mx-[160px] flex flex-row justify-between items-center max-[1440px]:my-24 max-[1300px]:mx-4">
         <div className="flex-grow-[527]"></div>
         <div className="w-[1012px]">
-          <h2 className="font-normal text-[33px] leading-[174%] text-black">
+          <h2 className="font-normal text-[33px] leading-[174%] text-black max-[1440px]:text-[24px]">
             Life, by Design.
           </h2>
-          <p className="font-normal text-lg leading-[191%] text-[#2F2F2F] mt-6.5">
+          <p className="font-normal text-lg leading-[191%] text-[#2F2F2F] mt-6.5 max-[1440px]:text-[16px]">
             This is a philosophy that guides everything I do. It’s about
             recognizing that everything around us is a form of design, and we
             can draw inspiration from it. Every choice, every moment, is shaped

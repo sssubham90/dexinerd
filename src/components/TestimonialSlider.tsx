@@ -54,11 +54,11 @@ export default function TestimonialSlider() {
         <div className="flex-grow-[585]"></div>
 
         <div className="w-[990px] max-[1520px]:w-full">
-          <h2 className="font-medium text-2xl text-[#DD5D18] mb-2">
+          <h2 className="font-medium text-2xl text-[#DD5D18] mb-2 max-[1440px]:text-[20px]">
             Testimonials
           </h2>
           <div className="flex flex-row justify-between items-center mb-14 max-[550px]:gap-4">
-            <h3 className="font-medium text-2xl text-[#2F2F2F] mt-0.5">
+            <h3 className="font-medium text-2xl text-[#2F2F2F] mt-0.5 max-[1440px]:text-[20px]">
               Feedback that speaks to my Results
             </h3>
             <div className="flex flex-row justify-center items-center gap-8 max-[550px]:gap-2">
@@ -78,7 +78,7 @@ export default function TestimonialSlider() {
           <div ref={sliderRef} className="keen-slider">
             {testimonials.map((t, idx) => (
               <div className="keen-slider__slide" key={idx}>
-                <blockquote className="text-2xl font-bold leading-[174%] text-black mb-14">
+                <blockquote className="text-2xl font-bold leading-[174%] text-black mb-14 max-[1440px]:text-[16px]">
                   “{t.quote}”
                 </blockquote>
                 <div className="flex flex-row items-center gap-4">
@@ -90,7 +90,7 @@ export default function TestimonialSlider() {
                     alt={t.name}
                     className="w-16 h-16 rounded-full object-cover"
                   />
-                  <div className="text-[#0B0B0B] text-lg leading-[191%]">
+                  <div className="text-[#0B0B0B] text-lg leading-[191%] max-[1440px]:text-[16px]">
                     <h3 className="font-semibold">{t.name}</h3>
                     <h4>{t.title}</h4>
                   </div>

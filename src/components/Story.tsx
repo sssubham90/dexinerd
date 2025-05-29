@@ -4,8 +4,10 @@ function Story() {
       <div className="flex-grow-[527]"></div>
 
       <div className="w-[1012px]">
-        <h2 className="font-medium text-2xl text-[#DD5D18]">I’m a Dexinerd</h2>
-        <h3 className="font-medium text-lg leading-[191%] text-[#2F2F2F] mt-6.5">
+        <h2 className="font-medium text-2xl text-[#DD5D18] max-[1440px]:text-[20px]">
+          I’m a Dexinerd
+        </h2>
+        <h3 className="font-medium text-lg leading-[191%] text-[#2F2F2F] mt-6.5 max-[1232px]:text-[16px]">
           Dexinerd represents how design shapes our daily lives. It’s about
           creating thoughtful, meaningful experiences that resonate with people
           and elevate the world around us. Design is everywhere, and I aim to
