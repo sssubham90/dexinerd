@@ -33,7 +33,7 @@ function Hero() {
           </Root>
         </div>
         <div
-          className="flex flex-row mx-auto items-center justify-between min-w-[208px] p-1.5 my-6 border-1 border-[#2F2F2F] rounded-4xl min-[850px]:hidden"
+          className="flex flex-row mx-auto items-center justify-between min-w-[208px] p-1.5 my-6 border-1 border-[#2F2F2F] rounded-4xl select-none min-[850px]:hidden"
           onClick={() =>
             window.scrollTo({
               top:
