@@ -101,7 +101,6 @@ function Root() {
     <>
       <Helmet>
         <link rel="preload" as="image" href={Hero} />
-        <meta name="description" content="Sourav's Portfolio" />
       </Helmet>
       <audio
         ref={audioRef}
