@@ -59,9 +59,9 @@ export default function TestimonialSlider() {
   return (
     <div className="my-27 mx-[160px] max-[1024px]:mx-4">
       <div className="flex flex-row justify-center items-center">
-        <div className="flex-grow-[585]"></div>
+        <div className="flex-grow-[527]"></div>
 
-        <div className="w-[990px] max-[1520px]:w-full">
+        <div className="w-[1012px] max-[1520px]:w-full">
           <h2 className="font-medium text-2xl text-[#DD5D18] mb-2 max-[1440px]:text-[20px]">
             Testimonials
           </h2>
@@ -108,7 +108,7 @@ export default function TestimonialSlider() {
           </div>
         </div>
 
-        <div className="flex-grow-[348]"></div>
+        <div className="flex-grow-[328]"></div>
       </div>
       <div className="my-27 max-w-[1520px] max-[1520px]:w-full h-0.5 bg-black/17 mb-23 mx-auto"></div>
     </div>

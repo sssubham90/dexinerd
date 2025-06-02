@@ -43,9 +43,9 @@ function FAQ() {
       id="faqs"
       className="scroll-mt-30 my-27 mx-[160px] flex flex-row justify-between items-center bg-[#F8F8F8] max-[1024px]:mx-4"
     >
-      <div className="flex-grow-[584]"></div>
+      <div className="flex-grow-[527]"></div>
 
-      <div className="w-[990px] max-[1520px]:w-full">
+      <div className="w-[1012px] max-[1520px]:w-full">
         <h2 className="font-medium text-2xl text-[#DD5D18] tracking-[-4%] max-[1440px]:text-[20px]">
           FAQs
         </h2>
@@ -81,7 +81,7 @@ function FAQ() {
         </Root>
       </div>
 
-      <div className="flex-grow-[350]"></div>
+      <div className="flex-grow-[328]"></div>
     </div>
   );
 }
