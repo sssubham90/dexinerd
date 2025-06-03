@@ -133,7 +133,7 @@ function ContactForm() {
   return (
     <div
       id="contact"
-      className="scroll-mt-30 mt-20 mb-40 py-32 px-[59px] max-w-[1520px] mx-auto bg-white rounded-2xl flex flex-row justify-between items-center gap-y-18 max-[1553px]:mx-4 max-[1553px]:mb-20 max-[1440px]:py-24 max-[1207px]:px-4 max-[768px]:flex-col max-[768px]:items-start gap-4"
+      className="scroll-mt-30 mt-20 mb-40 py-32 px-[59px] max-w-[1521px] mx-auto bg-white rounded-2xl flex flex-row justify-between items-center gap-y-18 max-[1553px]:mx-4 max-[1553px]:mb-20 max-[1440px]:py-24 max-[1207px]:px-4 max-[768px]:flex-col max-[768px]:items-start gap-4"
     >
       <div className="flex flex-1 flex-col justify-between items-start gap-18">
         <div className="w-full max-w-[622px]">
