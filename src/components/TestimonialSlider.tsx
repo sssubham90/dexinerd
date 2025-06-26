@@ -5,37 +5,45 @@ import Girish from "../assets/webp/Girish.webp";
 import Tejaswee from "../assets/webp/Tejaswee.webp";
 import Raman from "../assets/webp/Raman.webp";
 import Odyra from "../assets/webp/Odyra.webp";
+import Tushar from "../assets/webp/Tushar.webp";
 import ArrowLeft from "../assets/svg/ArrowLeft.svg?react";
 import ArrowRight from "../assets/svg/ArrowRight.svg?react";
 
 const testimonials = [
   {
+    name: "Tushar Verma",
+    title: "Delivery Manager, Infosys UK",
+    image: Tushar,
+    quote:
+      "Sourav's UI/UX skills stood out during our time at TCS. He pushed the boundaries of design in PowerApps using Figma and backed it with solid front-end implementation. His ability to simplify complex problems, manage clients smoothly, and deliver practical, elegant design solutions makes him a rare blend of creativity and clarity. Highly recommend him",
+  },
+  {
     name: "Girish Mohanty",
-    title: "Ollywood Film Director, Producer, Award-winning Choreographer",
+    title: "Ollywood Film Director, Producer, Award-winning Choreographer",
     image: Girish,
     quote:
-      "As a film director, I deeply value collaborators who can translate vision into powerful visuals, and Sourav does this with remarkable finesse. His designs don’t just look good; they tell a story, elevate the mood, and spark emotion. Sourav’s creative instincts, attention to detail, and ability to think beyond the obvious have brought a unique edge to our projects.",
+      "As a film director, I deeply value collaborators who can translate vision into powerful visuals, and Sourav does this with remarkable finesse. His designs don't just look good; they tell a story, elevate the mood, and spark emotion. Sourav's creative instincts, attention to detail, and ability to think beyond the obvious have brought a unique edge to our projects.",
   },
   {
     name: "Tejaswee Tripathy",
     title: "LinkedIn Top Voice",
     image: Tejaswee,
     quote:
-      "Sourav brings something rare to the table - he understands that design is not just about visuals; it's about human connection. As someone deeply invested in people, culture, and experiences, I’ve seen how his design sensibility helps brands speak more clearly, feel more approachable, and connect more meaningfully. His work goes beyond aesthetics - he designs with intent and an understanding of how people think and behave. It’s no surprise that teams trust him not just as a designer, but as a creative thinker who elevates the entire experience.",
+      "Sourav brings something rare to the table - he understands that design is not just about visuals; it's about human connection. As someone deeply invested in people, culture, and experiences, I've seen how his design sensibility helps brands speak more clearly, feel more approachable, and connect more meaningfully. His work goes beyond aesthetics - he designs with intent and an understanding of how people think and behave. It's no surprise that teams trust him not just as a designer, but as a creative thinker who elevates the entire experience.",
   },
   {
     name: "Ramanjeet Mohanty",
     title: "Co-Founder & CEO, Finocontrol",
     image: Raman,
     quote:
-      "Watching Sourav grow as a designer over the years has been truly inspiring. He started with raw curiosity and a keen eye, and over time, turned that into a sharp design instinct grounded in real understanding of users and business needs. I’ve seen him transform abstract ideas into visual identities and help brands find their voice through design. What sets him apart is that he doesn’t just make things look good - he makes them work beautifully. Whether it’s a website, a logo, or an entire product experience, Sourav brings clarity, consistency, and meaning to every pixel.",
+      "Watching Sourav grow as a designer over the years has been truly inspiring. He started with raw curiosity and a keen eye, and over time, turned that into a sharp design instinct grounded in real understanding of users and business needs. I've seen him transform abstract ideas into visual identities and help brands find their voice through design. What sets him apart is that he doesn't just make things look good - he makes them work beautifully. Whether it's a website, a logo, or an entire product experience, Sourav brings clarity, consistency, and meaning to every pixel.",
   },
   {
     name: "Madhusmita Satapathy",
     title: "Co-Founder & CEO, Odyra Lifestyle",
     image: Odyra,
     quote:
-      "I’ve worked with many designers, but what makes Sourav different is how deeply he listens before he even starts sketching. He doesn't rush to pretty screens - he first understands the real user need and the problem we’re solving. His wireframes tell a story, and his prototypes feel like the product is already alive.",
+      "I've worked with many designers, but what makes Sourav different is how deeply he listens before he even starts sketching. He doesn't rush to pretty screens - he first understands the real user need and the problem we're solving. His wireframes tell a story, and his prototypes feel like the product is already alive.",
   },
 ];
 
