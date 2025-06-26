@@ -6,6 +6,7 @@ import Tejaswee from "../assets/webp/Tejaswee.webp";
 import Raman from "../assets/webp/Raman.webp";
 import Odyra from "../assets/webp/Odyra.webp";
 import Tushar from "../assets/webp/Tushar.webp";
+import Kritika from "../assets/webp/Kritika.webp";
 import ArrowLeft from "../assets/svg/ArrowLeft.svg?react";
 import ArrowRight from "../assets/svg/ArrowRight.svg?react";
 
@@ -16,6 +17,13 @@ const testimonials = [
     image: Tushar,
     quote:
       "Sourav's UI/UX skills stood out during our time at TCS. He pushed the boundaries of design in PowerApps using Figma and backed it with solid front-end implementation. His ability to simplify complex problems, manage clients smoothly, and deliver practical, elegant design solutions makes him a rare blend of creativity and clarity. Highly recommend him",
+  },
+  {
+    name: "Kritika Arora",
+    title: "Influencer, Communication Coach",
+    image: Kritika,
+    quote:
+      "Sourav's design process feels less like creating screens and more like shaping experiences. What stands out is his ability to decode how people think and feel while using a product - and then design around that with purpose. It's rare to see someone blend logic and empathy this effortlessly in design.",
   },
   {
     name: "Girish Mohanty",
