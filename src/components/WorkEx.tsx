@@ -42,9 +42,9 @@ function WorkEx() {
           <img src={Durex} alt="Durex" className="w-13 mx-auto" />
           <img src={Hult} alt="Hult Prize" className="w-24 mx-auto" />
           <img src={KFC} alt="KFC" className="w-14 mx-auto" />
-          <img src={BJP} alt="BJP" className="w-7 mx-auto" />
           <img src={SeventhGear} alt="7thGear" className="w-22 mx-auto" />
           <img src={Highradius} alt="Highradius" className="w-31 mx-auto" />
+          <img src={BJP} alt="BJP" className="w-7 mx-auto" />
         </div>
       </div>
       <div className="flex-1 flex flex-col justify-center">
