@@ -30,7 +30,7 @@ function Portfolio() {
             onClick={() =>
               window.open(
                 "https://souravrout.myportfolio.com/casestudy",
-                "_blank"
+                "_blank",
               )
             }
           >
@@ -42,11 +42,20 @@ function Portfolio() {
             onClick={() =>
               window.open(
                 "https://souravrout.myportfolio.com/graphic",
-                "_blank"
+                "_blank",
               )
             }
           >
             <p className="p-2.5">Graphic Designs</p>
+            <Goto className="w-4 h-9 inline-block" />
+          </div>
+          <div
+            className="flex flex-row justify-start items-center w-full border-b-1 border-black/20 cursor-pointer fill-[#DD5D18] hover:text-[#8D58FF] hover:fill-[#8D58FF]"
+            onClick={() =>
+              window.open("https://souravrout.myportfolio.com/reels", "_blank")
+            }
+          >
+            <p className="p-2.5">Reels</p>
             <Goto className="w-4 h-9 inline-block" />
           </div>
         </div>

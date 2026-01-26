@@ -4,7 +4,7 @@ import RedBull from "../assets/svg/RedBull.svg";
 import KIIT from "../assets/svg/KIIT.svg";
 import MasterCard from "../assets/svg/MasterCard.svg";
 import Durex from "../assets/svg/Durex.svg";
-import ODGov from "../assets/svg/ODGov.svg";
+import KPMG from "../assets/svg/KPMG.svg";
 import KFC from "../assets/svg/KFC.svg";
 import Hult from "../assets/svg/Hult.svg";
 import Highradius from "../assets/svg/Highradius.svg";
@@ -33,6 +33,7 @@ function WorkEx() {
           </p>
         </div>
         <div className="grid grid-cols-6 gap-6 max-w-6xl mx-auto mt-8 px-4 items-center max-[512px]:grid-cols-4">
+          <img src={KPMG} alt="KPMG" className="w-16 mx-auto" />
           <img src={Deloitte} alt="Deloitte" className="w-24 mx-auto" />
           <img src={TCS} alt="TCS" className="w-22 mx-auto" />
           <img src={RedBull} alt="RedBull" className="w-16 mx-auto" />
@@ -41,7 +42,6 @@ function WorkEx() {
           <img src={Durex} alt="Durex" className="w-13 mx-auto" />
           <img src={Hult} alt="Hult Prize" className="w-24 mx-auto" />
           <img src={KFC} alt="KFC" className="w-14 mx-auto" />
-          <img src={ODGov} alt="ODGov" className="w-10 mx-auto" />
           <img src={BJP} alt="BJP" className="w-7 mx-auto" />
           <img src={SeventhGear} alt="7thGear" className="w-22 mx-auto" />
           <img src={Highradius} alt="Highradius" className="w-31 mx-auto" />
