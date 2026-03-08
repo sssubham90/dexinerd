@@ -1,50 +1,50 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: fustat;
-  src: url("../assets/fonts/Fustat-VariableFont_wght.woff2");
-  font-display: swap;
+	font-family: fustat;
+	src: url("../assets/fonts/Fustat-VariableFont_wght.woff2");
+	font-display: swap;
 }
 
 @theme {
-  --font-fustat: "fustat", sans-serif;
-  --shadow-up: 0 -10px 20px rgba(0, 0, 0, 0.15);
+	--font-fustat: "fustat", sans-serif;
+	--shadow-up: 0 -10px 20px rgba(0, 0, 0, 0.15);
 
-  --animate-accordion-down: accordion-down 0.3s cubic-bezier(0.87, 0, 0.13, 1);
-  --animate-accordion-up: accordion-up 0.3s cubic-bezier(0.87, 0, 0.13, 1);
-  --animate-float-up: float-up 0.75s ease-out;
+	--animate-accordion-down: accordion-down 0.3s cubic-bezier(0.87, 0, 0.13, 1);
+	--animate-accordion-up: accordion-up 0.3s cubic-bezier(0.87, 0, 0.13, 1);
+	--animate-float-up: float-up 0.75s ease-out;
 
-  @keyframes accordion-down {
-    from {
-      height: 0;
-    }
-    to {
-      height: var(--radix-accordion-content-height);
-    }
-  }
-  @keyframes accordion-up {
-    from {
-      height: var(--radix-accordion-content-height);
-    }
-    to {
-      height: 0;
-    }
-  }
-  @keyframes float-up {
-    from {
-      transform: translateY(1rem);
-      opacity: 0;
-    }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
+	@keyframes accordion-down {
+		from {
+			height: 0;
+		}
+		to {
+			height: var(--radix-accordion-content-height);
+		}
+	}
+	@keyframes accordion-up {
+		from {
+			height: var(--radix-accordion-content-height);
+		}
+		to {
+			height: 0;
+		}
+	}
+	@keyframes float-up {
+		from {
+			transform: translateY(1rem);
+			opacity: 0;
+		}
+		to {
+			transform: translateY(0);
+			opacity: 1;
+		}
+	}
 }
 
 @layer base {
-  html {
-    @apply font-fustat;
-    @apply bg-[#F8F8F8];
-  }
+	html {
+		@apply font-fustat;
+		@apply bg-[#F8F8F8];
+	}
 }
