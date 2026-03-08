@@ -45,7 +45,7 @@ function Form() {
 	return (
 		<form
 			onSubmit={handleSubmit}
-			className="w-full min-w-[360px] max-[425px]:min-w-[0px]"
+			className="w-full min-w-90 max-[425px]:min-w-0"
 		>
 			<div className="mb-6">
 				<label
@@ -124,7 +124,7 @@ function Form() {
 
 			<button
 				type="submit"
-				className="border-2 text-lg border-[#DD5D18] bg-[#DD5D18] hover:bg-[#8D58FF] text-white font-normal py-3 px-6 rounded-[32px] cursor-pointer max-[1440px]:text-[16px]"
+				className="border-2 text-lg border-[#DD5D18] bg-[#DD5D18] hover:bg-[#8D58FF] text-white font-normal py-3 px-6 rounded-4xl cursor-pointer max-[1440px]:text-[16px]"
 			>
 				Connect now
 			</button>
@@ -136,10 +136,10 @@ function ContactForm() {
 	return (
 		<div
 			id="contact"
-			className="scroll-mt-30 mt-20 mb-40 py-32 px-[59px] max-w-[1521px] mx-auto bg-white rounded-2xl flex flex-row justify-between items-center gap-y-18 max-[1553px]:mx-4 max-[1553px]:mb-20 max-[1440px]:py-24 max-[1207px]:px-4 max-[768px]:flex-col max-[768px]:items-start gap-4"
+			className="scroll-mt-30 mt-20 mb-40 py-32 px-14.75 max-w-380.25 mx-auto bg-white rounded-2xl flex flex-row justify-between items-center gap-y-18 max-[1553px]:mx-4 max-[1553px]:mb-20 max-[1440px]:py-24 max-[1207px]:px-4 max-[768px]:flex-col max-[768px]:items-start gap-4"
 		>
 			<div className="flex flex-1 flex-col justify-between items-start gap-18">
-				<div className="w-full max-w-[622px]">
+				<div className="w-full max-w-155.5">
 					<h3 className="font-medium text-lg text-[#DD5D18] leading-[191%] max-[1440px]:text-[16px]">
 						Get in Touch
 					</h3>
@@ -161,41 +161,43 @@ function ContactForm() {
 						</p>
 					</div>
 					<div className="flex flex-row justify-start items-center gap-4">
-						<img
-							src={Marker}
-							alt="Marker"
-							className="w-[18px] h-[23px] mx-0.5"
-						/>
+						<img src={Marker} alt="Marker" className="w-4.5 h-5.75 mx-0.5" />
 						<p className="font-normal text-lg text-black leading-[191%] max-[1440px]:text-[16px]  max-[375px]:hidden">
 							Bengaluru, Karnataka, India
 						</p>
 					</div>
 				</div>
 				<div className="flex flex-row justify-start items-center gap-6">
-					<img
-						src={Linkedin}
+					<button
+						type="button"
 						onClick={() =>
 							window.open("https://www.linkedin.com/in/souravroutsr", "_blank")
 						}
-						alt="Linkedin"
-						className="w-[28.31px] h-[28.31px] cursor-pointer"
-					/>
-					<img
-						src={Behance}
+						aria-label="LinkedIn"
+						className="w-[28.31px] h-[28.31px] cursor-pointer bg-none border-none p-0"
+					>
+						<img src={Linkedin} alt="LinkedIn" className="w-full h-full" />
+					</button>
+					<button
+						type="button"
 						onClick={() =>
 							window.open("https://www.behance.net/souravrout", "_blank")
 						}
-						alt="Behance"
-						className="w-[30.88px] h-[30.88px] cursor-pointer"
-					/>
-					<img
-						src={Dribble}
+						aria-label="Behance"
+						className="w-[30.88px] h-[30.88px] cursor-pointer bg-none border-none p-0"
+					>
+						<img src={Behance} alt="Behance" className="w-full h-full" />
+					</button>
+					<button
+						type="button"
 						onClick={() =>
 							window.open("https://dribbble.com/souravrout", "_blank")
 						}
-						alt="Dribble"
-						className="w-[28.42px] h-[28.42px] cursor-pointer"
-					/>
+						aria-label="Dribbble"
+						className="w-[28.42px] h-[28.42px] cursor-pointer bg-none border-none p-0"
+					>
+						<img src={Dribble} alt="Dribbble" className="w-full h-full" />
+					</button>
 				</div>
 			</div>
 			<div className="flex flex-1 flex-col px-20 max-[1340px]:px-4 w-full">

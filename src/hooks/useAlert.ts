@@ -1,8 +1,8 @@
 // store/useAlert.ts
 import { useSetAtom } from "jotai";
-import { showAlertAtom, AlertType } from "../store/alertStore";
+import { type AlertType, showAlertAtom } from "../store/alertStore";
 
 export const useAlert = () => {
-  const showAlert = useSetAtom(showAlertAtom);
-  return (message: string, type: AlertType) => showAlert({ type, message });
+	const showAlert = useSetAtom(showAlertAtom);
+	return (message: string, type: AlertType) => showAlert({ type, message });
 };
